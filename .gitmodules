@@ -1,0 +1,3 @@
+[submodule "Cesium"]
+	path = Cesium
+	url = git@github.com:AnalyticalGraphicsInc/cesium.git
