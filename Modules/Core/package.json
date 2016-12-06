@@ -1,0 +1,17 @@
+{
+  "name": "node-cesium-core",
+  "version": "1.28.0",
+  "description": "Cesium Core libraries in CommonJS format for use with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cesium",
+    "commonjs",
+    "node",
+    "core"
+  ],
+  "author": "Rob Taglang",
+  "license": "ISC"
+}

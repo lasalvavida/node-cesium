@@ -1,0 +1,35 @@
+{
+  "name": "node-cesium",
+  "description": "Top level project for building Cesium libraries in CommonJS format for use with Node.js",
+  "scripts": {
+    "build": "gulp build",
+    "build-core": "gulp copy-core && amd-to-common modules/Core/lib && gulp gen-core"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lasalvavida/cesium-node.git"
+  },
+  "keywords": [
+    "cesium",
+    "amd",
+    "commonjs",
+    "requirejs",
+    "amd",
+    "commonjs",
+    "browserify",
+    "webpack"
+  ],
+  "author": "Rob Taglang",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lasalvavida/cesium-node/issues"
+  },
+  "homepage": "https://github.com/lasalvavida/cesium-node#readme",
+  "dependencies": {
+    "amd-to-common": "1.1.1",
+    "bluebird": "^3.4.6",
+    "fs-extra": "^1.0.0",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1"
+  }
+}
