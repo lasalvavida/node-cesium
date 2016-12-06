@@ -18,8 +18,7 @@ gulp.task('gen-core', function(done) {
     var indexFile = './modules/Core/index.js';
     globAsync('./modules/Core/lib/*.js')
         .then(function(files) {
-            var indexString = 'use strict;\n' +
-                'module.exports = {\n';
+            var indexString = 'module.exports = {\n';
             var filesLength = files.length;
             for (var i = 0; i < filesLength; i++) {
                 var file = files[i];

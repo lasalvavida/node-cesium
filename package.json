@@ -1,8 +1,7 @@
 {
   "name": "node-cesium",
-  "description": "Top level project for building Cesium libraries in CommonJS format for use with Node.js",
+  "description": "Cesium libraries in CommonJS format for use with Node.js",
   "scripts": {
-    "build": "gulp build",
     "build-core": "gulp copy-core && amd-to-common modules/Core/lib && gulp gen-core"
   },
   "repository": {
