@@ -24,7 +24,7 @@ gulp.task('gen-core', function(done) {
                 var file = files[i];
                 file = file.substring(file.indexOf('lib'));
                 var moduleName = file.substring(file.indexOf('/') + 1).slice(0, -3);
-                indexString += '    ' + moduleName + ' : require(\'' + file + '\'),\n';
+                indexString += '    ' + moduleName + ' : require(\'./' + file + '\'),\n';
             }
             indexString += '};\n';
             return fsWriteFile(indexFile, indexString);
