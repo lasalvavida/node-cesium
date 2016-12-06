@@ -26,9 +26,9 @@
   "homepage": "https://github.com/lasalvavida/cesium-node#readme",
   "dependencies": {
     "amd-to-common": "1.1.1",
-    "bluebird": "^3.4.6",
-    "fs-extra": "^1.0.0",
-    "glob": "^7.1.1",
-    "gulp": "^3.9.1"
+    "bluebird": "3.4.6",
+    "fs-extra": "1.0.0",
+    "glob": "7.1.1",
+    "gulp": "3.9.1"
   }
 }

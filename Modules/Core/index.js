@@ -1,3 +1,7 @@
+if (typeof define !== 'function') {
+    var define = require('amdefine')(module);
+}
+
 module.exports = {
     appendForwardSlash : require('./lib/appendForwardSlash.js'),
     ArcGisImageServerTerrainProvider : require('./lib/ArcGisImageServerTerrainProvider.js'),

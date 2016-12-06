@@ -18,7 +18,10 @@ gulp.task('gen-core', function(done) {
     var indexFile = './modules/Core/index.js';
     globAsync('./modules/Core/lib/*.js')
         .then(function(files) {
-            var indexString = 'module.exports = {\n';
+            var indexString = 'if (typeof define !== \'function\') {\n' +
+                '    var define = require(\'amdefine\')(module);\n' +
+                '}\n\n' +
+                'module.exports = {\n';
             var filesLength = files.length;
             for (var i = 0; i < filesLength; i++) {
                 var file = files[i];

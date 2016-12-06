@@ -10,5 +10,8 @@
     "core"
   ],
   "author": "Rob Taglang",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "amdefine": "1.0.1"
+  }
 }
