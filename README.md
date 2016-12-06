@@ -18,6 +18,10 @@ var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
 ```
 
+See the main
+[Cesium](https://github.com/AnalyticalGraphicsInc/cesium)
+release for additional usage and licensing information.
+
 ### Build cesium-core
 ```
 // Get Cesium
