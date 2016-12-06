@@ -1,4 +1,3 @@
-use strict;
 module.exports = {
     appendForwardSlash : 'lib/appendForwardSlash.js',
     ArcGisImageServerTerrainProvider : 'lib/ArcGisImageServerTerrainProvider.js',

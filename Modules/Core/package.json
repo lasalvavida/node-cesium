@@ -3,9 +3,6 @@
   "version": "1.28.0",
   "description": "Cesium Core libraries in CommonJS format for use with Node.js",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "cesium",
     "commonjs",
@@ -13,5 +10,5 @@
     "core"
   ],
   "author": "Rob Taglang",
-  "license": "ISC"
+  "license": "Apache-2.0"
 }
