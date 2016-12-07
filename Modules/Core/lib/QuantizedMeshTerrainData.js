@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('../ThirdParty/when');
+var when = require('bluebird');
 var BoundingSphere = require('./BoundingSphere');
 var Cartesian2 = require('./Cartesian2');
 var Cartesian3 = require('./Cartesian3');

@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('../ThirdParty/when');
+var when = require('bluebird');
 var loadBlob = require('./loadBlob');
 var loadImage = require('./loadImage');
 
