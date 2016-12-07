@@ -1,35 +1,36 @@
-define(function(require, exports, module){
-  'use strict';
-  var defined = require('./defined');
-    'use strict';
+'use strict';
 
-    /**
-     * Formats an error object into a String.  If available, uses name, message, and stack
-     * properties, otherwise, falls back on toString().
-     *
-     * @exports formatError
-     *
-     * @param {Object} object The item to find in the array.
-     * @returns {String} A string containing the formatted error.
-     */
-    function formatError(object) {
-        var result;
+var defined = require('./defined');
 
-        var name = object.name;
-        var message = object.message;
-        if (defined(name) && defined(message)) {
-            result = name + ': ' + message;
-        } else {
-            result = object.toString();
-        }
 
-        var stack = object.stack;
-        if (defined(stack)) {
-            result += '\n' + stack;
-        }
 
-        return result;
+/**
+ * Formats an error object into a String.  If available, uses name, message, and stack
+ * properties, otherwise, falls back on toString().
+ *
+ * @exports formatError
+ *
+ * @param {Object} object The item to find in the array.
+ * @returns {String} A string containing the formatted error.
+ */
+function formatError(object) {
+    var result;
+
+    var name = object.name;
+    var message = object.message;
+    if (defined(name) && defined(message)) {
+        result = name + ': ' + message;
+    } else {
+        result = object.toString();
     }
 
-    module.exports = formatError;
-});
+    var stack = object.stack;
+    if (defined(stack)) {
+        result += '\n' + stack;
+    }
+
+    return result;
+}
+
+module.exports = formatError;
+

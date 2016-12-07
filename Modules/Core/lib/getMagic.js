@@ -1,16 +1,17 @@
-define(function(require, exports, module){
-  'use strict';
-  var defaultValue = require('../Core/defaultValue');
-  var getStringFromTypedArray = require('../Core/getStringFromTypedArray');
-    'use strict';
+'use strict';
 
-    /**
-     * @private
-     */
-    function getMagic(uint8Array, byteOffset) {
-        byteOffset = defaultValue(byteOffset, 0);
-        return getStringFromTypedArray(uint8Array, byteOffset, Math.min(4, uint8Array.length));
-    }
+var defaultValue = require('../Core/defaultValue');
+var getStringFromTypedArray = require('../Core/getStringFromTypedArray');
 
-    module.exports = getMagic;
-});
+
+
+/**
+ * @private
+ */
+function getMagic(uint8Array, byteOffset) {
+    byteOffset = defaultValue(byteOffset, 0);
+    return getStringFromTypedArray(uint8Array, byteOffset, Math.min(4, uint8Array.length));
+}
+
+module.exports = getMagic;
+

@@ -1,32 +1,33 @@
-define(function(require, exports, module){
-  'use strict';
-  var freezeObject = require('./freezeObject');
-    'use strict';
+'use strict';
+
+var freezeObject = require('./freezeObject');
+
+
+
+/**
+ * This enumerated type is used to determine how the vertices of the terrain mesh are compressed.
+ *
+ * @exports TerrainQuantization
+ *
+ * @private
+ */
+var TerrainQuantization = {
+    /**
+     * The vertices are not compressed.
+     *
+     * @type {Number}
+     * @constant
+     */
+    NONE : 0,
 
     /**
-     * This enumerated type is used to determine how the vertices of the terrain mesh are compressed.
+     * The vertices are compressed to 12 bits.
      *
-     * @exports TerrainQuantization
-     *
-     * @private
+     * @type {Number}
+     * @constant
      */
-    var TerrainQuantization = {
-        /**
-         * The vertices are not compressed.
-         *
-         * @type {Number}
-         * @constant
-         */
-        NONE : 0,
+    BITS12 : 1
+};
 
-        /**
-         * The vertices are compressed to 12 bits.
-         *
-         * @type {Number}
-         * @constant
-         */
-        BITS12 : 1
-    };
+module.exports = freezeObject(TerrainQuantization);
 
-    module.exports = freezeObject(TerrainQuantization);
-});

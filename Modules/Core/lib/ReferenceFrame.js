@@ -1,30 +1,31 @@
-define(function(require, exports, module){
-  'use strict';
-  var freezeObject = require('./freezeObject');
-    'use strict';
+'use strict';
+
+var freezeObject = require('./freezeObject');
+
+
+
+/**
+ * Constants for identifying well-known reference frames.
+ *
+ * @exports ReferenceFrame
+ */
+var ReferenceFrame = {
+    /**
+     * The fixed frame.
+     *
+     * @type {Number}
+     * @constant
+     */
+    FIXED : 0,
 
     /**
-     * Constants for identifying well-known reference frames.
+     * The inertial frame.
      *
-     * @exports ReferenceFrame
+     * @type {Number}
+     * @constant
      */
-    var ReferenceFrame = {
-        /**
-         * The fixed frame.
-         *
-         * @type {Number}
-         * @constant
-         */
-        FIXED : 0,
+    INERTIAL : 1
+};
 
-        /**
-         * The inertial frame.
-         *
-         * @type {Number}
-         * @constant
-         */
-        INERTIAL : 1
-    };
+module.exports = freezeObject(ReferenceFrame);
 
-    module.exports = freezeObject(ReferenceFrame);
-});

@@ -1,30 +1,31 @@
-define(function(require, exports, module){
-  'use strict';
-  var defaultValue = require('./defaultValue');
-    'use strict';
+'use strict';
 
+var defaultValue = require('./defaultValue');
+
+
+
+/**
+ * Represents the closed interval [start, stop].
+ * @alias Interval
+ * @constructor
+ *
+ * @param {Number} [start=0.0] The beginning of the interval.
+ * @param {Number} [stop=0.0] The end of the interval.
+ */
+function Interval(start, stop) {
     /**
-     * Represents the closed interval [start, stop].
-     * @alias Interval
-     * @constructor
-     *
-     * @param {Number} [start=0.0] The beginning of the interval.
-     * @param {Number} [stop=0.0] The end of the interval.
+     * The beginning of the interval.
+     * @type {Number}
+     * @default 0.0
      */
-    function Interval(start, stop) {
-        /**
-         * The beginning of the interval.
-         * @type {Number}
-         * @default 0.0
-         */
-        this.start = defaultValue(start, 0.0);
-        /**
-         * The end of the interval.
-         * @type {Number}
-         * @default 0.0
-         */
-        this.stop = defaultValue(stop, 0.0);
-    }
+    this.start = defaultValue(start, 0.0);
+    /**
+     * The end of the interval.
+     * @type {Number}
+     * @default 0.0
+     */
+    this.stop = defaultValue(stop, 0.0);
+}
 
-    module.exports = Interval;
-});
+module.exports = Interval;
+

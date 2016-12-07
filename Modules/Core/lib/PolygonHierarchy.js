@@ -1,30 +1,31 @@
-define(function(require, exports, module){
-  'use strict';
-  var defined = require('./defined');
-    'use strict';
+'use strict';
+
+var defined = require('./defined');
+
+
+
+/**
+ * An hierarchy of linear rings which define a polygon and its holes.
+ * The holes themselves may also have holes which nest inner polygons.
+ * @alias PolygonHierarchy
+ * @constructor
+ *
+ * @param {Cartesian3[]} [positions] A linear ring defining the outer boundary of the polygon or hole.
+ * @param {PolygonHierarchy[]} [holes] An array of polygon hierarchies defining holes in the polygon.
+ */
+function PolygonHierarchy(positions, holes) {
+    /**
+     * A linear ring defining the outer boundary of the polygon or hole.
+     * @type {Cartesian3[]}
+     */
+    this.positions = defined(positions) ? positions : [];
 
     /**
-     * An hierarchy of linear rings which define a polygon and its holes.
-     * The holes themselves may also have holes which nest inner polygons.
-     * @alias PolygonHierarchy
-     * @constructor
-     *
-     * @param {Cartesian3[]} [positions] A linear ring defining the outer boundary of the polygon or hole.
-     * @param {PolygonHierarchy[]} [holes] An array of polygon hierarchies defining holes in the polygon.
+     * An array of polygon hierarchies defining holes in the polygon.
+     * @type {PolygonHierarchy[]}
      */
-    function PolygonHierarchy(positions, holes) {
-        /**
-         * A linear ring defining the outer boundary of the polygon or hole.
-         * @type {Cartesian3[]}
-         */
-        this.positions = defined(positions) ? positions : [];
+    this.holes = defined(holes) ? holes : [];
+}
 
-        /**
-         * An array of polygon hierarchies defining holes in the polygon.
-         * @type {PolygonHierarchy[]}
-         */
-        this.holes = defined(holes) ? holes : [];
-    }
+module.exports = PolygonHierarchy;
 
-    module.exports = PolygonHierarchy;
-});

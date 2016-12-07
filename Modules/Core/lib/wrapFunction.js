@@ -1,31 +1,32 @@
-define(function(require, exports, module){
-  'use strict';
-  var DeveloperError = require('./DeveloperError');
-    'use strict';
+'use strict';
 
-    /**
-     * Wraps a function on the provided objects with another function called in the
-     * object's context so that the new function is always called immediately
-     * before the old one.
-     *
-     * @private
-     */
-    function wrapFunction(obj, oldFunction, newFunction) {
-        //>>includeStart('debug', pragmas.debug);
-        if (typeof oldFunction !== 'function') {
-            throw new DeveloperError("oldFunction is required to be a function.");
-        }
+var DeveloperError = require('./DeveloperError');
 
-        if (typeof newFunction !== 'function') {
-            throw new DeveloperError("oldFunction is required to be a function.");
-        }
-        //>>includeEnd('debug');
 
-        return function() {
-            newFunction.apply(obj, arguments);
-            oldFunction.apply(obj, arguments);
-        };
+
+/**
+ * Wraps a function on the provided objects with another function called in the
+ * object's context so that the new function is always called immediately
+ * before the old one.
+ *
+ * @private
+ */
+function wrapFunction(obj, oldFunction, newFunction) {
+    //>>includeStart('debug', pragmas.debug);
+    if (typeof oldFunction !== 'function') {
+        throw new DeveloperError("oldFunction is required to be a function.");
     }
 
-    module.exports = wrapFunction;
-});
+    if (typeof newFunction !== 'function') {
+        throw new DeveloperError("oldFunction is required to be a function.");
+    }
+    //>>includeEnd('debug');
+
+    return function() {
+        newFunction.apply(obj, arguments);
+        oldFunction.apply(obj, arguments);
+    };
+}
+
+module.exports = wrapFunction;
+

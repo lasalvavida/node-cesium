@@ -40,5 +40,5 @@ module for Node, since Node uses the CommonJS format and doesn't support AMD nat
 This can make it difficult to bundle npm modules that depend on Cesium.
 
 This library uses
-[amd-to-common](https://github.com/Willyham/amd-to-common)
+[browserify-ftw](https://github.com/thlorenz/browserify-ftw)
 to put Cesium in a format that node understands and that can be bundled easily.

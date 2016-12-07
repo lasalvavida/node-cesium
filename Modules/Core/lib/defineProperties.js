@@ -1,32 +1,33 @@
-define(function(require, exports, module){
-  'use strict';
-  var defined = require('./defined');
-    'use strict';
+'use strict';
 
-    var definePropertyWorks = (function() {
-        try {
-            return 'x' in Object.defineProperty({}, 'x', {});
-        } catch (e) {
-            return false;
-        }
-    })();
+var defined = require('./defined');
 
-    /**
-     * Defines properties on an object, using Object.defineProperties if available,
-     * otherwise returns the object unchanged.  This function should be used in
-     * setup code to prevent errors from completely halting JavaScript execution
-     * in legacy browsers.
-     *
-     * @private
-     *
-     * @exports defineProperties
-     */
-    var defineProperties = Object.defineProperties;
-    if (!definePropertyWorks || !defined(defineProperties)) {
-        defineProperties = function(o) {
-            return o;
-        };
+
+
+var definePropertyWorks = (function() {
+    try {
+        return 'x' in Object.defineProperty({}, 'x', {});
+    } catch (e) {
+        return false;
     }
+})();
 
-    module.exports = defineProperties;
-});
+/**
+ * Defines properties on an object, using Object.defineProperties if available,
+ * otherwise returns the object unchanged.  This function should be used in
+ * setup code to prevent errors from completely halting JavaScript execution
+ * in legacy browsers.
+ *
+ * @private
+ *
+ * @exports defineProperties
+ */
+var defineProperties = Object.defineProperties;
+if (!definePropertyWorks || !defined(defineProperties)) {
+    defineProperties = function(o) {
+        return o;
+    };
+}
+
+module.exports = defineProperties;
+

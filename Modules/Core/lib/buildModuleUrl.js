@@ -1,102 +1,103 @@
-define(function(require, exports, module){
-  'use strict';
-  var Uri = require('../ThirdParty/Uri');
-  var defined = require('./defined');
-  var DeveloperError = require('./DeveloperError');
-  var getAbsoluteUri = require('./getAbsoluteUri');
-  var joinUrls = require('./joinUrls');
-  var require = require('require');
-    'use strict';
-    /*global CESIUM_BASE_URL*/
+'use strict';
 
-    var cesiumScriptRegex = /((?:.*\/)|^)cesium[\w-]*\.js(?:\W|$)/i;
-    function getBaseUrlFromCesiumScript() {
-        var scripts = document.getElementsByTagName('script');
-        for ( var i = 0, len = scripts.length; i < len; ++i) {
-            var src = scripts[i].getAttribute('src');
-            var result = cesiumScriptRegex.exec(src);
-            if (result !== null) {
-                return result[1];
-            }
+var Uri = require('../ThirdParty/Uri');
+var defined = require('./defined');
+var DeveloperError = require('./DeveloperError');
+var getAbsoluteUri = require('./getAbsoluteUri');
+var joinUrls = require('./joinUrls');
+var require = require('..\require');
+
+
+/*global CESIUM_BASE_URL*/
+
+var cesiumScriptRegex = /((?:.*\/)|^)cesium[\w-]*\.js(?:\W|$)/i;
+function getBaseUrlFromCesiumScript() {
+    var scripts = document.getElementsByTagName('script');
+    for ( var i = 0, len = scripts.length; i < len; ++i) {
+        var src = scripts[i].getAttribute('src');
+        var result = cesiumScriptRegex.exec(src);
+        if (result !== null) {
+            return result[1];
         }
-        return undefined;
     }
+    return undefined;
+}
 
-    var baseUrl;
-    function getCesiumBaseUrl() {
-        if (defined(baseUrl)) {
-            return baseUrl;
-        }
-
-        var baseUrlString;
-        if (typeof CESIUM_BASE_URL !== 'undefined') {
-            baseUrlString = CESIUM_BASE_URL;
-        } else {
-            baseUrlString = getBaseUrlFromCesiumScript();
-        }
-
-        //>>includeStart('debug', pragmas.debug);
-        if (!defined(baseUrlString)) {
-            throw new DeveloperError('Unable to determine Cesium base URL automatically, try defining a global variable called CESIUM_BASE_URL.');
-        }
-        //>>includeEnd('debug');
-
-        baseUrl = new Uri(getAbsoluteUri(baseUrlString));
-
+var baseUrl;
+function getCesiumBaseUrl() {
+    if (defined(baseUrl)) {
         return baseUrl;
     }
 
-    function buildModuleUrlFromRequireToUrl(moduleID) {
-        //moduleID will be non-relative, so require it relative to this module, in Core.
-        return require.toUrl('../' + moduleID);
+    var baseUrlString;
+    if (typeof CESIUM_BASE_URL !== 'undefined') {
+        baseUrlString = CESIUM_BASE_URL;
+    } else {
+        baseUrlString = getBaseUrlFromCesiumScript();
     }
 
-    function buildModuleUrlFromBaseUrl(moduleID) {
-        return joinUrls(getCesiumBaseUrl(), moduleID);
+    //>>includeStart('debug', pragmas.debug);
+    if (!defined(baseUrlString)) {
+        throw new DeveloperError('Unable to determine Cesium base URL automatically, try defining a global variable called CESIUM_BASE_URL.');
     }
+    //>>includeEnd('debug');
 
-    var implementation;
-    var a;
+    baseUrl = new Uri(getAbsoluteUri(baseUrlString));
 
-    /**
-     * Given a non-relative moduleID, returns an absolute URL to the file represented by that module ID,
-     * using, in order of preference, require.toUrl, the value of a global CESIUM_BASE_URL, or
-     * the base URL of the Cesium.js script.
-     *
-     * @private
-     */
-    function buildModuleUrl(moduleID) {
-        if (!defined(implementation)) {
-            //select implementation
-            if (defined(require.toUrl)) {
-                implementation = buildModuleUrlFromRequireToUrl;
-            } else {
-                implementation = buildModuleUrlFromBaseUrl;
-            }
+    return baseUrl;
+}
+
+function buildModuleUrlFromRequireToUrl(moduleID) {
+    //moduleID will be non-relative, so require it relative to this module, in Core.
+    return require.toUrl('../' + moduleID);
+}
+
+function buildModuleUrlFromBaseUrl(moduleID) {
+    return joinUrls(getCesiumBaseUrl(), moduleID);
+}
+
+var implementation;
+var a;
+
+/**
+ * Given a non-relative moduleID, returns an absolute URL to the file represented by that module ID,
+ * using, in order of preference, require.toUrl, the value of a global CESIUM_BASE_URL, or
+ * the base URL of the Cesium.js script.
+ *
+ * @private
+ */
+function buildModuleUrl(moduleID) {
+    if (!defined(implementation)) {
+        //select implementation
+        if (defined(require.toUrl)) {
+            implementation = buildModuleUrlFromRequireToUrl;
+        } else {
+            implementation = buildModuleUrlFromBaseUrl;
         }
-
-        if (!defined(a)) {
-            a = document.createElement('a');
-        }
-
-        var url = implementation(moduleID);
-
-        a.href = url;
-        a.href = a.href; // IE only absolutizes href on get, not set
-
-        return a.href;
     }
 
-    // exposed for testing
-    buildModuleUrl._cesiumScriptRegex = cesiumScriptRegex;
+    if (!defined(a)) {
+        a = document.createElement('a');
+    }
 
-    /**
-     * Sets the base URL for resolving modules.
-     * @param {String} value The new base URL.
-     */
-    buildModuleUrl.setBaseUrl = function(value) {
-        baseUrl = new Uri(value).resolve(new Uri(document.location.href));
-    };
+    var url = implementation(moduleID);
 
-    module.exports = buildModuleUrl;
-});
+    a.href = url;
+    a.href = a.href; // IE only absolutizes href on get, not set
+
+    return a.href;
+}
+
+// exposed for testing
+buildModuleUrl._cesiumScriptRegex = cesiumScriptRegex;
+
+/**
+ * Sets the base URL for resolving modules.
+ * @param {String} value The new base URL.
+ */
+buildModuleUrl.setBaseUrl = function(value) {
+    baseUrl = new Uri(value).resolve(new Uri(document.location.href));
+};
+
+module.exports = buildModuleUrl;
+

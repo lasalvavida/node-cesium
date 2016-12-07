@@ -1,45 +1,46 @@
-define(function(require, exports, module){
-  'use strict';
-  var freezeObject = require('./freezeObject');
-    'use strict';
+'use strict';
+
+var freezeObject = require('./freezeObject');
+
+
+
+/**
+ * Constants to determine how much time advances with each call
+ * to {@link Clock#tick}.
+ *
+ * @exports ClockStep
+ *
+ * @see Clock
+ * @see ClockRange
+ */
+var ClockStep = {
+    /**
+     * {@link Clock#tick} advances the current time by a fixed step,
+     * which is the number of seconds specified by {@link Clock#multiplier}.
+     *
+     * @type {Number}
+     * @constant
+     */
+    TICK_DEPENDENT : 0,
 
     /**
-     * Constants to determine how much time advances with each call
-     * to {@link Clock#tick}.
+     * {@link Clock#tick} advances the current time by the amount of system
+     * time elapsed since the previous call multiplied by {@link Clock#multiplier}.
      *
-     * @exports ClockStep
-     *
-     * @see Clock
-     * @see ClockRange
+     * @type {Number}
+     * @constant
      */
-    var ClockStep = {
-        /**
-         * {@link Clock#tick} advances the current time by a fixed step,
-         * which is the number of seconds specified by {@link Clock#multiplier}.
-         *
-         * @type {Number}
-         * @constant
-         */
-        TICK_DEPENDENT : 0,
+    SYSTEM_CLOCK_MULTIPLIER : 1,
 
-        /**
-         * {@link Clock#tick} advances the current time by the amount of system
-         * time elapsed since the previous call multiplied by {@link Clock#multiplier}.
-         *
-         * @type {Number}
-         * @constant
-         */
-        SYSTEM_CLOCK_MULTIPLIER : 1,
+    /**
+     * {@link Clock#tick} sets the clock to the current system time;
+     * ignoring all other settings.
+     *
+     * @type {Number}
+     * @constant
+     */
+    SYSTEM_CLOCK : 2
+};
 
-        /**
-         * {@link Clock#tick} sets the clock to the current system time;
-         * ignoring all other settings.
-         *
-         * @type {Number}
-         * @constant
-         */
-        SYSTEM_CLOCK : 2
-    };
+module.exports = freezeObject(ClockStep);
 
-    module.exports = freezeObject(ClockStep);
-});

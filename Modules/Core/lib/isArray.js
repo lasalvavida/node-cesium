@@ -1,21 +1,22 @@
-define(function(require, exports, module){
-  'use strict';
-  var defined = require('./defined');
-    'use strict';
+'use strict';
 
-    /**
-     * Tests an object to see if it is an array.
-     * @exports isArray
-     *
-     * @param {Object} value The value to test.
-     * @returns {Boolean} true if the value is an array, false otherwise.
-     */
-    var isArray = Array.isArray;
-    if (!defined(isArray)) {
-        isArray = function(value) {
-            return Object.prototype.toString.call(value) === '[object Array]';
-        };
-    }
+var defined = require('./defined');
 
-    module.exports = isArray;
-});
+
+
+/**
+ * Tests an object to see if it is an array.
+ * @exports isArray
+ *
+ * @param {Object} value The value to test.
+ * @returns {Boolean} true if the value is an array, false otherwise.
+ */
+var isArray = Array.isArray;
+if (!defined(isArray)) {
+    isArray = function(value) {
+        return Object.prototype.toString.call(value) === '[object Array]';
+    };
+}
+
+module.exports = isArray;
+

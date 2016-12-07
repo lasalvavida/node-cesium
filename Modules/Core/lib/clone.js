@@ -1,37 +1,38 @@
-define(function(require, exports, module){
-  'use strict';
-  var defaultValue = require('./defaultValue');
-    'use strict';
+'use strict';
 
-    /**
-     * Clones an object, returning a new object containing the same properties.
-     *
-     * @exports clone
-     *
-     * @param {Object} object The object to clone.
-     * @param {Boolean} [deep=false] If true, all properties will be deep cloned recursively.
-     * @returns {Object} The cloned object.
-     */
-    function clone(object, deep) {
-        if (object === null || typeof object !== 'object') {
-            return object;
-        }
+var defaultValue = require('./defaultValue');
 
-        deep = defaultValue(deep, false);
 
-        var result = new object.constructor();
-        for ( var propertyName in object) {
-            if (object.hasOwnProperty(propertyName)) {
-                var value = object[propertyName];
-                if (deep) {
-                    value = clone(value, deep);
-                }
-                result[propertyName] = value;
-            }
-        }
 
-        return result;
+/**
+ * Clones an object, returning a new object containing the same properties.
+ *
+ * @exports clone
+ *
+ * @param {Object} object The object to clone.
+ * @param {Boolean} [deep=false] If true, all properties will be deep cloned recursively.
+ * @returns {Object} The cloned object.
+ */
+function clone(object, deep) {
+    if (object === null || typeof object !== 'object') {
+        return object;
     }
 
-    module.exports = clone;
-});
+    deep = defaultValue(deep, false);
+
+    var result = new object.constructor();
+    for ( var propertyName in object) {
+        if (object.hasOwnProperty(propertyName)) {
+            var value = object[propertyName];
+            if (deep) {
+                value = clone(value, deep);
+            }
+            result[propertyName] = value;
+        }
+    }
+
+    return result;
+}
+
+module.exports = clone;
+
