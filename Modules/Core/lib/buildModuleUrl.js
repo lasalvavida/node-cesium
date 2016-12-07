@@ -5,7 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var getAbsoluteUri = require('./getAbsoluteUri');
 var joinUrls = require('./joinUrls');
-var require = require('..\require');
 
 
 /*global CESIUM_BASE_URL*/

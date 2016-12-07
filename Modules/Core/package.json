@@ -1,6 +1,6 @@
 {
   "name": "cesium-core",
-  "version": "1.28.5",
+  "version": "1.28.7",
   "description": "Cesium Core libraries in CommonJS format for use with Node.js",
   "main": "index.js",
   "keywords": [
@@ -16,6 +16,6 @@
     "earcut": "2.1.1",
     "mersenne-twister": "1.1.0",
     "sprintf-js": "1.0.3",
-    "tween": "^0.9.0"
+    "tween": "0.9.0"
   }
 }

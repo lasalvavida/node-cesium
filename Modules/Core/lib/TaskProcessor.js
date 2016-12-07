@@ -9,7 +9,6 @@ var DeveloperError = require('./DeveloperError');
 var getAbsoluteUri = require('./getAbsoluteUri');
 var isCrossOriginUrl = require('./isCrossOriginUrl');
 var RuntimeError = require('./RuntimeError');
-var require = require('..\require');
 
 
 

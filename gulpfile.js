@@ -37,6 +37,8 @@ gulp.task('post-process-core', function(done) {
                         fileContents = fileContents.replace('\'../ThirdParty/earcut-2.1.1\'', '\'earcut\'');
                         // Replace ThirdParty `sprintf` usage with npm `sprintf-js`
                         fileContents = fileContents.replace('\'../ThirdParty/sprintf\');', '\'sprintf-js\').sprintf;');
+                        // Delete external require usage
+                        fileContents = fileContents.replace('var require = require(\'..\\require\');\n', '');
                         // If the first header style comment contains @private, don't make it public
                         var headerMatches = fileContents.match(/\/\*((.|\s)*?)\*\//g);
                         if (headerMatches.length > 0) {
