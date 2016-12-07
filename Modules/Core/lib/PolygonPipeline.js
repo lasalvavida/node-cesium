@@ -1,6 +1,6 @@
 'use strict';
 
-var earcut = require('../ThirdParty/earcut-2.1.1');
+var earcut = require('earcut');
 var Cartesian2 = require('./Cartesian2');
 var Cartesian3 = require('./Cartesian3');
 var ComponentDatatype = require('./ComponentDatatype');

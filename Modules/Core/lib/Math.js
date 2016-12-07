@@ -1,6 +1,6 @@
 'use strict';
 
-var MersenneTwister = require('../ThirdParty/mersenne-twister');
+var MersenneTwister = require('mersenne-twister');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');

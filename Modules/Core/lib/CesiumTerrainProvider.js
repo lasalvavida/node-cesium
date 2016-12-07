@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('../ThirdParty/Uri');
+var Uri = require('url');
 var when = require('bluebird');
 var BoundingSphere = require('./BoundingSphere');
 var Cartesian3 = require('./Cartesian3');

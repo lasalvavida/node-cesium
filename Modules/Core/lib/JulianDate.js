@@ -1,6 +1,6 @@
 'use strict';
 
-var sprintf = require('../ThirdParty/sprintf');
+var sprintf = require('sprintf-js').sprintf;
 var binarySearch = require('./binarySearch');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');

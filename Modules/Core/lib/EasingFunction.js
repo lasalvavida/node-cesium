@@ -1,6 +1,6 @@
 'use strict';
 
-var Tween = require('../ThirdParty/Tween');
+var Tween = require('tween');
 var freezeObject = require('./freezeObject');
 
 

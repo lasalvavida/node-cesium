@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('../ThirdParty/Uri');
+var Uri = require('url');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');

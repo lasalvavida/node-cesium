@@ -12,6 +12,10 @@
   "author": "Rob Taglang",
   "license": "Apache-2.0",
   "dependencies": {
-    "bluebird": "^3.4.6"
+    "bluebird": "3.4.6",
+    "earcut": "2.1.1",
+    "mersenne-twister": "1.1.0",
+    "sprintf-js": "1.0.3",
+    "tween": "^0.9.0"
   }
 }

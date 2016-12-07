@@ -25,6 +25,18 @@ gulp.task('post-process-core', function(done) {
                         var fileContents = data.toString();
                         // We can remove the global define tag for jsHint since we don't use define anymore
                         fileContents = fileContents.replace(/\/\*global define\*\/(\s*)/, '');
+                        // Replace ThirdParty `when` usage with npm `bluebird`
+                        fileContents = fileContents.replace('\'../ThirdParty/when\'', '\'bluebird\'');
+                        // Replace ThirdParty `mersenne-twister` usage with npm `mersenne-twister`
+                        fileContents = fileContents.replace('\'../ThirdParty/mersenne-twister\'', '\'mersenne-twister\'');
+                        // Replace ThirdParty `Uri` usage with node 'url'
+                        fileContents = fileContents.replace('\'../ThirdParty/Uri\'', '\'url\'');
+                        // Replace ThirdParty `Tween` usage with npm `tween`
+                        fileContents = fileContents.replace('\'../ThirdParty/Tween\'', '\'tween\'');
+                        // Replace ThirdParty `earcut2.1.1` usage with npm `earcut`
+                        fileContents = fileContents.replace('\'../ThirdParty/earcut-2.1.1\'', '\'earcut\'');
+                        // Replace ThirdParty `sprintf` usage with npm `sprintf-js`
+                        fileContents = fileContents.replace('\'../ThirdParty/sprintf\');', '\'sprintf-js\').sprintf;');
                         // If the first header style comment contains @private, don't make it public
                         var headerMatches = fileContents.match(/\/\*((.|\s)*?)\*\//g);
                         if (headerMatches.length > 0) {

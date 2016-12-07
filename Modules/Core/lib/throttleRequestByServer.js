@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('../ThirdParty/Uri');
+var Uri = require('url');
 var when = require('bluebird');
 var defaultValue = require('./defaultValue');
 
