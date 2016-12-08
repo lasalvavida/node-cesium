@@ -16,6 +16,6 @@
   "author": "Rob Taglang",
   "license": "Apache-2.0",
   "dependencies": {
-    "cesium-core": "^1.28.13"
+    "cesium-core": "^1.28.14"
   }
 }
