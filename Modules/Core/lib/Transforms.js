@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var Cartesian2 = require('./Cartesian2');
 var Cartesian3 = require('./Cartesian3');
 var Cartesian4 = require('./Cartesian4');
@@ -649,7 +649,7 @@ Transforms.preloadIcrfFixed = function(timeInterval) {
     var xysPromise = Transforms.iau2006XysData.preload(startDayTT, startSecondTT, stopDayTT, stopSecondTT);
     var eopPromise = Transforms.earthOrientationParameters.getPromiseToLoad();
 
-    return when.all([xysPromise, eopPromise]);
+    return Promise.all([xysPromise, eopPromise]);
 };
 
 /**

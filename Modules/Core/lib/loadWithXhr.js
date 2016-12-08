@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
@@ -33,7 +33,7 @@ var TrustedServers = require('./TrustedServers');
  *     responseType : 'blob'
  * }).then(function(blob) {
  *     // use the data
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  *
@@ -60,7 +60,7 @@ function loadWithXhr(options) {
     var overrideMimeType = options.overrideMimeType;
 
     return when(options.url, function(url) {
-        var deferred = when.defer();
+        var deferred = Promise.defer();
 
         loadWithXhr.load(url, responseType, method, data, headers, deferred, overrideMimeType);
 

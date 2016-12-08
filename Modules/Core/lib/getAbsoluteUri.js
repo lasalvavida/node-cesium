@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('url');
+var Uri = require('urijs');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
@@ -26,7 +26,7 @@ function getAbsoluteUri(relative, base) {
     base = defaultValue(base, document.location.href);
     var baseUri = new Uri(base);
     var relativeUri = new Uri(relative);
-    return relativeUri.resolve(baseUri).toString();
+    return relativeUri.relativeTo(Uri);
 }
 
 module.exports = getAbsoluteUri;

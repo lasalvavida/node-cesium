@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var defineProperties = require('./defineProperties');
@@ -42,7 +42,7 @@ function EllipsoidTerrainProvider(options) {
     this._levelZeroMaximumGeometricError = TerrainProvider.getEstimatedLevelZeroGeometricErrorForAHeightmap(this._tilingScheme.ellipsoid, 64, this._tilingScheme.getNumberOfXTilesAtLevel(0));
 
     this._errorEvent = new Event();
-    this._readyPromise = when.resolve(true);
+    this._readyPromise = Promise.resolve(true);
 }
 
 defineProperties(EllipsoidTerrainProvider.prototype, {

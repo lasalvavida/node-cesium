@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var loadImage = require('./loadImage');
@@ -29,7 +29,7 @@ function loadImageFromTypedArray(uint8Array, format) {
         return image;
     }, function(error) {
         window.URL.revokeObjectURL(blobUrl);
-        return when.reject(error);
+        return Promise.reject(error);
     });
 }
 

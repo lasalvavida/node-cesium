@@ -30,7 +30,7 @@ var defaultHeaders = {
  * @example
  * Cesium.loadJson('http://someUrl.com/someJson.txt').then(function(jsonData) {
  *     // Do something with the JSON object
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  * 

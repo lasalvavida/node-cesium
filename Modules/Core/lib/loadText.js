@@ -21,7 +21,7 @@ var loadWithXhr = require('./loadWithXhr');
  *   'X-Custom-Header' : 'some value'
  * }).then(function(text) {
  *     // Do something with the text
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  * 

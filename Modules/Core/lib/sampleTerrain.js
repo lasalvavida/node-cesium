@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
@@ -51,7 +51,7 @@ function sampleTerrain(terrainProvider, level, positions) {
     }
     //>>includeEnd('debug');
 
-    var deferred = when.defer();
+    var deferred = Promise.defer();
 
     function doSamplingWhenReady() {
         if (terrainProvider.ready) {
@@ -107,7 +107,7 @@ function doSampling(terrainProvider, level, positions) {
         tilePromises.push(tilePromise);
     }
 
-    return when.all(tilePromises, function() {
+    return Promise.all(tilePromises, function() {
         return positions;
     });
 }

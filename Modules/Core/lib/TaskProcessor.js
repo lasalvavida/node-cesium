@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var buildModuleUrl = require('./buildModuleUrl');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
@@ -29,7 +29,7 @@ function canTransferArrayBuffer() {
             return TaskProcessor._canTransferArrayBuffer;
         }
 
-        var deferred = when.defer();
+        var deferred = Promise.defer();
 
         worker.onmessage = function(event) {
             var array = event.data.array;
@@ -189,7 +189,7 @@ var emptyTransferableObjectArray = [];
  * if (!Cesium.defined(promise)) {
  *     // too many active tasks - try again later
  * } else {
- *     Cesium.when(promise, function(result) {
+ *     Cesium.new Promise(function(resolve) {
  *         // use the result of the task
  *     });
  * }
@@ -200,7 +200,7 @@ TaskProcessor.prototype.scheduleTask = function(parameters, transferableObjects)
     }
 
     if (this._activeTasks >= this._maximumActiveTasks) {
-        return undefined;
+        resolve(promise);
     }
 
     ++this._activeTasks;
@@ -214,7 +214,7 @@ TaskProcessor.prototype.scheduleTask = function(parameters, transferableObjects)
         }
 
         var id = processor._nextID++;
-        var deferred = when.defer();
+        var deferred = Promise.defer();
         processor._deferreds[id] = deferred;
 
         processor._worker.postMessage({

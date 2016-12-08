@@ -1,7 +1,7 @@
 'use strict';
 
-var Uri = require('url');
-var when = require('bluebird');
+var Uri = require('urijs');
+var Promise = require('bluebird');
 var combine = require('./combine');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
@@ -26,7 +26,7 @@ var queryToObject = require('./queryToObject');
  * // load a data asynchronously
  * Cesium.loadJsonp('some/webservice').then(function(data) {
  *     // use the loaded data
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  * 
@@ -47,7 +47,7 @@ function loadJsonp(url, options) {
         functionName = 'loadJsonp' + Math.random().toString().substring(2, 8);
     } while (defined(window[functionName]));
 
-    var deferred = when.defer();
+    var deferred = Promise.defer();
 
     //assign a function with that name in the global scope
     window[functionName] = function(data) {

@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var buildModuleUrl = require('./buildModuleUrl');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
@@ -112,7 +112,7 @@ Iau2006XysData.prototype.preload = function(startDayTT, startSecondTT, stopDayTT
         promises.push(requestXysChunk(this, i));
     }
 
-    return when.all(promises);
+    return Promise.all(promises);
 };
 
 /**
@@ -222,7 +222,7 @@ function requestXysChunk(xysData, chunkIndex) {
         return xysData._chunkDownloadsInProgress[chunkIndex];
     }
 
-    var deferred = when.defer();
+    var deferred = Promise.defer();
 
     xysData._chunkDownloadsInProgress[chunkIndex] = deferred;
 

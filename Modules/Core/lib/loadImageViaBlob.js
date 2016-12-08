@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var loadBlob = require('./loadBlob');
 var loadImage = require('./loadImage');
 
@@ -29,12 +29,12 @@ var dataUriRegex = /^data:/;
  * Cesium.loadImageViaBlob('some/image/url.png').then(function(image) {
  *     var blob = image.blob;
  *     // use the loaded image or XHR
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  *
  * // load several images in parallel
- * when.all([loadImageViaBlob('image1.png'), loadImageViaBlob('image2.png')]).then(function(images) {
+ * Promise.all([loadImageViaBlob('image1.png'), loadImageViaBlob('image2.png')]).then(function(images) {
  *     // images is an array containing all the loaded images
  * });
  * 
@@ -55,7 +55,7 @@ function loadImageViaBlob(url) {
             return image;
         }, function(error) {
             window.URL.revokeObjectURL(blobUrl);
-            return when.reject(error);
+            return Promise.reject(error);
         });
     });
 }

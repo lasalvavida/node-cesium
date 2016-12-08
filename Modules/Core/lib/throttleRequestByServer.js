@@ -1,18 +1,18 @@
 'use strict';
 
-var Uri = require('url');
-var when = require('bluebird');
+var Uri = require('urijs');
+var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 
 var activeRequests = {};
 
 var pageUri = typeof document !== 'undefined' ? new Uri(document.location.href) : new Uri();
 function getServer(url) {
-    var uri = new Uri(url).resolve(pageUri);
-    uri.normalize();
-    var server = uri.authority;
+    var uri = new Uri(url).relativeTo(uri);
+    uri.normalizeQuery();
+    var server = uri.authority();
     if (!/:/.test(server)) {
-        server = server + ':' + (uri.scheme === 'https' ? '443' : '80');
+        server = server + ':' + (uri.protocol() === 'https' ? '443' : '80');
     }
     return server;
 }
@@ -60,12 +60,12 @@ function throttleRequestByServer(url, requestFunction) {
 
     activeRequests[server] = activeRequestsForServer + 1;
 
-    return when(requestFunction(url), function(result) {
+    return new Promise(function(resolve) {
         activeRequests[server]--;
-        return result;
-    }).otherwise(function(error) {
+        resolve(requestFunction(url));
+    }).catch(function(error) {
         activeRequests[server]--;
-        return when.reject(error);
+        return Promise.reject(error);
     });
 }
 

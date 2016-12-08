@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var BoundingSphere = require('./BoundingSphere');
 var Cartesian2 = require('./Cartesian2');
 var Cartesian3 = require('./Cartesian3');
@@ -278,7 +278,7 @@ QuantizedMeshTerrainData.prototype.createMesh = function(tilingScheme, x, y, lev
     }
 
     var that = this;
-    return when(verticesPromise, function(result) {
+    return new Promise(function(resolve) {
         var vertexCount = that._quantizedVertices.length / 3;
         vertexCount += that._westIndices.length + that._southIndices.length + that._eastIndices.length + that._northIndices.length;
         var indicesTypedArray = IndexDatatype.createTypedArray(vertexCount, result.indices);
@@ -323,7 +323,7 @@ QuantizedMeshTerrainData.prototype.createMesh = function(tilingScheme, x, y, lev
         that._eastIndices = undefined;
         that._northIndices = undefined;
 
-        return that._mesh;
+        resolve(verticesPromise);
     });
 };
 
@@ -413,7 +413,7 @@ QuantizedMeshTerrainData.prototype.upsample = function(tilingScheme, thisX, this
     var eastSkirtHeight = isEastChild ? this._eastSkirtHeight : (shortestSkirt * 0.5);
     var northSkirtHeight = isNorthChild ? this._northSkirtHeight : (shortestSkirt * 0.5);
 
-    return when(upsamplePromise, function(result) {
+    return new Promise(function(resolve) {
         var quantizedVertices = new Uint16Array(result.vertices);
         var indicesTypedArray = IndexDatatype.createTypedArray(quantizedVertices.length / 3, result.indices);
         var encodedNormals;
@@ -421,26 +421,7 @@ QuantizedMeshTerrainData.prototype.upsample = function(tilingScheme, thisX, this
             encodedNormals = new Uint8Array(result.encodedNormals);
         }
 
-        return new QuantizedMeshTerrainData({
-            quantizedVertices : quantizedVertices,
-            indices : indicesTypedArray,
-            encodedNormals : encodedNormals,
-            minimumHeight : result.minimumHeight,
-            maximumHeight : result.maximumHeight,
-            boundingSphere : BoundingSphere.clone(result.boundingSphere),
-            orientedBoundingBox : OrientedBoundingBox.clone(result.orientedBoundingBox),
-            horizonOcclusionPoint : Cartesian3.clone(result.horizonOcclusionPoint),
-            westIndices : result.westIndices,
-            southIndices : result.southIndices,
-            eastIndices : result.eastIndices,
-            northIndices : result.northIndices,
-            westSkirtHeight : westSkirtHeight,
-            southSkirtHeight : southSkirtHeight,
-            eastSkirtHeight : eastSkirtHeight,
-            northSkirtHeight : northSkirtHeight,
-            childTileMask : 0,
-            createdByUpsampling : true
-        });
+        resolve(upsamplePromise);
     });
 };
 

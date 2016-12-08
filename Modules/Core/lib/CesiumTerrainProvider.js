@@ -1,7 +1,7 @@
 'use strict';
 
-var Uri = require('url');
-var when = require('bluebird');
+var Uri = require('urijs');
+var Promise = require('bluebird');
 var BoundingSphere = require('./BoundingSphere');
 var Cartesian3 = require('./Cartesian3');
 var Credit = require('./Credit');
@@ -120,7 +120,7 @@ function CesiumTerrainProvider(options) {
     this._credit = credit;
 
     this._ready = false;
-    this._readyPromise = when.defer();
+    this._readyPromise = Promise.defer();
 
     var metadataUrl = joinUrls(this._url, 'layer.json');
     if (defined(this._proxy)) {
@@ -168,9 +168,9 @@ function CesiumTerrainProvider(options) {
         for (var i = 0; i < that._tileUrlTemplates.length; ++i) {
             var template = new Uri(that._tileUrlTemplates[i]);
             var baseUri = new Uri(that._url);
-            if (template.authority && !baseUri.authority) {
-                baseUri.authority = template.authority;
-                baseUri.scheme = template.scheme;
+            if (template.authority && !baseUri.authority()) {
+                baseUri.authority() = template.authority;
+                baseUri.protocol() = template.scheme;
             }
             that._tileUrlTemplates[i] = joinUrls(baseUri, template).toString().replace('{version}', data.version);
         }

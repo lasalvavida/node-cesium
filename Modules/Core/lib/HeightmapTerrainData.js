@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var defineProperties = require('./defineProperties');
@@ -208,7 +208,7 @@ HeightmapTerrainData.prototype.createMesh = function(tilingScheme, x, y, level, 
     }
 
     var that = this;
-    return when(verticesPromise, function(result) {
+    return new Promise(function(resolve) {
         that._mesh = new TerrainMesh(
                 center,
                 new Float32Array(result.vertices),
@@ -224,7 +224,7 @@ HeightmapTerrainData.prototype.createMesh = function(tilingScheme, x, y, level, 
 
         // Free memory received from server after mesh is created.
         that._buffer = undefined;
-        return that._mesh;
+        resolve(verticesPromise);
     });
 };
 

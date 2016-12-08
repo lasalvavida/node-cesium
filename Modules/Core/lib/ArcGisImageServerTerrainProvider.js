@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var Credit = require('./Credit');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
@@ -86,7 +86,7 @@ function ArcGisImageServerTerrainProvider(options) {
         credit = new Credit(credit);
     }
     this._credit = credit;
-    this._readyPromise = when.resolve(true);
+    this._readyPromise = Promise.resolve(true);
 }
 
 defineProperties(ArcGisImageServerTerrainProvider.prototype, {

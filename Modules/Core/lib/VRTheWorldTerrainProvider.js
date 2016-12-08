@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var Credit = require('./Credit');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
@@ -62,7 +62,7 @@ function VRTheWorldTerrainProvider(options) {
 
     this._errorEvent = new Event();
     this._ready = false;
-    this._readyPromise = when.defer();
+    this._readyPromise = Promise.defer();
 
     this._proxy = options.proxy;
 

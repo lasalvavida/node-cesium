@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('url');
+var Uri = require('urijs');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var getAbsoluteUri = require('./getAbsoluteUri');
@@ -94,7 +94,7 @@ buildModuleUrl._cesiumScriptRegex = cesiumScriptRegex;
  * @param {String} value The new base URL.
  */
 buildModuleUrl.setBaseUrl = function(value) {
-    baseUrl = new Uri(value).resolve(new Uri(document.location.href));
+    baseUrl = new Uri(value).relativeTo(Uri);
 };
 
 module.exports = buildModuleUrl;

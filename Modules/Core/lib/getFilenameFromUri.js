@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('url');
+var Uri = require('urijs');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
@@ -23,7 +23,7 @@ function getFilenameFromUri(uri) {
     //>>includeEnd('debug');
 
     var uriObject = new Uri(uri);
-    uriObject.normalize();
+    uriObject.normalizeQuery();
     var path = uriObject.path;
     var index = path.lastIndexOf('/');
     if (index !== -1) {

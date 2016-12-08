@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var binarySearch = require('./binarySearch');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');

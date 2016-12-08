@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('url');
+var Uri = require('urijs');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
@@ -34,11 +34,11 @@ function joinUrls(first, second, appendSlash) {
         second = new Uri(second);
     }
 
-    // Uri.isAbsolute returns false for a URL like '//foo.com'.  So if we have an authority but
+    // Uri.isAbsolute returns false for a URL like '//foo.com'.  So if we have an.authority() but
     // not a scheme, add a scheme matching the page's scheme.
     if (defined(second.authority) && !defined(second.scheme)) {
         if (typeof document !== 'undefined' && defined(document.location) && defined(document.location.href)) {
-            second.scheme = new Uri(document.location.href).scheme;
+            second.scheme = new Uri(document.location.href).protocol();
         } else {
             // Not in a browser?  Use the first URL's scheme instead.
             second.scheme = first.scheme;
@@ -52,11 +52,11 @@ function joinUrls(first, second, appendSlash) {
     }
 
     var url = '';
-    if (defined(baseUri.scheme)) {
-        url += baseUri.scheme + ':';
+    if (defined(baseUri.protocol())) {
+        url += baseUri.protocol() + ':';
     }
-    if (defined(baseUri.authority)) {
-        url += '//' + baseUri.authority;
+    if (defined(baseUri.authority())) {
+        url += '//' + baseUri.authority();
 
         if (baseUri.path !== '' && baseUri.path !== '/') {
             url = url.replace(/\/?$/, '/');

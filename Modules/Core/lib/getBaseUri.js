@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('url');
+var Uri = require('urijs');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 

@@ -19,7 +19,7 @@ var loadWithXhr = require('./loadWithXhr');
  * // load a single URL asynchronously
  * Cesium.loadArrayBuffer('some/url').then(function(arrayBuffer) {
  *     // use the data
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  * 

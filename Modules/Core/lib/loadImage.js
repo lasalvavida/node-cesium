@@ -1,6 +1,6 @@
 'use strict';
 
-var when = require('bluebird');
+var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
@@ -26,12 +26,12 @@ var dataUriRegex = /^data:/;
  * // load a single image asynchronously
  * Cesium.loadImage('some/image/url.png').then(function(image) {
  *     // use the loaded image
- * }).otherwise(function(error) {
+ * }).catch(function(error) {
  *     // an error occurred
  * });
  *
  * // load several images in parallel
- * when.all([loadImage('image1.png'), loadImage('image2.png')]).then(function(images) {
+ * Promise.all([loadImage('image1.png'), loadImage('image2.png')]).then(function(images) {
  *     // images is an array containing all the loaded images
  * });
  * 
@@ -57,7 +57,7 @@ function loadImage(url, allowCrossOrigin) {
             crossOrigin = isCrossOriginUrl(url);
         }
 
-        var deferred = when.defer();
+        var deferred = Promise.defer();
 
         loadImage.createImage(url, crossOrigin, deferred);
 

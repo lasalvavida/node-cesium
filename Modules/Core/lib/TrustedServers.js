@@ -1,6 +1,6 @@
 'use strict';
 
-var Uri = require('url');
+var Uri = require('urijs');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
@@ -69,7 +69,7 @@ TrustedServers.remove = function(host, port) {
 
 function getAuthority(url) {
     var uri = new Uri(url);
-    uri.normalize();
+    uri.normalizeQuery();
 
     // Removes username:password@ so we just have host[:port]
     var authority = uri.getAuthority();
