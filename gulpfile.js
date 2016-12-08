@@ -103,6 +103,7 @@ gulp.task('post-process-renderer', function(done) {
             return Promise.map(files, function(file) {
                 return fsReadFile(file)
                     .then(function(data) {
+                        console.log(file);
                         var fileContents = data.toString();
                         // As per our Node style guide, delete duplicate newlines
                         fileContents = fileContents.replace(/\r\n/g, '\n');
@@ -113,9 +114,9 @@ gulp.task('post-process-renderer', function(done) {
                         fileContents = fileContents.replace('\'use strict\';\n\n', '\'use strict\';\n\nvar CesiumCore = require(\'cesium-core\');\n');
                         fileContents = fileContents.replace(/require\('\.\.\/Core\/(.*?)'\);/g, 'CesiumCore.$1;');
                         // This module itself is private, so just expose everything
-                        publicModules[moduleName] = filePath;
                         var filePath = file.substring(file.indexOf('lib'));
                         var moduleName = filePath.substring(filePath.indexOf('/') + 1).slice(0, -3);
+                        publicModules[moduleName] = filePath;
                         return fsOutputFile(file, new Buffer(fileContents));
                     });
             })
