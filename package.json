@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/lasalvavida/node-cesium#readme",
   "dependencies": {
-    "bluebird": "3.4.6",
-    "browserify-ftw": "0.8.0",
-    "fs-extra": "1.0.0",
-    "glob": "7.1.1",
-    "gulp": "3.9.1"
+    "bluebird": "^3.4.6",
+    "browserify-ftw": "^0.8.0",
+    "fs-extra": "^1.0.0",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1"
   }
 }
