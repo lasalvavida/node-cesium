@@ -1,6 +1,6 @@
 'use strict';
 
-var defineProperties = require('../Core/defineProperties');
+var defineProperties = require('./defineProperties');
 
 /**
  * A queue that can enqueue items at the end, and dequeue items from the front.

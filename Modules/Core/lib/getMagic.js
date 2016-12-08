@@ -1,7 +1,7 @@
 'use strict';
 
-var defaultValue = require('../Core/defaultValue');
-var getStringFromTypedArray = require('../Core/getStringFromTypedArray');
+var defaultValue = require('./defaultValue');
+var getStringFromTypedArray = require('./getStringFromTypedArray');
 
 /**
  * @private
