@@ -10,8 +10,6 @@ var CesiumMath = require('./Math');
  * Attribute compression and decompression functions.
  *
  * @exports AttributeCompression
- *
- * @private
  */
 var AttributeCompression = {};
 
