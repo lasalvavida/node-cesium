@@ -1,0 +1,18 @@
+{
+  "name": "cesium-renderer",
+  "version": "1.28.0",
+  "description": "Cesium Renderer libraries in CommonJS format for use with Node.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lasalvavida/node-cesium.git"
+  },
+  "main": "index.js",
+  "keywords": [
+    "cesium",
+    "commonjs",
+    "node",
+    "renderer"
+  ],
+  "author": "Rob Taglang",
+  "license": "Apache-2.0"
+}

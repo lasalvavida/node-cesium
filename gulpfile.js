@@ -15,6 +15,23 @@ gulp.task('copy-core', function(done) {
     fsCopy('./cesium/Source/Core', './modules/Core/lib').then(done);
 });
 
+function generateIndexString(publicModules) {
+    var indexString = 'module.exports = {\n';
+    var first = true;
+    for (var publicModuleName in publicModules) {
+        if (publicModules.hasOwnProperty(publicModuleName)) {
+            var publicModulePath = publicModules[publicModuleName];
+            if (!first) {
+                indexString += ',\n';
+            }
+            indexString += '    ' + publicModuleName + ' : require(\'./' + publicModulePath + '\')';
+            first = false;
+        }
+    }
+    indexString += '\n};\n';
+    return indexString;
+}
+
 gulp.task('post-process-core', function(done) {
     globAsync('./modules/Core/lib/*.js')
         .then(function(files) {
@@ -67,20 +84,43 @@ gulp.task('post-process-core', function(done) {
                     });
                 })
                 .then(function() {
-                    var indexString = 'module.exports = {\n';
-                    var first = true;
-                    for (var publicModuleName in publicModules) {
-                        if (publicModules.hasOwnProperty(publicModuleName)) {
-                            var publicModulePath = publicModules[publicModuleName];
-                            if (!first) {
-                                indexString += ',\n';
-                            }
-                            indexString += '    ' + publicModuleName + ' : require(\'./' + publicModulePath + '\')';
-                            first = false;
-                        }
-                    }
-                    indexString += '\n};\n';
-                    return fsOutputFile('./Modules/Core/index.js', indexString);
+                    return fsOutputFile('./Modules/Core/index.js', generateIndexString(publicModules));
+                });
+        })
+        .then(function() {
+            done();
+        });
+});
+
+gulp.task('copy-renderer', function(done) {
+    fsCopy('./cesium/Source/Renderer', './modules/Renderer/lib').then(done);
+});
+
+gulp.task('post-process-renderer', function(done) {
+    globAsync('./modules/Renderer/lib/*.js')
+        .then(function(files) {
+            var publicModules = {};
+            return Promise.map(files, function(file) {
+                return fsReadFile(file)
+                    .then(function(data) {
+                        var fileContents = data.toString();
+                        // As per our Node style guide, delete duplicate newlines
+                        fileContents = fileContents.replace(/\r\n/g, '\n');
+                        fileContents = fileContents.replace(/\n{2,}/g, '\n\n');
+                        // We can remove the global define tag for jsHint since we don't use define anymore
+                        fileContents = fileContents.replace(/\/\*global define\*\/(\s*)/, '');
+                        // Require cesium-core
+                        fileContents = fileContents.replace('\'use strict\';\n\n', '\'use strict\';\n\nvar CesiumCore = require(\'cesium-core\');\n');
+                        fileContents = fileContents.replace(/require\('\.\.\/Core\/(.*?)'\);/g, 'CesiumCore.$1;');
+                        // This module itself is private, so just expose everything
+                        publicModules[moduleName] = filePath;
+                        var filePath = file.substring(file.indexOf('lib'));
+                        var moduleName = filePath.substring(filePath.indexOf('/') + 1).slice(0, -3);
+                        return fsOutputFile(file, new Buffer(fileContents));
+                    });
+            })
+                .then(function() {
+                    return fsOutputFile('./Modules/Renderer/index.js', generateIndexString(publicModules));
                 });
         })
         .then(function() {

@@ -16,8 +16,6 @@ var definePropertyWorks = (function() {
  * setup code to prevent errors from completely halting JavaScript execution
  * in legacy browsers.
  *
- * @private
- *
  * @exports defineProperties
  */
 var defineProperties = Object.defineProperties;

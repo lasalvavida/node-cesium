@@ -2,7 +2,8 @@
   "name": "node-cesium",
   "description": "Cesium libraries in CommonJS format for use with Node.js",
   "scripts": {
-    "build-core": "gulp copy-core && browserify-ftw -r Modules/Core/require-config.js -c Modules/Core/refactor-config.js -e entry.js && gulp post-process-core"
+    "build-core": "gulp copy-core && browserify-ftw -r Modules/Core/require-config.js -c Modules/Core/refactor-config.js -e entry.js && gulp post-process-core",
+    "build-renderer": "gulp copy-renderer && browserify-ftw -r Modules/Renderer/require-config.js -c Modules/Renderer/refactor-config.js -e entry.js && gulp post-process-renderer"
   },
   "repository": {
     "type": "git",
