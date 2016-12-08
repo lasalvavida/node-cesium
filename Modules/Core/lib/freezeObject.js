@@ -7,8 +7,6 @@ var defined = require('./defined');
  * the object unchanged.  This function should be used in setup code to prevent
  * errors from completely halting JavaScript execution in legacy browsers.
  *
- * @private
- *
  * @exports freezeObject
  */
 var freezeObject = Object.freeze;
