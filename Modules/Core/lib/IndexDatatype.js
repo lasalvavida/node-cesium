@@ -1,10 +1,10 @@
 'use strict';
 
-var WebGLConstants = require('../Renderer/WebGLConstants');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
+var WebGLConstants = require('./WebGLConstants');
 
 
 

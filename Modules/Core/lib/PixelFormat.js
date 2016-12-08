@@ -1,7 +1,7 @@
 'use strict';
 
-var WebGLConstants = require('../Renderer/WebGLConstants');
 var freezeObject = require('./freezeObject');
+var WebGLConstants = require('./WebGLConstants');
 
 
 

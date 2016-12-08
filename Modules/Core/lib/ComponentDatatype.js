@@ -1,11 +1,11 @@
 'use strict';
 
-var WebGLConstants = require('../Renderer/WebGLConstants');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var FeatureDetection = require('./FeatureDetection');
 var freezeObject = require('./freezeObject');
+var WebGLConstants = require('./WebGLConstants');
 
 
 
