@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Encapsulates an algorithm to optimize triangles for the post
  * vertex-shader cache.  This is based on the 2007 SIGGRAPH paper

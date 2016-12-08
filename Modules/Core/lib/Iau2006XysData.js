@@ -9,8 +9,6 @@ var JulianDate = require('./JulianDate');
 var loadJson = require('./loadJson');
 var TimeStandard = require('./TimeStandard');
 
-
-
 /**
  * A set of IAU2006 XYS data that is used to evaluate the transformation between the International
  * Celestial Reference Frame (ICRF) and the International Terrestrial Reference Frame (ITRF).

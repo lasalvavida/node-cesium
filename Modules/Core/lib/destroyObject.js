@@ -3,8 +3,6 @@
 var defaultValue = require('./defaultValue');
 var DeveloperError = require('./DeveloperError');
 
-
-
 function returnTrue() {
     return true;
 }

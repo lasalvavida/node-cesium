@@ -18,8 +18,6 @@ var CesiumMath = require('./Math');
 var PolygonPipeline = require('./PolygonPipeline');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 var cartesian1 = new Cartesian3();
 var cartesian2 = new Cartesian3();
 var cartesian3 = new Cartesian3();

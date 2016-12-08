@@ -18,8 +18,6 @@ var TerrainEncoding = require('./TerrainEncoding');
 var Transforms = require('./Transforms');
 var WebMercatorProjection = require('./WebMercatorProjection');
 
-
-
 /**
  * Contains functions to create a mesh from a heightmap image.
  *

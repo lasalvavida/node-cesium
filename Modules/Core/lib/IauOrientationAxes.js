@@ -8,8 +8,6 @@ var CesiumMath = require('./Math');
 var Matrix3 = require('./Matrix3');
 var Quaternion = require('./Quaternion');
 
-
-
 /**
  * The Axes representing the orientation of a Globe as represented by the data
  * from the IAU/IAG Working Group reports on rotational elements.

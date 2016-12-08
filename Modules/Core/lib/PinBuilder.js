@@ -7,8 +7,6 @@ var DeveloperError = require('./DeveloperError');
 var loadImage = require('./loadImage');
 var writeTextToCanvas = require('./writeTextToCanvas');
 
-
-
 /**
  * A utility class for generating custom map pins as canvas elements.
  * <br /><br />

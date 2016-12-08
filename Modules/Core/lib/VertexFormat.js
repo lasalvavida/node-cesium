@@ -5,8 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * A vertex format defines what attributes make up a vertex.  A VertexFormat can be provided
  * to a {@link Geometry} to request that certain properties be computed, e.g., just position,

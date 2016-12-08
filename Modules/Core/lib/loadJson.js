@@ -5,8 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var loadText = require('./loadText');
 
-
-
 var defaultHeaders = {
     Accept : 'application/json,*/*;q=0.01'
 };

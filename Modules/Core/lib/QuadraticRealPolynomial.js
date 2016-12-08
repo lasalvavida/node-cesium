@@ -3,8 +3,6 @@
 var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * Defines functions for 2nd order polynomial functions of one variable with only real coefficients.
  *

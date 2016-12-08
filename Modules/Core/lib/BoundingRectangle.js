@@ -9,8 +9,6 @@ var GeographicProjection = require('./GeographicProjection');
 var Intersect = require('./Intersect');
 var Rectangle = require('./Rectangle');
 
-
-
 /**
  * A bounding rectangle given by a corner, width and height.
  * @alias BoundingRectangle

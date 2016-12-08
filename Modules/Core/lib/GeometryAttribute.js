@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Values and type information for geometry attributes.  A {@link Geometry}
  * generally contains one or more attributes.  All attributes together form

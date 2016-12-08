@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 /**
  * Describes a single leap second, which is constructed from a {@link JulianDate} and a
  * numerical offset representing the number of seconds TAI is ahead of the UTC time standard.

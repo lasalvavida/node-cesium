@@ -3,8 +3,6 @@
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 
-
-
 /**
  * Merges two objects, copying their properties onto a new combined object. When two objects have the same
  * property, the value of the property on the first object is used.  If either object is undefined,

@@ -2,8 +2,6 @@
 
 var defaultValue = require('./defaultValue');
 
-
-
 /**
  * Represents the closed interval [start, stop].
  * @alias Interval

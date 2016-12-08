@@ -4,8 +4,6 @@ var when = require('bluebird');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Initiates a terrain height query for an array of {@link Cartographic} positions by
  * requesting tiles from a terrain provider, sampling, and interpolating.  The interpolation

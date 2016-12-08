@@ -9,8 +9,6 @@ var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * The map projection used by Google Maps, Bing Maps, and most of ArcGIS Online, EPSG:3857.  This
  * projection use longitude and latitude expressed with the WGS84 and transforms them to Mercator using

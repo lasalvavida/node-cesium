@@ -7,8 +7,6 @@ var DeveloperError = require('./DeveloperError');
 var Quaternion = require('./Quaternion');
 var Spline = require('./Spline');
 
-
-
 function computeInnerQuadrangles(points, firstInnerQuadrangle, lastInnerQuadrangle) {
     var length = points.length;
     var quads = new Array(length);

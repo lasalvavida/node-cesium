@@ -4,8 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Uses the Tridiagonal Matrix Algorithm, also known as the Thomas Algorithm, to solve
  * a system of linear equations where the coefficient matrix is a tridiagonal matrix.

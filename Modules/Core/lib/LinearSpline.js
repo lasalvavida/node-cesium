@@ -7,8 +7,6 @@ var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Spline = require('./Spline');
 
-
-
 /**
  * A spline that uses piecewise linear interpolation to create a curve.
  *

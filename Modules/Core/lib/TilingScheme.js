@@ -3,8 +3,6 @@
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * A tiling scheme for geometry or imagery on the surface of an ellipsoid.  At level-of-detail zero,
  * the coarsest, least-detailed level, the number of tiles is configurable.
@@ -42,7 +40,6 @@ defineProperties(TilingScheme.prototype, {
     rectangle : {
         get : DeveloperError.throwInstantiationError
     },
-
 
     /**
      * Gets the map projection used by the tiling scheme.

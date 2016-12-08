@@ -10,8 +10,6 @@ var Event = require('./Event');
 var getTimestamp = require('./getTimestamp');
 var JulianDate = require('./JulianDate');
 
-
-
 /**
  * A simple clock for keeping track of simulated time.
  *
@@ -218,7 +216,6 @@ defineProperties(Clock.prototype, {
             this._clockStep = value;
         }
     },
-
 
     /**
      * Indicates whether {@link Clock#tick} should attempt to advance time.

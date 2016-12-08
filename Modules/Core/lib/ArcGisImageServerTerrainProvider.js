@@ -16,8 +16,6 @@ var CesiumMath = require('./Math');
 var TerrainProvider = require('./TerrainProvider');
 var throttleRequestByServer = require('./throttleRequestByServer');
 
-
-
 /**
  * A {@link TerrainProvider} that produces terrain geometry by tessellating height maps
  * retrieved from an ArcGIS ImageServer.

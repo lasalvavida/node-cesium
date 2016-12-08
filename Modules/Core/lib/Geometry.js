@@ -6,8 +6,6 @@ var DeveloperError = require('./DeveloperError');
 var GeometryType = require('./GeometryType');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 /**
  * A geometry representation with attributes forming vertices and optional index data
  * defining primitives.  Geometries and an {@link Appearance}, which describes the shading,

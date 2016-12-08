@@ -8,8 +8,6 @@ var Ellipsoid = require('./Ellipsoid');
 var Rectangle = require('./Rectangle');
 var WebMercatorProjection = require('./WebMercatorProjection');
 
-
-
 /**
  * A tiling scheme for geometry referenced to a {@link WebMercatorProjection}, EPSG:3857.  This is
  * the tiling scheme used by Google Maps, Microsoft Bing Maps, and most of ESRI ArcGIS Online.

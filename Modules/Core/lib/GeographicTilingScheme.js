@@ -10,8 +10,6 @@ var GeographicProjection = require('./GeographicProjection');
 var CesiumMath = require('./Math');
 var Rectangle = require('./Rectangle');
 
-
-
 /**
  * A tiling scheme for geometry referenced to a simple {@link GeographicProjection} where
  * longitude and latitude are directly mapped to X and Y.  This projection is commonly

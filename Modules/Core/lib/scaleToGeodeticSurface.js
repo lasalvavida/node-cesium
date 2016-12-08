@@ -5,8 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 
-
-
 var scaleToGeodeticSurfaceIntersection = new Cartesian3();
 var scaleToGeodeticSurfaceGradient = new Cartesian3();
 

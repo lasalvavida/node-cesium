@@ -15,8 +15,6 @@ var GeometryAttributes = require('./GeometryAttributes');
 var IndexDatatype = require('./IndexDatatype');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 var radiusScratch = new Cartesian2();
 
 /**

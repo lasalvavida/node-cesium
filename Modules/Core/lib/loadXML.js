@@ -2,8 +2,6 @@
 
 var loadWithXhr = require('./loadWithXhr');
 
-
-
 /**
  * Asynchronously loads the given URL as XML.  Returns a promise that will resolve to
  * an XML Document once loaded, or reject if the URL failed to load.  The data is loaded

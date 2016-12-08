@@ -21,8 +21,6 @@ var PolylineVolumeGeometryLibrary = require('./PolylineVolumeGeometryLibrary');
 var PrimitiveType = require('./PrimitiveType');
 var WindingOrder = require('./WindingOrder');
 
-
-
 function computeAttributes(positions, shape) {
     var attributes = new GeometryAttributes();
     attributes.position = new GeometryAttribute({

@@ -16,8 +16,6 @@ var PrimitiveType = require('./PrimitiveType');
 var VertexFormat = require('./VertexFormat');
 var WallGeometryLibrary = require('./WallGeometryLibrary');
 
-
-
 var scratchCartesian3Position1 = new Cartesian3();
 var scratchCartesian3Position2 = new Cartesian3();
 var scratchCartesian3Position3 = new Cartesian3();

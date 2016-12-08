@@ -13,8 +13,6 @@ var CesiumMath = require('./Math');
 var Matrix4 = require('./Matrix4');
 var Plane = require('./Plane');
 
-
-
 /**
  * @private
  */

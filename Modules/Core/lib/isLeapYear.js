@@ -2,8 +2,6 @@
 
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Determines if a given date is a leap year.
  *

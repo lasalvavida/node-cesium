@@ -2,8 +2,6 @@
 
 var defaultValue = require('./defaultValue');
 
-
-
 /**
  * Attributes, which make up a geometry's vertices.  Each property in this object corresponds to a
  * {@link GeometryAttribute} containing the attribute's data.

@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 /**
  * Formats an error object into a String.  If available, uses name, message, and stack
  * properties, otherwise, falls back on toString().

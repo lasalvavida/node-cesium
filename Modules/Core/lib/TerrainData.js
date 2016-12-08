@@ -3,8 +3,6 @@
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Terrain data for a single tile.  This type describes an
  * interface and is not intended to be instantiated directly.

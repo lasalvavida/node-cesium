@@ -6,8 +6,6 @@ var JulianDate = require('./JulianDate');
 var CesiumMath = require('./Math');
 var TimeConstants = require('./TimeConstants');
 
-
-
 /**
  * This is a collection of the orientation information available for central bodies.
  * The data comes from the Report of the IAU/IAG Working Group on Cartographic

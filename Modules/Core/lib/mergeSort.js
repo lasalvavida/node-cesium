@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 var leftScratchArray = [];
 var rightScratchArray = [];
 

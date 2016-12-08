@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 /**
  * A structure containing the orientation data computed at a particular time. The data
  * represents the direction of the pole of rotation and the rotation about that pole.

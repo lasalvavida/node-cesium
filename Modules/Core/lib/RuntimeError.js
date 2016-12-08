@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 /**
  * Constructs an exception object that is thrown due to an error that can occur at runtime, e.g.,
  * out of memory, could not compile shader, etc.  If a function may throw this

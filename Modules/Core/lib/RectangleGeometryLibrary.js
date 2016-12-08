@@ -9,8 +9,6 @@ var CesiumMath = require('./Math');
 var Matrix2 = require('./Matrix2');
 var Rectangle = require('./Rectangle');
 
-
-
 var cos = Math.cos;
 var sin = Math.sin;
 var sqrt = Math.sqrt;

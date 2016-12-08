@@ -3,8 +3,6 @@
 var defaultValue = require('../Core/defaultValue');
 var getStringFromTypedArray = require('../Core/getStringFromTypedArray');
 
-
-
 /**
  * @private
  */

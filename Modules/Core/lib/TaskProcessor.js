@@ -10,8 +10,6 @@ var getAbsoluteUri = require('./getAbsoluteUri');
 var isCrossOriginUrl = require('./isCrossOriginUrl');
 var RuntimeError = require('./RuntimeError');
 
-
-
 function canTransferArrayBuffer() {
     if (!defined(TaskProcessor._canTransferArrayBuffer)) {
         var worker = new Worker(getWorkerUrl('Workers/transferTypedArrayTest.js'));

@@ -5,8 +5,6 @@ var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 var QuadraticRealPolynomial = require('./QuadraticRealPolynomial');
 
-
-
 /**
  * Defines functions for 4th order polynomial functions of one variable with only real coefficients.
  *

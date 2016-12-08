@@ -18,8 +18,6 @@ var PrimitiveType = require('./PrimitiveType');
 var Rectangle = require('./Rectangle');
 var RectangleGeometryLibrary = require('./RectangleGeometryLibrary');
 
-
-
 var bottomBoundingSphere = new BoundingSphere();
 var topBoundingSphere = new BoundingSphere();
 var positionScratch = new Cartesian3();

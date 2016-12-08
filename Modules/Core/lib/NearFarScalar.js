@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Represents a scalar value's lower and upper bound at a near distance and far distance in eye space.
  * @alias NearFarScalar
@@ -67,7 +65,6 @@ NearFarScalar.clone = function(nearFarScalar, result) {
     result.farValue = nearFarScalar.farValue;
     return result;
 };
-
 
 /**
  * The number of elements used to pack the object into an array.

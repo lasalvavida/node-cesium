@@ -3,8 +3,6 @@
 var Credit = require('./Credit');
 var defined = require('./defined');
 
-
-
 /**
  * Object for setting and retrieving the default BingMaps API key.
  *

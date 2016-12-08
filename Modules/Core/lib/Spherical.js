@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * A set of curvilinear 3-dimensional coordinates.
  *

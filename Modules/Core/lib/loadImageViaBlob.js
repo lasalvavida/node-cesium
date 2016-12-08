@@ -4,8 +4,6 @@ var when = require('bluebird');
 var loadBlob = require('./loadBlob');
 var loadImage = require('./loadImage');
 
-
-
 var dataUriRegex = /^data:/;
 
 /**

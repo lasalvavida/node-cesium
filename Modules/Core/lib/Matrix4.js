@@ -11,8 +11,6 @@ var CesiumMath = require('./Math');
 var Matrix3 = require('./Matrix3');
 var RuntimeError = require('./RuntimeError');
 
-
-
 /**
  * A 4x4 matrix, indexable as a column-major order array.
  * Constructor parameters are in row-major order for code readability.

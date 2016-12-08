@@ -13,8 +13,6 @@ var Matrix3 = require('./Matrix3');
 var Matrix4 = require('./Matrix4');
 var Rectangle = require('./Rectangle');
 
-
-
 /**
  * A bounding sphere with a center and a radius.
  * @alias BoundingSphere

@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Finds an item in a sorted array.
  *

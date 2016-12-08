@@ -14,8 +14,6 @@ var TerrainEncoding = require('./TerrainEncoding');
 var TerrainMesh = require('./TerrainMesh');
 var TerrainProvider = require('./TerrainProvider');
 
-
-
 /**
  * Terrain data for a single tile where the terrain data is represented as a heightmap.  A heightmap
  * is a rectangular array of heights in row-major order from south to north and west to east.
@@ -142,7 +140,6 @@ defineProperties(HeightmapTerrainData.prototype, {
         }
     }
 });
-
 
 var taskProcessor = new TaskProcessor('createVerticesFromHeightmap');
 

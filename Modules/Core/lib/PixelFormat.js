@@ -3,8 +3,6 @@
 var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
-
-
 /**
  * The format of a pixel, i.e., the number of components it has and what they represent.
  *

@@ -5,8 +5,6 @@ var Cartesian3 = require('./Cartesian3');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 var scratchCartesian1 = new Cartesian3();
 var scratchCartesian2 = new Cartesian3();
 var scratchCartesian3 = new Cartesian3();
@@ -37,7 +35,6 @@ function barycentricCoordinates(point, p0, p1, p2, result) {
         throw new DeveloperError('point, p0, p1, and p2 are required.');
     }
     //>>includeEnd('debug');
-
 
     if (!defined(result)) {
         result = new Cartesian3();

@@ -4,8 +4,6 @@ var Uri = require('url');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * A singleton that contains all of the servers that are trusted. Credentials will be sent with
  * any requests to these servers.

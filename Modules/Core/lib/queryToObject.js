@@ -4,8 +4,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var isArray = require('./isArray');
 
-
-
 /**
  * Parses a query string into an object, where the keys and values of the object are the
  * name/value pairs from the query string, decoded. If a name appears multiple times,

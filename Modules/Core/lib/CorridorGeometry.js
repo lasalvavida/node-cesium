@@ -22,8 +22,6 @@ var PrimitiveType = require('./PrimitiveType');
 var Rectangle = require('./Rectangle');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var cartesian1 = new Cartesian3();
 var cartesian2 = new Cartesian3();
 var cartesian3 = new Cartesian3();

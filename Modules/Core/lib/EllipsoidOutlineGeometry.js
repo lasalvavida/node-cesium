@@ -14,8 +14,6 @@ var IndexDatatype = require('./IndexDatatype');
 var CesiumMath = require('./Math');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 var defaultRadii = new Cartesian3(1.0, 1.0, 1.0);
 var cos = Math.cos;
 var sin = Math.sin;

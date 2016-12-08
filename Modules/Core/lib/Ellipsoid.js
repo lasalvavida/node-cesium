@@ -10,8 +10,6 @@ var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var scaleToGeodeticSurface = require('./scaleToGeodeticSurface');
 
-
-
 function initialize(ellipsoid, x, y, z) {
     x = defaultValue(x, 0.0);
     y = defaultValue(y, 0.0);

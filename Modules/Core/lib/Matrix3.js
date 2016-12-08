@@ -8,8 +8,6 @@ var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * A 3x3 matrix, indexable as a column-major order array.
  * Constructor parameters are in row-major order for code readability.

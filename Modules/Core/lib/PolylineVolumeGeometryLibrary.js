@@ -13,8 +13,6 @@ var PolylinePipeline = require('./PolylinePipeline');
 var Quaternion = require('./Quaternion');
 var Transforms = require('./Transforms');
 
-
-
 var scratch2Array = [new Cartesian3(), new Cartesian3()];
 var scratchCartesian1 = new Cartesian3();
 var scratchCartesian2 = new Cartesian3();

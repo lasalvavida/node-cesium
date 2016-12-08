@@ -10,8 +10,6 @@ var CesiumMath = require('./Math');
 var Matrix4 = require('./Matrix4');
 var TerrainQuantization = require('./TerrainQuantization');
 
-
-
 var cartesian3Scratch = new Cartesian3();
 var cartesian3DimScratch = new Cartesian3();
 var cartesian2Scratch = new Cartesian2();

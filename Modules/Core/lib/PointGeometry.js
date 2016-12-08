@@ -10,8 +10,6 @@ var GeometryAttribute = require('./GeometryAttribute');
 var GeometryAttributes = require('./GeometryAttributes');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 /**
  * Describes a collection of points made up of positions and colors.
  *

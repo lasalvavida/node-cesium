@@ -9,8 +9,6 @@ var Matrix3 = require('./Matrix3');
 var TimeConstants = require('./TimeConstants');
 var TimeStandard = require('./TimeStandard');
 
-
-
 /**
  * Contains functions for finding the Cartesian coordinates of the sun and the moon in the
  * Earth-centered inertial frame.

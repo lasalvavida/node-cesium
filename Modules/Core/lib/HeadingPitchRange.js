@@ -3,8 +3,6 @@
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 
-
-
 /**
  * Defines a heading angle, pitch angle, and range in a local frame.
  * Heading is the rotation from the local north direction where a positive angle is increasing eastward.

@@ -7,8 +7,6 @@ var DeveloperError = require('./DeveloperError');
 var isCrossOriginUrl = require('./isCrossOriginUrl');
 var TrustedServers = require('./TrustedServers');
 
-
-
 var dataUriRegex = /^data:/;
 
 /**

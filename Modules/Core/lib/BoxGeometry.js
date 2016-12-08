@@ -12,8 +12,6 @@ var GeometryAttributes = require('./GeometryAttributes');
 var PrimitiveType = require('./PrimitiveType');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var diffScratch = new Cartesian3();
 
 /**

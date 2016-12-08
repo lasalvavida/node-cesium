@@ -5,8 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var Matrix4 = require('./Matrix4');
 
-
-
 /**
  * Geometry instancing allows one {@link Geometry} object to be positions in several
  * different locations and colored uniquely.  For example, one {@link BoxGeometry} can

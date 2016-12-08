@@ -3,8 +3,6 @@
 var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
-
-
 /**
  * The type of a geometric primitive, i.e., points, lines, and triangles.
  *

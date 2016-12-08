@@ -10,8 +10,6 @@ var GeographicTilingScheme = require('./GeographicTilingScheme');
 var HeightmapTerrainData = require('./HeightmapTerrainData');
 var TerrainProvider = require('./TerrainProvider');
 
-
-
 /**
  * A very simple {@link TerrainProvider} that produces geometry by tessellating an ellipsoidal
  * surface.

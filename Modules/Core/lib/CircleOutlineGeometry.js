@@ -7,8 +7,6 @@ var DeveloperError = require('./DeveloperError');
 var EllipseOutlineGeometry = require('./EllipseOutlineGeometry');
 var Ellipsoid = require('./Ellipsoid');
 
-
-
 /**
  * A description of the outline of a circle on the ellipsoid.
  *

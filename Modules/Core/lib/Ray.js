@@ -5,8 +5,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Represents a ray that extends infinitely from the provided origin in the provided direction.
  * @alias Ray

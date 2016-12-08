@@ -9,8 +9,6 @@ var Ellipsoid = require('./Ellipsoid');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * A two dimensional region specified as longitude and latitude coordinates.
  *

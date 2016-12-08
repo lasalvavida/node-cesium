@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 var definePropertyWorks = (function() {
     try {
         return 'x' in Object.defineProperty({}, 'x', {});

@@ -5,8 +5,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Given a relative Uri and a base Uri, returns the absolute Uri of the relative Uri.
  * @exports getAbsoluteUri

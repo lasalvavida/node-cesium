@@ -4,8 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Contains functions for operating on 2D triangles.
  *

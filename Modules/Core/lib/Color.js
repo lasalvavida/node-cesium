@@ -7,8 +7,6 @@ var FeatureDetection = require('./FeatureDetection');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
-
-
 function hue2rgb(m1, m2, h) {
     if (h < 0) {
         h += 1;

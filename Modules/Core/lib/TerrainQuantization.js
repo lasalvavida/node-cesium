@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * This enumerated type is used to determine how the vertices of the terrain mesh are compressed.
  *

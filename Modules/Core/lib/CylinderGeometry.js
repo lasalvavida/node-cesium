@@ -16,14 +16,11 @@ var CesiumMath = require('./Math');
 var PrimitiveType = require('./PrimitiveType');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var radiusScratch = new Cartesian2();
 var normalScratch = new Cartesian3();
 var binormalScratch = new Cartesian3();
 var tangentScratch = new Cartesian3();
 var positionScratch = new Cartesian3();
-
 
 /**
  * A description of a cylinder.

@@ -23,8 +23,6 @@ var TerrainProvider = require('./TerrainProvider');
 var throttleRequestByServer = require('./throttleRequestByServer');
 var TileProviderError = require('./TileProviderError');
 
-
-
 /**
  * A {@link TerrainProvider} that access terrain data in a Cesium terrain format.
  * The format is described on the

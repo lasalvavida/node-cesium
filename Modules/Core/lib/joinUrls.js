@@ -5,8 +5,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Function for joining URLs in a manner that is aware of query strings and fragments.
  * This is useful when the base URL has a query string that needs to be maintained

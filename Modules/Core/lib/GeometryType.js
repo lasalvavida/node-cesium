@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * @private
  */

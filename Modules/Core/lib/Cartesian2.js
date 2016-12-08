@@ -6,8 +6,6 @@ var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * A 2D Cartesian point.
  * @alias Cartesian2
@@ -281,7 +279,6 @@ Cartesian2.minimumByComponent = function(first, second, result) {
         throw new DeveloperError('result is required.');
     }
     //>>includeEnd('debug');
-
 
     result.x = Math.min(first.x, second.x);
     result.y = Math.min(first.y, second.y);

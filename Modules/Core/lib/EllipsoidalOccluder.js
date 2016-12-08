@@ -8,8 +8,6 @@ var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Rectangle = require('./Rectangle');
 
-
-
 /**
  * Determine whether or not other objects are visible or hidden behind the visible horizon defined by
  * an {@link Ellipsoid} and a camera position.  The ellipsoid is assumed to be located at the

@@ -16,8 +16,6 @@ var CesiumMath = require('./Math');
 var PrimitiveType = require('./PrimitiveType');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var scratchPosition = new Cartesian3();
 var scratchNormal = new Cartesian3();
 var scratchTangent = new Cartesian3();

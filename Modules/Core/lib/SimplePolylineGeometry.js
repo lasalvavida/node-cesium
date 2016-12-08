@@ -16,8 +16,6 @@ var CesiumMath = require('./Math');
 var PolylinePipeline = require('./PolylinePipeline');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 function interpolateColors(p0, p1, color0, color1, minDistance, array, offset) {
     var numPoints = PolylinePipeline.numberOfPoints(p0, p1, minDistance);
     var i;

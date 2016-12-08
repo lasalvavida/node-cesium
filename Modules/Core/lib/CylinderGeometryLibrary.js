@@ -2,8 +2,6 @@
 
 var CesiumMath = require('./Math');
 
-
-
 /**
  * @private
  */

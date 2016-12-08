@@ -7,8 +7,6 @@ var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * A 2x2 matrix, indexable as a column-major order array.
  * Constructor parameters are in row-major order for code readability.

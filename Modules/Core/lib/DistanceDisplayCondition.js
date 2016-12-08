@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var defineProperties = require('./defineProperties');
 
-
-
 /**
  * Determines visibility based on the distance to the camera.
  *

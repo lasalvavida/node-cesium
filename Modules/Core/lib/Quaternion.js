@@ -9,8 +9,6 @@ var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var Matrix3 = require('./Matrix3');
 
-
-
 /**
  * A set of 4-dimensional coordinates used to represent rotation in 3-dimensional space.
  * @alias Quaternion

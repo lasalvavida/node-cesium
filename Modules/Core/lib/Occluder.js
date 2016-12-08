@@ -11,8 +11,6 @@ var CesiumMath = require('./Math');
 var Rectangle = require('./Rectangle');
 var Visibility = require('./Visibility');
 
-
-
 /**
  * Creates an Occluder derived from an object's position and radius, as well as the camera position.
  * The occluder can be used to determine whether or not other objects are visible or hidden behind the
@@ -147,7 +145,6 @@ Occluder.fromBoundingSphere = function(occluderBoundingSphere, cameraPosition, r
 
     return result;
 };
-
 
 var tempVecScratch = new Cartesian3();
 

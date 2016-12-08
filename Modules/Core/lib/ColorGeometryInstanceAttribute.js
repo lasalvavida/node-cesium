@@ -7,8 +7,6 @@ var defined = require('./defined');
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Value and type information for per-instance geometry color.
  *

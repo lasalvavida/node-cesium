@@ -7,8 +7,6 @@ var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 var JulianDate = require('./JulianDate');
 
-
-
 /**
  * An interval defined by a start and a stop time; optionally including those times as part of the interval.
  * Arbitrary data can optionally be associated with each instance for used with {@link TimeIntervalCollection}.

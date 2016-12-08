@@ -8,8 +8,6 @@ var RequestErrorEvent = require('./RequestErrorEvent');
 var RuntimeError = require('./RuntimeError');
 var TrustedServers = require('./TrustedServers');
 
-
-
 /**
  * Asynchronously loads the given URL.  Returns a promise that will resolve to
  * the result once loaded, or reject if the URL failed to load.  The data is loaded

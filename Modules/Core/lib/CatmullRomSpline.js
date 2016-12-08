@@ -10,8 +10,6 @@ var HermiteSpline = require('./HermiteSpline');
 var Matrix4 = require('./Matrix4');
 var Spline = require('./Spline');
 
-
-
 var scratchTimeVec = new Cartesian4();
 var scratchTemp0 = new Cartesian3();
 var scratchTemp1 = new Cartesian3();

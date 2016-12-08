@@ -26,8 +26,6 @@ var Plane = require('./Plane');
 var PrimitiveType = require('./PrimitiveType');
 var Tipsify = require('./Tipsify');
 
-
-
 /**
  * Content pipeline functions for geometries.
  *

@@ -24,8 +24,6 @@ var PrimitiveType = require('./PrimitiveType');
 var VertexFormat = require('./VertexFormat');
 var WindingOrder = require('./WindingOrder');
 
-
-
 function computeAttributes(combinedPositions, shape, boundingRectangle, vertexFormat) {
     var attributes = new GeometryAttributes();
     if (vertexFormat.position) {

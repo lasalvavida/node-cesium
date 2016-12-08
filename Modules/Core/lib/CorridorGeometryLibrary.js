@@ -9,8 +9,6 @@ var PolylinePipeline = require('./PolylinePipeline');
 var PolylineVolumeGeometryLibrary = require('./PolylineVolumeGeometryLibrary');
 var Quaternion = require('./Quaternion');
 
-
-
 /**
  * @private
  */

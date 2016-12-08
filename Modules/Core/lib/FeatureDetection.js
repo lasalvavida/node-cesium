@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var Fullscreen = require('./Fullscreen');
 
-
-
 var theNavigator;
 if (typeof navigator !== 'undefined') {
     theNavigator = navigator;
@@ -155,7 +153,6 @@ function isWindows() {
     }
     return isWindowsResult;
 }
-
 
 function firefoxVersion() {
     return isFirefox() && firefoxVersionResult;

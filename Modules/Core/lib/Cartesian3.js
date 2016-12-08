@@ -6,8 +6,6 @@ var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * A 3D Cartesian point.
  * @alias Cartesian3

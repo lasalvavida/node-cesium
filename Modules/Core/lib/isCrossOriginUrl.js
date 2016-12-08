@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 var a;
 
 /**

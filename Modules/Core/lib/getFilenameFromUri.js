@@ -4,8 +4,6 @@ var Uri = require('url');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Given a URI, returns the last segment of the URI, removing any path or query information.
  * @exports getFilenameFromUri

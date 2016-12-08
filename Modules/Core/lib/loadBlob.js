@@ -2,8 +2,6 @@
 
 var loadWithXhr = require('./loadWithXhr');
 
-
-
 /**
  * Asynchronously loads the given URL as a blob.  Returns a promise that will resolve to
  * a Blob once loaded, or reject if the URL failed to load.  The data is loaded

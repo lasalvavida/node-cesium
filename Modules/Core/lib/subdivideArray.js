@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Subdivides an array into a number of smaller, equal sized arrays.
  *

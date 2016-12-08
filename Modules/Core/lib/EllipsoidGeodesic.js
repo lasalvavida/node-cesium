@@ -9,8 +9,6 @@ var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var CesiumMath = require('./Math');
 
-
-
 function setConstants(ellipsoidGeodesic) {
     var uSquared = ellipsoidGeodesic._uSquared;
     var a = ellipsoidGeodesic._ellipsoid.maximumRadius;

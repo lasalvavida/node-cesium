@@ -4,8 +4,6 @@ var defined = require('./defined');
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 var nextCreditId = 0;
 var creditToId = {};
 

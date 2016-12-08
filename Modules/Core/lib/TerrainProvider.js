@@ -5,8 +5,6 @@ var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * Provides terrain or other geometry for the surface of an ellipsoid.  The surface geometry is
  * organized into a pyramid of tiles according to a {@link TilingScheme}.  This type describes an

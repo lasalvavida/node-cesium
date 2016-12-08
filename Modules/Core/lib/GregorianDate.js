@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 /**
  * Represents a Gregorian date in a more precise format than the JavaScript Date object.
  * In addition to submillisecond precision, this object can also represent leap seconds.

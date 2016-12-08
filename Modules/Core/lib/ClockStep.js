@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * Constants to determine how much time advances with each call
  * to {@link Clock#tick}.

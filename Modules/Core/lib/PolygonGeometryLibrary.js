@@ -17,8 +17,6 @@ var PrimitiveType = require('./PrimitiveType');
 var Queue = require('./Queue');
 var WindingOrder = require('./WindingOrder');
 
-
-
 /**
  * @private
  */

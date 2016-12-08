@@ -6,8 +6,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * Attribute compression and decompression functions.
  *

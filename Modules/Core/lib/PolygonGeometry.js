@@ -26,8 +26,6 @@ var Rectangle = require('./Rectangle');
 var VertexFormat = require('./VertexFormat');
 var WindingOrder = require('./WindingOrder');
 
-
-
 var computeBoundingRectangleCartesian2 = new Cartesian2();
 var computeBoundingRectangleCartesian3 = new Cartesian3();
 var computeBoundingRectangleQuaternion = new Quaternion();
@@ -345,7 +343,6 @@ function createGeometryFromPositionsExtruded(ellipsoid, polygon, granularity, hi
             newIndices = IndexDatatype.createTypedArray(numPositions, indices.length * 2);
             newIndices.set(indices);
             var ilength = indices.length;
-
 
             var length = numPositions / 2;
 

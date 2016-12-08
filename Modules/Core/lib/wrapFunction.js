@@ -2,8 +2,6 @@
 
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Wraps a function on the provided objects with another function called in the
  * object's context so that the new function is always called immediately

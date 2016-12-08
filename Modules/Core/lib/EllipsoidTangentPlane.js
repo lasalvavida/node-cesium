@@ -15,8 +15,6 @@ var Plane = require('./Plane');
 var Ray = require('./Ray');
 var Transforms = require('./Transforms');
 
-
-
 var scratchCart4 = new Cartesian4();
 /**
  * A plane tangent to the provided ellipsoid at the provided origin.

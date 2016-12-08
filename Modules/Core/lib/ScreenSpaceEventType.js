@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * This enumerated type is for classifying mouse events: down, up, click, double click, move and move while a button is held down.
  *

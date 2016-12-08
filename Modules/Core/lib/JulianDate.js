@@ -11,8 +11,6 @@ var LeapSecond = require('./LeapSecond');
 var TimeConstants = require('./TimeConstants');
 var TimeStandard = require('./TimeStandard');
 
-
-
 var gregorianDateScratch = new GregorianDate();
 var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 var daysInLeapFeburary = 29;

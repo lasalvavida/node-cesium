@@ -3,8 +3,6 @@
 var barycentricCoordinates = require('./barycentricCoordinates');
 var Cartesian3 = require('./Cartesian3');
 
-
-
 var coords = new Cartesian3();
 
 /**

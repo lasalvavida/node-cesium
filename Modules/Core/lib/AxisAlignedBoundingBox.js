@@ -6,8 +6,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var Intersect = require('./Intersect');
 
-
-
 /**
  * Creates an instance of an AxisAlignedBoundingBox from the minimum and maximum points along the x, y, and z axes.
  * @alias AxisAlignedBoundingBox

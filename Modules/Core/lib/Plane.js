@@ -5,8 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * A plane in Hessian Normal Form defined by
  * <pre>

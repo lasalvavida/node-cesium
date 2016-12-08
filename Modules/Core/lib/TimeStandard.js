@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * Provides the type of time standards which JulianDate can take as input.
  *

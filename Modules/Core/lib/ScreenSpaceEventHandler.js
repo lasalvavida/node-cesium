@@ -11,8 +11,6 @@ var getTimestamp = require('./getTimestamp');
 var KeyboardEventModifier = require('./KeyboardEventModifier');
 var ScreenSpaceEventType = require('./ScreenSpaceEventType');
 
-
-
 function getPosition(screenSpaceEventHandler, event, result) {
     var element = screenSpaceEventHandler._element;
     if (element === document) {

@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 /**
  * Freezes an object, using Object.freeze if available, otherwise returns
  * the object unchanged.  This function should be used in setup code to prevent

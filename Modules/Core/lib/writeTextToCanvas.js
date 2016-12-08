@@ -6,8 +6,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 var imageSmoothingEnabledName;
 
 /**

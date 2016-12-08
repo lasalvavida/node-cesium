@@ -6,8 +6,6 @@ var DeveloperError = require('./DeveloperError');
 var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
-
-
 /**
  * A 4D Cartesian point.
  * @alias Cartesian4
@@ -121,7 +119,6 @@ Cartesian4.clone = function(cartesian, result) {
     result.w = cartesian.w;
     return result;
 };
-
 
 /**
  * The number of elements used to pack the object into an array.

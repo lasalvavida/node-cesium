@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 /**
  * An {@link InterpolationAlgorithm} for performing Lagrange interpolation.
  *

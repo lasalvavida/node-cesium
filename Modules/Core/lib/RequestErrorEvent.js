@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var parseResponseHeaders = require('./parseResponseHeaders');
 
-
-
 /**
  * An event that is raised when a request encounters an error.
  *

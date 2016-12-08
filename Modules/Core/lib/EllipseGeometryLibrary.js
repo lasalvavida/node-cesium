@@ -5,8 +5,6 @@ var CesiumMath = require('./Math');
 var Matrix3 = require('./Matrix3');
 var Quaternion = require('./Quaternion');
 
-
-
 var EllipseGeometryLibrary = {};
 
 var rotAxis = new Cartesian3();

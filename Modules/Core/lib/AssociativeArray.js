@@ -4,8 +4,6 @@ var defined = require('./defined');
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * A collection of key-value pairs that is stored as a hash for easy
  * lookup but also provides an array for fast iteration.

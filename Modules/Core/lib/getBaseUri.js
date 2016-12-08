@@ -4,8 +4,6 @@ var Uri = require('url');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Given a URI, returns the base path of the URI.
  * @exports getBaseUri

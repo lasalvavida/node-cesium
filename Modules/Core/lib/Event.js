@@ -4,8 +4,6 @@ var defined = require('./defined');
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * A generic utility class for managing subscribers for a particular event.
  * This class is usually instantiated inside of a container class and

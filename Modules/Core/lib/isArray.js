@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 /**
  * Tests an object to see if it is an array.
  * @exports isArray

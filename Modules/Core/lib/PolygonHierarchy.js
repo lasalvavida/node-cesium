@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 /**
  * An hierarchy of linear rings which define a polygon and its holes.
  * The holes themselves may also have holes which nest inner polygons.

@@ -2,8 +2,6 @@
 
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Static interface for {@link Packable} types which are interpolated in a
  * different representation than their packed value.  These methods and

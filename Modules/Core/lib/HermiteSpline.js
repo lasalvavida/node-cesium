@@ -11,8 +11,6 @@ var Matrix4 = require('./Matrix4');
 var Spline = require('./Spline');
 var TridiagonalSystemSolver = require('./TridiagonalSystemSolver');
 
-
-
 var scratchLower = [];
 var scratchDiagonal = [];
 var scratchUpper = [];

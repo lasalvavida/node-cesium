@@ -2,8 +2,6 @@
 
 var defaultValue = require('./defaultValue');
 
-
-
 /**
  * Clones an object, returning a new object containing the same properties.
  *

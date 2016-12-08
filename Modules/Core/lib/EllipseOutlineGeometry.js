@@ -15,8 +15,6 @@ var IndexDatatype = require('./IndexDatatype');
 var CesiumMath = require('./Math');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 var scratchCartesian1 = new Cartesian3();
 var boundingSphereCenter = new Cartesian3();
 

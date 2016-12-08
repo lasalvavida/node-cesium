@@ -9,8 +9,6 @@ var EllipseGeometry = require('./EllipseGeometry');
 var Ellipsoid = require('./Ellipsoid');
 var VertexFormat = require('./VertexFormat');
 
-
-
 /**
  * A description of a circle on the ellipsoid. Circle geometry can be rendered with both {@link Primitive} and {@link GroundPrimitive}.
  *

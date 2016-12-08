@@ -11,8 +11,6 @@ var GeometryAttribute = require('./GeometryAttribute');
 var GeometryAttributes = require('./GeometryAttributes');
 var PrimitiveType = require('./PrimitiveType');
 
-
-
 var diffScratch = new Cartesian3();
 
 /**

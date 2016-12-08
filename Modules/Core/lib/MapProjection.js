@@ -3,8 +3,6 @@
 var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Defines how geodetic ellipsoid coordinates ({@link Cartographic}) project to a
  * flat map like Cesium's 2D and Columbus View modes.

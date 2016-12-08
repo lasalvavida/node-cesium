@@ -5,8 +5,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var Quaternion = require('./Quaternion');
 
-
-
 var defaultScale = new Cartesian3(1.0, 1.0, 1.0);
 var defaultTranslation = Cartesian3.ZERO;
 var defaultRotation = Quaternion.IDENTITY;

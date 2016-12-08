@@ -2,8 +2,6 @@
 
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * The interface for interpolation algorithms.
  *

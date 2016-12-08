@@ -4,8 +4,6 @@ var Uri = require('url');
 var when = require('bluebird');
 var defaultValue = require('./defaultValue');
 
-
-
 var activeRequests = {};
 
 var pageUri = typeof document !== 'undefined' ? new Uri(document.location.href) : new Uri();

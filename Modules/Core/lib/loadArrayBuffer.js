@@ -2,8 +2,6 @@
 
 var loadWithXhr = require('./loadWithXhr');
 
-
-
 /**
  * Asynchronously loads the given URL as raw binary data.  Returns a promise that will resolve to
  * an ArrayBuffer once loaded, or reject if the URL failed to load.  The data is loaded

@@ -16,8 +16,6 @@ var TaskProcessor = require('./TaskProcessor');
 var TerrainEncoding = require('./TerrainEncoding');
 var TerrainMesh = require('./TerrainMesh');
 
-
-
 /**
  * Terrain data for a single tile where the terrain data is represented as a quantized mesh.  A quantized
  * mesh consists of three vertex attributes, longitude, latitude, and height.  All attributes are expressed

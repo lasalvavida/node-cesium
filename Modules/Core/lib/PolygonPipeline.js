@@ -14,8 +14,6 @@ var CesiumMath = require('./Math');
 var PrimitiveType = require('./PrimitiveType');
 var WindingOrder = require('./WindingOrder');
 
-
-
 var scaleToGeodeticHeightN = new Cartesian3();
 var scaleToGeodeticHeightP = new Cartesian3();
 

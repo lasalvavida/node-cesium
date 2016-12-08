@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * Constants for time conversions like those done by {@link JulianDate}.
  *

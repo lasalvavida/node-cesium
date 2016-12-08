@@ -19,8 +19,6 @@ var TerrainProvider = require('./TerrainProvider');
 var throttleRequestByServer = require('./throttleRequestByServer');
 var TileProviderError = require('./TileProviderError');
 
-
-
 function DataRectangle(rectangle, maxLevel) {
     this.rectangle = rectangle;
     this.maxLevel = maxLevel;

@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var getTimestamp = require('./getTimestamp');
 
-
-
 if (typeof window === 'undefined') {
     return;
 }

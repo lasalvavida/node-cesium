@@ -26,8 +26,6 @@ var Rectangle = require('./Rectangle');
 var RectangleGeometryLibrary = require('./RectangleGeometryLibrary');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var positionScratch = new Cartesian3();
 var normalScratch = new Cartesian3();
 var tangentScratch = new Cartesian3();

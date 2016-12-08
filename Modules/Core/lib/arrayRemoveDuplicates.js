@@ -5,8 +5,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 
-
-
 var removeDuplicatesEpsilon = CesiumMath.EPSILON10;
 
 /**

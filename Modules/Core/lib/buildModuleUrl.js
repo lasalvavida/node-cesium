@@ -6,7 +6,6 @@ var DeveloperError = require('./DeveloperError');
 var getAbsoluteUri = require('./getAbsoluteUri');
 var joinUrls = require('./joinUrls');
 
-
 /*global CESIUM_BASE_URL*/
 
 var cesiumScriptRegex = /((?:.*\/)|^)cesium[\w-]*\.js(?:\W|$)/i;

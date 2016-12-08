@@ -2,8 +2,6 @@
 
 var defined = require('./defined');
 
-
-
 if (typeof window === 'undefined') {
     return;
 }

@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var defineProperties = require('./defineProperties');
 
-
-
 var _supportsFullscreen;
 var _names = {
     requestFullscreen : undefined,

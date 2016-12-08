@@ -7,8 +7,6 @@ var destroyObject = require('./destroyObject');
 var Iso8601 = require('./Iso8601');
 var JulianDate = require('./JulianDate');
 
-
-
 /**
  * Synchronizes a video element with a simulation clock.
  *

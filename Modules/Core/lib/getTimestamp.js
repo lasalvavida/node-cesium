@@ -2,7 +2,6 @@
 
 var defined = require('./defined');
 
-
 /*global performance*/
 
 /**

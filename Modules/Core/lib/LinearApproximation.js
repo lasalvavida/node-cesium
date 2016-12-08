@@ -3,8 +3,6 @@
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * An {@link InterpolationAlgorithm} for performing linear interpolation.
  *

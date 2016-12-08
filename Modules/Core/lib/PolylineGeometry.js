@@ -19,8 +19,6 @@ var PolylinePipeline = require('./PolylinePipeline');
 var PrimitiveType = require('./PrimitiveType');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var scratchInterpolateColorsArray = [];
 
 function interpolateColors(p0, p1, color0, color1, numPoints) {

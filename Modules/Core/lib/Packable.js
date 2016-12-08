@@ -2,8 +2,6 @@
 
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Static interface for types which can store their values as packed
  * elements in an array.  These methods and properties are expected to be

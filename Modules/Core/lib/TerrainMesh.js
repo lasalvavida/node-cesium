@@ -1,8 +1,6 @@
 'use strict';
 
-var defaultValue = require('../Core/defaultValue');
-
-
+var defaultValue = require('./defaultValue');
 
 /**
   * A mesh plus related metadata for a single tile of terrain.  Instances of this type are

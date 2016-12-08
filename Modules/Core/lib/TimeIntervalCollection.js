@@ -9,8 +9,6 @@ var Event = require('./Event');
 var JulianDate = require('./JulianDate');
 var TimeInterval = require('./TimeInterval');
 
-
-
 function compareIntervalStartTimes(left, right) {
     return JulianDate.compare(left.start, right.start);
 }

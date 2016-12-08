@@ -3,8 +3,6 @@
 var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
-
-
 /**
  * Winding order defines the order of vertices for a triangle to be considered front-facing.
  *

@@ -16,8 +16,6 @@ var Matrix3 = require('./Matrix3');
 var Plane = require('./Plane');
 var Rectangle = require('./Rectangle');
 
-
-
 /**
  * Creates an instance of an OrientedBoundingBox.
  * An OrientedBoundingBox of some object is a closed and convex cuboid. It can provide a tighter bounding volume than {@link BoundingSphere} or {@link AxisAlignedBoundingBox} in many cases.

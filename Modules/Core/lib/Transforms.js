@@ -22,8 +22,6 @@ var Matrix4 = require('./Matrix4');
 var Quaternion = require('./Quaternion');
 var TimeConstants = require('./TimeConstants');
 
-
-
 /**
  * Contains functions for transforming positions to various reference frames.
  *

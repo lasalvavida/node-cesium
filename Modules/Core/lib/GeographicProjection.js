@@ -8,8 +8,6 @@ var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 
-
-
 /**
  * A simple map projection where longitude and latitude are linearly mapped to X and Y by multiplying
  * them by the {@link Ellipsoid#maximumRadius}.  This projection

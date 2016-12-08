@@ -4,8 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * A fixed-point encoding of a {@link Cartesian3} with 64-bit floating-point components, as two {@link Cartesian3}
  * values that, when converted to 32-bit floating-point and added, approximate the original input.

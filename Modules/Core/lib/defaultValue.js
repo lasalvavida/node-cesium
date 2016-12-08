@@ -2,8 +2,6 @@
 
 var freezeObject = require('./freezeObject');
 
-
-
 /**
  * Returns the first parameter if not undefined, otherwise the second parameter.
  * Useful for setting a default value for a parameter.

@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var formatError = require('./formatError');
 
-
-
 /**
  * Provides details about an error that occurred in an {@link ImageryProvider} or a {@link TerrainProvider}.
  *

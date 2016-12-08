@@ -6,8 +6,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var EllipsoidOutlineGeometry = require('./EllipsoidOutlineGeometry');
 
-
-
 /**
  * A description of the outline of a sphere.
  *

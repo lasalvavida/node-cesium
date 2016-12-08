@@ -11,8 +11,6 @@ var QuadraticRealPolynomial = require('./QuadraticRealPolynomial');
 var QuarticRealPolynomial = require('./QuarticRealPolynomial');
 var Ray = require('./Ray');
 
-
-
 /**
  * Functions for computing the intersection between geometries such as rays, planes, triangles, and ellipsoids.
  *

@@ -9,8 +9,6 @@ var DeveloperError = require('./DeveloperError');
 var objectToQuery = require('./objectToQuery');
 var queryToObject = require('./queryToObject');
 
-
-
 /**
  * Requests a resource using JSONP.
  *

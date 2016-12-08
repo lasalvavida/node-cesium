@@ -4,8 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 
-
-
 /**
  * Creates a curve parameterized and evaluated by time. This type describes an interface
  * and is not intended to be instantiated directly.

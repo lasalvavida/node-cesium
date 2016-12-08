@@ -7,8 +7,6 @@ var DeveloperError = require('./DeveloperError');
 var EllipsoidGeometry = require('./EllipsoidGeometry');
 var VertexFormat = require('./VertexFormat');
 
-
-
 /**
  * A description of a sphere centered at the origin.
  *

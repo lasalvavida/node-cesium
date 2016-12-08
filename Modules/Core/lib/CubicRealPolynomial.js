@@ -3,8 +3,6 @@
 var DeveloperError = require('./DeveloperError');
 var QuadraticRealPolynomial = require('./QuadraticRealPolynomial');
 
-
-
 /**
  * Defines functions for 3rd order polynomial functions of one variable with only real coefficients.
  *

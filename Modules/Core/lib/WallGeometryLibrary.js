@@ -8,8 +8,6 @@ var PolygonPipeline = require('./PolygonPipeline');
 var PolylinePipeline = require('./PolylinePipeline');
 var WindingOrder = require('./WindingOrder');
 
-
-
 /**
  * private
  */

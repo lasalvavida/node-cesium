@@ -27,8 +27,6 @@ var Rectangle = require('./Rectangle');
 var Transforms = require('./Transforms');
 var VertexFormat = require('./VertexFormat');
 
-
-
 var scratchCartesian1 = new Cartesian3();
 var scratchCartesian2 = new Cartesian3();
 var scratchCartesian3 = new Cartesian3();

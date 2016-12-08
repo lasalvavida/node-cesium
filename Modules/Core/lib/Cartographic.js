@@ -8,8 +8,6 @@ var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var scaleToGeodeticSurface = require('./scaleToGeodeticSurface');
 
-
-
 /**
  * A position defined by longitude, latitude, and height.
  * @alias Cartographic
