@@ -1,6 +1,5 @@
 'use strict';
 
-var measureText = require('../ThirdParty/measureText');
 var Color = require('./Color');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
@@ -79,7 +78,7 @@ function writeTextToCanvas(text, options) {
     canvas.style.visibility = 'hidden';
     document.body.appendChild(canvas);
 
-    var dimensions = measureText(context2D, text, stroke, fill);
+    var dimensions = context2D.measureText(text);
     canvas.dimensions = dimensions;
 
     document.body.removeChild(canvas);
