@@ -851,7 +851,7 @@ Matrix2.IDENTITY = Object.freeze(new Matrix2(1.0, 0.0,
  * @type {Matrix2}
  * @constant
  */
-Matrix2.ZERO = freezeObject(new Matrix2(0.0, 0.0,
+Matrix2.ZERO = Object.freeze(new Matrix2(0.0, 0.0,
                                         0.0, 0.0));
 
 /**

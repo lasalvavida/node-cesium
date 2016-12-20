@@ -1,6 +1,6 @@
 'use strict';
 
-var Object.freeze = require('../Core/freezeObject');
+var Object.freeze = require('../Core/Object.freeze');
 
 /**
  * Enum containing WebGL Constant values by name.
@@ -589,5 +589,5 @@ var WebGLConstants = {
     TEXTURE_IMMUTABLE_LEVELS : 0x82DF
 };
 
-module.exports = freezeObject(WebGLConstants);
+module.exports = Object.freeze(WebGLConstants);
 

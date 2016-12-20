@@ -225,7 +225,7 @@ Ellipsoid.WGS84 = Object.freeze(new Ellipsoid(6378137.0, 6378137.0, 6356752.3142
  * @type {Ellipsoid}
  * @constant
  */
-Ellipsoid.UNIT_SPHERE = freezeObject(new Ellipsoid(1.0, 1.0, 1.0));
+Ellipsoid.UNIT_SPHERE = Object.freeze(new Ellipsoid(1.0, 1.0, 1.0));
 
 /**
  * An Ellipsoid instance initialized to a sphere with the lunar radius.
@@ -233,7 +233,7 @@ Ellipsoid.UNIT_SPHERE = freezeObject(new Ellipsoid(1.0, 1.0, 1.0));
  * @type {Ellipsoid}
  * @constant
  */
-Ellipsoid.MOON = freezeObject(new Ellipsoid(CesiumMath.LUNAR_RADIUS, CesiumMath.LUNAR_RADIUS, CesiumMath.LUNAR_RADIUS));
+Ellipsoid.MOON = Object.freeze(new Ellipsoid(CesiumMath.LUNAR_RADIUS, CesiumMath.LUNAR_RADIUS, CesiumMath.LUNAR_RADIUS));
 
 /**
  * Duplicates an Ellipsoid instance.

@@ -777,7 +777,7 @@ Cartesian2.ZERO = Object.freeze(new Cartesian2(0.0, 0.0));
  * @type {Cartesian2}
  * @constant
  */
-Cartesian2.UNIT_X = freezeObject(new Cartesian2(1.0, 0.0));
+Cartesian2.UNIT_X = Object.freeze(new Cartesian2(1.0, 0.0));
 
 /**
  * An immutable Cartesian2 instance initialized to (0.0, 1.0).
@@ -785,7 +785,7 @@ Cartesian2.UNIT_X = freezeObject(new Cartesian2(1.0, 0.0));
  * @type {Cartesian2}
  * @constant
  */
-Cartesian2.UNIT_Y = freezeObject(new Cartesian2(0.0, 1.0));
+Cartesian2.UNIT_Y = Object.freeze(new Cartesian2(0.0, 1.0));
 
 /**
  * Duplicates this Cartesian2 instance.

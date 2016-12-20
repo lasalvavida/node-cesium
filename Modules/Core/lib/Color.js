@@ -943,7 +943,7 @@ Color.ALICEBLUE = Object.freeze(Color.fromCssColorString('#F0F8FF'));
  * @constant
  * @type {Color}
  */
-Color.ANTIQUEWHITE = freezeObject(Color.fromCssColorString('#FAEBD7'));
+Color.ANTIQUEWHITE = Object.freeze(Color.fromCssColorString('#FAEBD7'));
 
 /**
  * An immutable Color instance initialized to CSS color #00FFFF
@@ -952,7 +952,7 @@ Color.ANTIQUEWHITE = freezeObject(Color.fromCssColorString('#FAEBD7'));
  * @constant
  * @type {Color}
  */
-Color.AQUA = freezeObject(Color.fromCssColorString('#00FFFF'));
+Color.AQUA = Object.freeze(Color.fromCssColorString('#00FFFF'));
 
 /**
  * An immutable Color instance initialized to CSS color #7FFFD4
@@ -961,7 +961,7 @@ Color.AQUA = freezeObject(Color.fromCssColorString('#00FFFF'));
  * @constant
  * @type {Color}
  */
-Color.AQUAMARINE = freezeObject(Color.fromCssColorString('#7FFFD4'));
+Color.AQUAMARINE = Object.freeze(Color.fromCssColorString('#7FFFD4'));
 
 /**
  * An immutable Color instance initialized to CSS color #F0FFFF
@@ -970,7 +970,7 @@ Color.AQUAMARINE = freezeObject(Color.fromCssColorString('#7FFFD4'));
  * @constant
  * @type {Color}
  */
-Color.AZURE = freezeObject(Color.fromCssColorString('#F0FFFF'));
+Color.AZURE = Object.freeze(Color.fromCssColorString('#F0FFFF'));
 
 /**
  * An immutable Color instance initialized to CSS color #F5F5DC
@@ -979,7 +979,7 @@ Color.AZURE = freezeObject(Color.fromCssColorString('#F0FFFF'));
  * @constant
  * @type {Color}
  */
-Color.BEIGE = freezeObject(Color.fromCssColorString('#F5F5DC'));
+Color.BEIGE = Object.freeze(Color.fromCssColorString('#F5F5DC'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFE4C4
@@ -988,7 +988,7 @@ Color.BEIGE = freezeObject(Color.fromCssColorString('#F5F5DC'));
  * @constant
  * @type {Color}
  */
-Color.BISQUE = freezeObject(Color.fromCssColorString('#FFE4C4'));
+Color.BISQUE = Object.freeze(Color.fromCssColorString('#FFE4C4'));
 
 /**
  * An immutable Color instance initialized to CSS color #000000
@@ -997,7 +997,7 @@ Color.BISQUE = freezeObject(Color.fromCssColorString('#FFE4C4'));
  * @constant
  * @type {Color}
  */
-Color.BLACK = freezeObject(Color.fromCssColorString('#000000'));
+Color.BLACK = Object.freeze(Color.fromCssColorString('#000000'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFEBCD
@@ -1006,7 +1006,7 @@ Color.BLACK = freezeObject(Color.fromCssColorString('#000000'));
  * @constant
  * @type {Color}
  */
-Color.BLANCHEDALMOND = freezeObject(Color.fromCssColorString('#FFEBCD'));
+Color.BLANCHEDALMOND = Object.freeze(Color.fromCssColorString('#FFEBCD'));
 
 /**
  * An immutable Color instance initialized to CSS color #0000FF
@@ -1015,7 +1015,7 @@ Color.BLANCHEDALMOND = freezeObject(Color.fromCssColorString('#FFEBCD'));
  * @constant
  * @type {Color}
  */
-Color.BLUE = freezeObject(Color.fromCssColorString('#0000FF'));
+Color.BLUE = Object.freeze(Color.fromCssColorString('#0000FF'));
 
 /**
  * An immutable Color instance initialized to CSS color #8A2BE2
@@ -1024,7 +1024,7 @@ Color.BLUE = freezeObject(Color.fromCssColorString('#0000FF'));
  * @constant
  * @type {Color}
  */
-Color.BLUEVIOLET = freezeObject(Color.fromCssColorString('#8A2BE2'));
+Color.BLUEVIOLET = Object.freeze(Color.fromCssColorString('#8A2BE2'));
 
 /**
  * An immutable Color instance initialized to CSS color #A52A2A
@@ -1033,7 +1033,7 @@ Color.BLUEVIOLET = freezeObject(Color.fromCssColorString('#8A2BE2'));
  * @constant
  * @type {Color}
  */
-Color.BROWN = freezeObject(Color.fromCssColorString('#A52A2A'));
+Color.BROWN = Object.freeze(Color.fromCssColorString('#A52A2A'));
 
 /**
  * An immutable Color instance initialized to CSS color #DEB887
@@ -1042,7 +1042,7 @@ Color.BROWN = freezeObject(Color.fromCssColorString('#A52A2A'));
  * @constant
  * @type {Color}
  */
-Color.BURLYWOOD = freezeObject(Color.fromCssColorString('#DEB887'));
+Color.BURLYWOOD = Object.freeze(Color.fromCssColorString('#DEB887'));
 
 /**
  * An immutable Color instance initialized to CSS color #5F9EA0
@@ -1051,7 +1051,7 @@ Color.BURLYWOOD = freezeObject(Color.fromCssColorString('#DEB887'));
  * @constant
  * @type {Color}
  */
-Color.CADETBLUE = freezeObject(Color.fromCssColorString('#5F9EA0'));
+Color.CADETBLUE = Object.freeze(Color.fromCssColorString('#5F9EA0'));
 /**
  * An immutable Color instance initialized to CSS color #7FFF00
  * <span class="colorSwath" style="background: #7FFF00;"></span>
@@ -1059,7 +1059,7 @@ Color.CADETBLUE = freezeObject(Color.fromCssColorString('#5F9EA0'));
  * @constant
  * @type {Color}
  */
-Color.CHARTREUSE = freezeObject(Color.fromCssColorString('#7FFF00'));
+Color.CHARTREUSE = Object.freeze(Color.fromCssColorString('#7FFF00'));
 
 /**
  * An immutable Color instance initialized to CSS color #D2691E
@@ -1068,7 +1068,7 @@ Color.CHARTREUSE = freezeObject(Color.fromCssColorString('#7FFF00'));
  * @constant
  * @type {Color}
  */
-Color.CHOCOLATE = freezeObject(Color.fromCssColorString('#D2691E'));
+Color.CHOCOLATE = Object.freeze(Color.fromCssColorString('#D2691E'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF7F50
@@ -1077,7 +1077,7 @@ Color.CHOCOLATE = freezeObject(Color.fromCssColorString('#D2691E'));
  * @constant
  * @type {Color}
  */
-Color.CORAL = freezeObject(Color.fromCssColorString('#FF7F50'));
+Color.CORAL = Object.freeze(Color.fromCssColorString('#FF7F50'));
 
 /**
  * An immutable Color instance initialized to CSS color #6495ED
@@ -1086,7 +1086,7 @@ Color.CORAL = freezeObject(Color.fromCssColorString('#FF7F50'));
  * @constant
  * @type {Color}
  */
-Color.CORNFLOWERBLUE = freezeObject(Color.fromCssColorString('#6495ED'));
+Color.CORNFLOWERBLUE = Object.freeze(Color.fromCssColorString('#6495ED'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFF8DC
@@ -1095,7 +1095,7 @@ Color.CORNFLOWERBLUE = freezeObject(Color.fromCssColorString('#6495ED'));
  * @constant
  * @type {Color}
  */
-Color.CORNSILK = freezeObject(Color.fromCssColorString('#FFF8DC'));
+Color.CORNSILK = Object.freeze(Color.fromCssColorString('#FFF8DC'));
 
 /**
  * An immutable Color instance initialized to CSS color #DC143C
@@ -1104,7 +1104,7 @@ Color.CORNSILK = freezeObject(Color.fromCssColorString('#FFF8DC'));
  * @constant
  * @type {Color}
  */
-Color.CRIMSON = freezeObject(Color.fromCssColorString('#DC143C'));
+Color.CRIMSON = Object.freeze(Color.fromCssColorString('#DC143C'));
 
 /**
  * An immutable Color instance initialized to CSS color #00FFFF
@@ -1113,7 +1113,7 @@ Color.CRIMSON = freezeObject(Color.fromCssColorString('#DC143C'));
  * @constant
  * @type {Color}
  */
-Color.CYAN = freezeObject(Color.fromCssColorString('#00FFFF'));
+Color.CYAN = Object.freeze(Color.fromCssColorString('#00FFFF'));
 
 /**
  * An immutable Color instance initialized to CSS color #00008B
@@ -1122,7 +1122,7 @@ Color.CYAN = freezeObject(Color.fromCssColorString('#00FFFF'));
  * @constant
  * @type {Color}
  */
-Color.DARKBLUE = freezeObject(Color.fromCssColorString('#00008B'));
+Color.DARKBLUE = Object.freeze(Color.fromCssColorString('#00008B'));
 
 /**
  * An immutable Color instance initialized to CSS color #008B8B
@@ -1131,7 +1131,7 @@ Color.DARKBLUE = freezeObject(Color.fromCssColorString('#00008B'));
  * @constant
  * @type {Color}
  */
-Color.DARKCYAN = freezeObject(Color.fromCssColorString('#008B8B'));
+Color.DARKCYAN = Object.freeze(Color.fromCssColorString('#008B8B'));
 
 /**
  * An immutable Color instance initialized to CSS color #B8860B
@@ -1140,7 +1140,7 @@ Color.DARKCYAN = freezeObject(Color.fromCssColorString('#008B8B'));
  * @constant
  * @type {Color}
  */
-Color.DARKGOLDENROD = freezeObject(Color.fromCssColorString('#B8860B'));
+Color.DARKGOLDENROD = Object.freeze(Color.fromCssColorString('#B8860B'));
 
 /**
  * An immutable Color instance initialized to CSS color #A9A9A9
@@ -1149,7 +1149,7 @@ Color.DARKGOLDENROD = freezeObject(Color.fromCssColorString('#B8860B'));
  * @constant
  * @type {Color}
  */
-Color.DARKGRAY = freezeObject(Color.fromCssColorString('#A9A9A9'));
+Color.DARKGRAY = Object.freeze(Color.fromCssColorString('#A9A9A9'));
 
 /**
  * An immutable Color instance initialized to CSS color #006400
@@ -1158,7 +1158,7 @@ Color.DARKGRAY = freezeObject(Color.fromCssColorString('#A9A9A9'));
  * @constant
  * @type {Color}
  */
-Color.DARKGREEN = freezeObject(Color.fromCssColorString('#006400'));
+Color.DARKGREEN = Object.freeze(Color.fromCssColorString('#006400'));
 
 /**
  * An immutable Color instance initialized to CSS color #A9A9A9
@@ -1176,7 +1176,7 @@ Color.DARKGREY = Color.DARKGRAY;
  * @constant
  * @type {Color}
  */
-Color.DARKKHAKI = freezeObject(Color.fromCssColorString('#BDB76B'));
+Color.DARKKHAKI = Object.freeze(Color.fromCssColorString('#BDB76B'));
 
 /**
  * An immutable Color instance initialized to CSS color #8B008B
@@ -1185,7 +1185,7 @@ Color.DARKKHAKI = freezeObject(Color.fromCssColorString('#BDB76B'));
  * @constant
  * @type {Color}
  */
-Color.DARKMAGENTA = freezeObject(Color.fromCssColorString('#8B008B'));
+Color.DARKMAGENTA = Object.freeze(Color.fromCssColorString('#8B008B'));
 
 /**
  * An immutable Color instance initialized to CSS color #556B2F
@@ -1194,7 +1194,7 @@ Color.DARKMAGENTA = freezeObject(Color.fromCssColorString('#8B008B'));
  * @constant
  * @type {Color}
  */
-Color.DARKOLIVEGREEN = freezeObject(Color.fromCssColorString('#556B2F'));
+Color.DARKOLIVEGREEN = Object.freeze(Color.fromCssColorString('#556B2F'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF8C00
@@ -1203,7 +1203,7 @@ Color.DARKOLIVEGREEN = freezeObject(Color.fromCssColorString('#556B2F'));
  * @constant
  * @type {Color}
  */
-Color.DARKORANGE = freezeObject(Color.fromCssColorString('#FF8C00'));
+Color.DARKORANGE = Object.freeze(Color.fromCssColorString('#FF8C00'));
 
 /**
  * An immutable Color instance initialized to CSS color #9932CC
@@ -1212,7 +1212,7 @@ Color.DARKORANGE = freezeObject(Color.fromCssColorString('#FF8C00'));
  * @constant
  * @type {Color}
  */
-Color.DARKORCHID = freezeObject(Color.fromCssColorString('#9932CC'));
+Color.DARKORCHID = Object.freeze(Color.fromCssColorString('#9932CC'));
 
 /**
  * An immutable Color instance initialized to CSS color #8B0000
@@ -1221,7 +1221,7 @@ Color.DARKORCHID = freezeObject(Color.fromCssColorString('#9932CC'));
  * @constant
  * @type {Color}
  */
-Color.DARKRED = freezeObject(Color.fromCssColorString('#8B0000'));
+Color.DARKRED = Object.freeze(Color.fromCssColorString('#8B0000'));
 
 /**
  * An immutable Color instance initialized to CSS color #E9967A
@@ -1230,7 +1230,7 @@ Color.DARKRED = freezeObject(Color.fromCssColorString('#8B0000'));
  * @constant
  * @type {Color}
  */
-Color.DARKSALMON = freezeObject(Color.fromCssColorString('#E9967A'));
+Color.DARKSALMON = Object.freeze(Color.fromCssColorString('#E9967A'));
 
 /**
  * An immutable Color instance initialized to CSS color #8FBC8F
@@ -1239,7 +1239,7 @@ Color.DARKSALMON = freezeObject(Color.fromCssColorString('#E9967A'));
  * @constant
  * @type {Color}
  */
-Color.DARKSEAGREEN = freezeObject(Color.fromCssColorString('#8FBC8F'));
+Color.DARKSEAGREEN = Object.freeze(Color.fromCssColorString('#8FBC8F'));
 
 /**
  * An immutable Color instance initialized to CSS color #483D8B
@@ -1248,7 +1248,7 @@ Color.DARKSEAGREEN = freezeObject(Color.fromCssColorString('#8FBC8F'));
  * @constant
  * @type {Color}
  */
-Color.DARKSLATEBLUE = freezeObject(Color.fromCssColorString('#483D8B'));
+Color.DARKSLATEBLUE = Object.freeze(Color.fromCssColorString('#483D8B'));
 
 /**
  * An immutable Color instance initialized to CSS color #2F4F4F
@@ -1257,7 +1257,7 @@ Color.DARKSLATEBLUE = freezeObject(Color.fromCssColorString('#483D8B'));
  * @constant
  * @type {Color}
  */
-Color.DARKSLATEGRAY = freezeObject(Color.fromCssColorString('#2F4F4F'));
+Color.DARKSLATEGRAY = Object.freeze(Color.fromCssColorString('#2F4F4F'));
 
 /**
  * An immutable Color instance initialized to CSS color #2F4F4F
@@ -1275,7 +1275,7 @@ Color.DARKSLATEGREY = Color.DARKSLATEGRAY;
  * @constant
  * @type {Color}
  */
-Color.DARKTURQUOISE = freezeObject(Color.fromCssColorString('#00CED1'));
+Color.DARKTURQUOISE = Object.freeze(Color.fromCssColorString('#00CED1'));
 
 /**
  * An immutable Color instance initialized to CSS color #9400D3
@@ -1284,7 +1284,7 @@ Color.DARKTURQUOISE = freezeObject(Color.fromCssColorString('#00CED1'));
  * @constant
  * @type {Color}
  */
-Color.DARKVIOLET = freezeObject(Color.fromCssColorString('#9400D3'));
+Color.DARKVIOLET = Object.freeze(Color.fromCssColorString('#9400D3'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF1493
@@ -1293,7 +1293,7 @@ Color.DARKVIOLET = freezeObject(Color.fromCssColorString('#9400D3'));
  * @constant
  * @type {Color}
  */
-Color.DEEPPINK = freezeObject(Color.fromCssColorString('#FF1493'));
+Color.DEEPPINK = Object.freeze(Color.fromCssColorString('#FF1493'));
 
 /**
  * An immutable Color instance initialized to CSS color #00BFFF
@@ -1302,7 +1302,7 @@ Color.DEEPPINK = freezeObject(Color.fromCssColorString('#FF1493'));
  * @constant
  * @type {Color}
  */
-Color.DEEPSKYBLUE = freezeObject(Color.fromCssColorString('#00BFFF'));
+Color.DEEPSKYBLUE = Object.freeze(Color.fromCssColorString('#00BFFF'));
 
 /**
  * An immutable Color instance initialized to CSS color #696969
@@ -1311,7 +1311,7 @@ Color.DEEPSKYBLUE = freezeObject(Color.fromCssColorString('#00BFFF'));
  * @constant
  * @type {Color}
  */
-Color.DIMGRAY = freezeObject(Color.fromCssColorString('#696969'));
+Color.DIMGRAY = Object.freeze(Color.fromCssColorString('#696969'));
 
 /**
  * An immutable Color instance initialized to CSS color #696969
@@ -1329,7 +1329,7 @@ Color.DIMGREY = Color.DIMGRAY;
  * @constant
  * @type {Color}
  */
-Color.DODGERBLUE = freezeObject(Color.fromCssColorString('#1E90FF'));
+Color.DODGERBLUE = Object.freeze(Color.fromCssColorString('#1E90FF'));
 
 /**
  * An immutable Color instance initialized to CSS color #B22222
@@ -1338,7 +1338,7 @@ Color.DODGERBLUE = freezeObject(Color.fromCssColorString('#1E90FF'));
  * @constant
  * @type {Color}
  */
-Color.FIREBRICK = freezeObject(Color.fromCssColorString('#B22222'));
+Color.FIREBRICK = Object.freeze(Color.fromCssColorString('#B22222'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFFAF0
@@ -1347,7 +1347,7 @@ Color.FIREBRICK = freezeObject(Color.fromCssColorString('#B22222'));
  * @constant
  * @type {Color}
  */
-Color.FLORALWHITE = freezeObject(Color.fromCssColorString('#FFFAF0'));
+Color.FLORALWHITE = Object.freeze(Color.fromCssColorString('#FFFAF0'));
 
 /**
  * An immutable Color instance initialized to CSS color #228B22
@@ -1356,7 +1356,7 @@ Color.FLORALWHITE = freezeObject(Color.fromCssColorString('#FFFAF0'));
  * @constant
  * @type {Color}
  */
-Color.FORESTGREEN = freezeObject(Color.fromCssColorString('#228B22'));
+Color.FORESTGREEN = Object.freeze(Color.fromCssColorString('#228B22'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF00FF
@@ -1365,7 +1365,7 @@ Color.FORESTGREEN = freezeObject(Color.fromCssColorString('#228B22'));
  * @constant
  * @type {Color}
  */
-Color.FUSCHIA = freezeObject(Color.fromCssColorString('#FF00FF'));
+Color.FUSCHIA = Object.freeze(Color.fromCssColorString('#FF00FF'));
 
 /**
  * An immutable Color instance initialized to CSS color #DCDCDC
@@ -1374,7 +1374,7 @@ Color.FUSCHIA = freezeObject(Color.fromCssColorString('#FF00FF'));
  * @constant
  * @type {Color}
  */
-Color.GAINSBORO = freezeObject(Color.fromCssColorString('#DCDCDC'));
+Color.GAINSBORO = Object.freeze(Color.fromCssColorString('#DCDCDC'));
 
 /**
  * An immutable Color instance initialized to CSS color #F8F8FF
@@ -1383,7 +1383,7 @@ Color.GAINSBORO = freezeObject(Color.fromCssColorString('#DCDCDC'));
  * @constant
  * @type {Color}
  */
-Color.GHOSTWHITE = freezeObject(Color.fromCssColorString('#F8F8FF'));
+Color.GHOSTWHITE = Object.freeze(Color.fromCssColorString('#F8F8FF'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFD700
@@ -1392,7 +1392,7 @@ Color.GHOSTWHITE = freezeObject(Color.fromCssColorString('#F8F8FF'));
  * @constant
  * @type {Color}
  */
-Color.GOLD = freezeObject(Color.fromCssColorString('#FFD700'));
+Color.GOLD = Object.freeze(Color.fromCssColorString('#FFD700'));
 
 /**
  * An immutable Color instance initialized to CSS color #DAA520
@@ -1401,7 +1401,7 @@ Color.GOLD = freezeObject(Color.fromCssColorString('#FFD700'));
  * @constant
  * @type {Color}
  */
-Color.GOLDENROD = freezeObject(Color.fromCssColorString('#DAA520'));
+Color.GOLDENROD = Object.freeze(Color.fromCssColorString('#DAA520'));
 
 /**
  * An immutable Color instance initialized to CSS color #808080
@@ -1410,7 +1410,7 @@ Color.GOLDENROD = freezeObject(Color.fromCssColorString('#DAA520'));
  * @constant
  * @type {Color}
  */
-Color.GRAY = freezeObject(Color.fromCssColorString('#808080'));
+Color.GRAY = Object.freeze(Color.fromCssColorString('#808080'));
 
 /**
  * An immutable Color instance initialized to CSS color #008000
@@ -1419,7 +1419,7 @@ Color.GRAY = freezeObject(Color.fromCssColorString('#808080'));
  * @constant
  * @type {Color}
  */
-Color.GREEN = freezeObject(Color.fromCssColorString('#008000'));
+Color.GREEN = Object.freeze(Color.fromCssColorString('#008000'));
 
 /**
  * An immutable Color instance initialized to CSS color #ADFF2F
@@ -1428,7 +1428,7 @@ Color.GREEN = freezeObject(Color.fromCssColorString('#008000'));
  * @constant
  * @type {Color}
  */
-Color.GREENYELLOW = freezeObject(Color.fromCssColorString('#ADFF2F'));
+Color.GREENYELLOW = Object.freeze(Color.fromCssColorString('#ADFF2F'));
 
 /**
  * An immutable Color instance initialized to CSS color #808080
@@ -1446,7 +1446,7 @@ Color.GREY = Color.GRAY;
  * @constant
  * @type {Color}
  */
-Color.HONEYDEW = freezeObject(Color.fromCssColorString('#F0FFF0'));
+Color.HONEYDEW = Object.freeze(Color.fromCssColorString('#F0FFF0'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF69B4
@@ -1455,7 +1455,7 @@ Color.HONEYDEW = freezeObject(Color.fromCssColorString('#F0FFF0'));
  * @constant
  * @type {Color}
  */
-Color.HOTPINK = freezeObject(Color.fromCssColorString('#FF69B4'));
+Color.HOTPINK = Object.freeze(Color.fromCssColorString('#FF69B4'));
 
 /**
  * An immutable Color instance initialized to CSS color #CD5C5C
@@ -1464,7 +1464,7 @@ Color.HOTPINK = freezeObject(Color.fromCssColorString('#FF69B4'));
  * @constant
  * @type {Color}
  */
-Color.INDIANRED = freezeObject(Color.fromCssColorString('#CD5C5C'));
+Color.INDIANRED = Object.freeze(Color.fromCssColorString('#CD5C5C'));
 
 /**
  * An immutable Color instance initialized to CSS color #4B0082
@@ -1473,7 +1473,7 @@ Color.INDIANRED = freezeObject(Color.fromCssColorString('#CD5C5C'));
  * @constant
  * @type {Color}
  */
-Color.INDIGO = freezeObject(Color.fromCssColorString('#4B0082'));
+Color.INDIGO = Object.freeze(Color.fromCssColorString('#4B0082'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFFFF0
@@ -1482,7 +1482,7 @@ Color.INDIGO = freezeObject(Color.fromCssColorString('#4B0082'));
  * @constant
  * @type {Color}
  */
-Color.IVORY = freezeObject(Color.fromCssColorString('#FFFFF0'));
+Color.IVORY = Object.freeze(Color.fromCssColorString('#FFFFF0'));
 
 /**
  * An immutable Color instance initialized to CSS color #F0E68C
@@ -1491,7 +1491,7 @@ Color.IVORY = freezeObject(Color.fromCssColorString('#FFFFF0'));
  * @constant
  * @type {Color}
  */
-Color.KHAKI = freezeObject(Color.fromCssColorString('#F0E68C'));
+Color.KHAKI = Object.freeze(Color.fromCssColorString('#F0E68C'));
 
 /**
  * An immutable Color instance initialized to CSS color #E6E6FA
@@ -1500,7 +1500,7 @@ Color.KHAKI = freezeObject(Color.fromCssColorString('#F0E68C'));
  * @constant
  * @type {Color}
  */
-Color.LAVENDER = freezeObject(Color.fromCssColorString('#E6E6FA'));
+Color.LAVENDER = Object.freeze(Color.fromCssColorString('#E6E6FA'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFF0F5
@@ -1509,7 +1509,7 @@ Color.LAVENDER = freezeObject(Color.fromCssColorString('#E6E6FA'));
  * @constant
  * @type {Color}
  */
-Color.LAVENDAR_BLUSH = freezeObject(Color.fromCssColorString('#FFF0F5'));
+Color.LAVENDAR_BLUSH = Object.freeze(Color.fromCssColorString('#FFF0F5'));
 
 /**
  * An immutable Color instance initialized to CSS color #7CFC00
@@ -1518,7 +1518,7 @@ Color.LAVENDAR_BLUSH = freezeObject(Color.fromCssColorString('#FFF0F5'));
  * @constant
  * @type {Color}
  */
-Color.LAWNGREEN = freezeObject(Color.fromCssColorString('#7CFC00'));
+Color.LAWNGREEN = Object.freeze(Color.fromCssColorString('#7CFC00'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFFACD
@@ -1527,7 +1527,7 @@ Color.LAWNGREEN = freezeObject(Color.fromCssColorString('#7CFC00'));
  * @constant
  * @type {Color}
  */
-Color.LEMONCHIFFON = freezeObject(Color.fromCssColorString('#FFFACD'));
+Color.LEMONCHIFFON = Object.freeze(Color.fromCssColorString('#FFFACD'));
 
 /**
  * An immutable Color instance initialized to CSS color #ADD8E6
@@ -1536,7 +1536,7 @@ Color.LEMONCHIFFON = freezeObject(Color.fromCssColorString('#FFFACD'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTBLUE = freezeObject(Color.fromCssColorString('#ADD8E6'));
+Color.LIGHTBLUE = Object.freeze(Color.fromCssColorString('#ADD8E6'));
 
 /**
  * An immutable Color instance initialized to CSS color #F08080
@@ -1545,7 +1545,7 @@ Color.LIGHTBLUE = freezeObject(Color.fromCssColorString('#ADD8E6'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTCORAL = freezeObject(Color.fromCssColorString('#F08080'));
+Color.LIGHTCORAL = Object.freeze(Color.fromCssColorString('#F08080'));
 
 /**
  * An immutable Color instance initialized to CSS color #E0FFFF
@@ -1554,7 +1554,7 @@ Color.LIGHTCORAL = freezeObject(Color.fromCssColorString('#F08080'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTCYAN = freezeObject(Color.fromCssColorString('#E0FFFF'));
+Color.LIGHTCYAN = Object.freeze(Color.fromCssColorString('#E0FFFF'));
 
 /**
  * An immutable Color instance initialized to CSS color #FAFAD2
@@ -1563,7 +1563,7 @@ Color.LIGHTCYAN = freezeObject(Color.fromCssColorString('#E0FFFF'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTGOLDENRODYELLOW = freezeObject(Color.fromCssColorString('#FAFAD2'));
+Color.LIGHTGOLDENRODYELLOW = Object.freeze(Color.fromCssColorString('#FAFAD2'));
 
 /**
  * An immutable Color instance initialized to CSS color #D3D3D3
@@ -1572,7 +1572,7 @@ Color.LIGHTGOLDENRODYELLOW = freezeObject(Color.fromCssColorString('#FAFAD2'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTGRAY = freezeObject(Color.fromCssColorString('#D3D3D3'));
+Color.LIGHTGRAY = Object.freeze(Color.fromCssColorString('#D3D3D3'));
 
 /**
  * An immutable Color instance initialized to CSS color #90EE90
@@ -1581,7 +1581,7 @@ Color.LIGHTGRAY = freezeObject(Color.fromCssColorString('#D3D3D3'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTGREEN = freezeObject(Color.fromCssColorString('#90EE90'));
+Color.LIGHTGREEN = Object.freeze(Color.fromCssColorString('#90EE90'));
 
 /**
  * An immutable Color instance initialized to CSS color #D3D3D3
@@ -1599,7 +1599,7 @@ Color.LIGHTGREY = Color.LIGHTGRAY;
  * @constant
  * @type {Color}
  */
-Color.LIGHTPINK = freezeObject(Color.fromCssColorString('#FFB6C1'));
+Color.LIGHTPINK = Object.freeze(Color.fromCssColorString('#FFB6C1'));
 
 /**
  * An immutable Color instance initialized to CSS color #20B2AA
@@ -1608,7 +1608,7 @@ Color.LIGHTPINK = freezeObject(Color.fromCssColorString('#FFB6C1'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTSEAGREEN = freezeObject(Color.fromCssColorString('#20B2AA'));
+Color.LIGHTSEAGREEN = Object.freeze(Color.fromCssColorString('#20B2AA'));
 
 /**
  * An immutable Color instance initialized to CSS color #87CEFA
@@ -1617,7 +1617,7 @@ Color.LIGHTSEAGREEN = freezeObject(Color.fromCssColorString('#20B2AA'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTSKYBLUE = freezeObject(Color.fromCssColorString('#87CEFA'));
+Color.LIGHTSKYBLUE = Object.freeze(Color.fromCssColorString('#87CEFA'));
 
 /**
  * An immutable Color instance initialized to CSS color #778899
@@ -1626,7 +1626,7 @@ Color.LIGHTSKYBLUE = freezeObject(Color.fromCssColorString('#87CEFA'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTSLATEGRAY = freezeObject(Color.fromCssColorString('#778899'));
+Color.LIGHTSLATEGRAY = Object.freeze(Color.fromCssColorString('#778899'));
 
 /**
  * An immutable Color instance initialized to CSS color #778899
@@ -1644,7 +1644,7 @@ Color.LIGHTSLATEGREY = Color.LIGHTSLATEGRAY;
  * @constant
  * @type {Color}
  */
-Color.LIGHTSTEELBLUE = freezeObject(Color.fromCssColorString('#B0C4DE'));
+Color.LIGHTSTEELBLUE = Object.freeze(Color.fromCssColorString('#B0C4DE'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFFFE0
@@ -1653,7 +1653,7 @@ Color.LIGHTSTEELBLUE = freezeObject(Color.fromCssColorString('#B0C4DE'));
  * @constant
  * @type {Color}
  */
-Color.LIGHTYELLOW = freezeObject(Color.fromCssColorString('#FFFFE0'));
+Color.LIGHTYELLOW = Object.freeze(Color.fromCssColorString('#FFFFE0'));
 
 /**
  * An immutable Color instance initialized to CSS color #00FF00
@@ -1662,7 +1662,7 @@ Color.LIGHTYELLOW = freezeObject(Color.fromCssColorString('#FFFFE0'));
  * @constant
  * @type {Color}
  */
-Color.LIME = freezeObject(Color.fromCssColorString('#00FF00'));
+Color.LIME = Object.freeze(Color.fromCssColorString('#00FF00'));
 
 /**
  * An immutable Color instance initialized to CSS color #32CD32
@@ -1671,7 +1671,7 @@ Color.LIME = freezeObject(Color.fromCssColorString('#00FF00'));
  * @constant
  * @type {Color}
  */
-Color.LIMEGREEN = freezeObject(Color.fromCssColorString('#32CD32'));
+Color.LIMEGREEN = Object.freeze(Color.fromCssColorString('#32CD32'));
 
 /**
  * An immutable Color instance initialized to CSS color #FAF0E6
@@ -1680,7 +1680,7 @@ Color.LIMEGREEN = freezeObject(Color.fromCssColorString('#32CD32'));
  * @constant
  * @type {Color}
  */
-Color.LINEN = freezeObject(Color.fromCssColorString('#FAF0E6'));
+Color.LINEN = Object.freeze(Color.fromCssColorString('#FAF0E6'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF00FF
@@ -1689,7 +1689,7 @@ Color.LINEN = freezeObject(Color.fromCssColorString('#FAF0E6'));
  * @constant
  * @type {Color}
  */
-Color.MAGENTA = freezeObject(Color.fromCssColorString('#FF00FF'));
+Color.MAGENTA = Object.freeze(Color.fromCssColorString('#FF00FF'));
 
 /**
  * An immutable Color instance initialized to CSS color #800000
@@ -1698,7 +1698,7 @@ Color.MAGENTA = freezeObject(Color.fromCssColorString('#FF00FF'));
  * @constant
  * @type {Color}
  */
-Color.MAROON = freezeObject(Color.fromCssColorString('#800000'));
+Color.MAROON = Object.freeze(Color.fromCssColorString('#800000'));
 
 /**
  * An immutable Color instance initialized to CSS color #66CDAA
@@ -1707,7 +1707,7 @@ Color.MAROON = freezeObject(Color.fromCssColorString('#800000'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMAQUAMARINE = freezeObject(Color.fromCssColorString('#66CDAA'));
+Color.MEDIUMAQUAMARINE = Object.freeze(Color.fromCssColorString('#66CDAA'));
 
 /**
  * An immutable Color instance initialized to CSS color #0000CD
@@ -1716,7 +1716,7 @@ Color.MEDIUMAQUAMARINE = freezeObject(Color.fromCssColorString('#66CDAA'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMBLUE = freezeObject(Color.fromCssColorString('#0000CD'));
+Color.MEDIUMBLUE = Object.freeze(Color.fromCssColorString('#0000CD'));
 
 /**
  * An immutable Color instance initialized to CSS color #BA55D3
@@ -1725,7 +1725,7 @@ Color.MEDIUMBLUE = freezeObject(Color.fromCssColorString('#0000CD'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMORCHID = freezeObject(Color.fromCssColorString('#BA55D3'));
+Color.MEDIUMORCHID = Object.freeze(Color.fromCssColorString('#BA55D3'));
 
 /**
  * An immutable Color instance initialized to CSS color #9370DB
@@ -1734,7 +1734,7 @@ Color.MEDIUMORCHID = freezeObject(Color.fromCssColorString('#BA55D3'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMPURPLE = freezeObject(Color.fromCssColorString('#9370DB'));
+Color.MEDIUMPURPLE = Object.freeze(Color.fromCssColorString('#9370DB'));
 
 /**
  * An immutable Color instance initialized to CSS color #3CB371
@@ -1743,7 +1743,7 @@ Color.MEDIUMPURPLE = freezeObject(Color.fromCssColorString('#9370DB'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMSEAGREEN = freezeObject(Color.fromCssColorString('#3CB371'));
+Color.MEDIUMSEAGREEN = Object.freeze(Color.fromCssColorString('#3CB371'));
 
 /**
  * An immutable Color instance initialized to CSS color #7B68EE
@@ -1752,7 +1752,7 @@ Color.MEDIUMSEAGREEN = freezeObject(Color.fromCssColorString('#3CB371'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMSLATEBLUE = freezeObject(Color.fromCssColorString('#7B68EE'));
+Color.MEDIUMSLATEBLUE = Object.freeze(Color.fromCssColorString('#7B68EE'));
 
 /**
  * An immutable Color instance initialized to CSS color #00FA9A
@@ -1761,7 +1761,7 @@ Color.MEDIUMSLATEBLUE = freezeObject(Color.fromCssColorString('#7B68EE'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMSPRINGGREEN = freezeObject(Color.fromCssColorString('#00FA9A'));
+Color.MEDIUMSPRINGGREEN = Object.freeze(Color.fromCssColorString('#00FA9A'));
 
 /**
  * An immutable Color instance initialized to CSS color #48D1CC
@@ -1770,7 +1770,7 @@ Color.MEDIUMSPRINGGREEN = freezeObject(Color.fromCssColorString('#00FA9A'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMTURQUOISE = freezeObject(Color.fromCssColorString('#48D1CC'));
+Color.MEDIUMTURQUOISE = Object.freeze(Color.fromCssColorString('#48D1CC'));
 
 /**
  * An immutable Color instance initialized to CSS color #C71585
@@ -1779,7 +1779,7 @@ Color.MEDIUMTURQUOISE = freezeObject(Color.fromCssColorString('#48D1CC'));
  * @constant
  * @type {Color}
  */
-Color.MEDIUMVIOLETRED = freezeObject(Color.fromCssColorString('#C71585'));
+Color.MEDIUMVIOLETRED = Object.freeze(Color.fromCssColorString('#C71585'));
 
 /**
  * An immutable Color instance initialized to CSS color #191970
@@ -1788,7 +1788,7 @@ Color.MEDIUMVIOLETRED = freezeObject(Color.fromCssColorString('#C71585'));
  * @constant
  * @type {Color}
  */
-Color.MIDNIGHTBLUE = freezeObject(Color.fromCssColorString('#191970'));
+Color.MIDNIGHTBLUE = Object.freeze(Color.fromCssColorString('#191970'));
 
 /**
  * An immutable Color instance initialized to CSS color #F5FFFA
@@ -1797,7 +1797,7 @@ Color.MIDNIGHTBLUE = freezeObject(Color.fromCssColorString('#191970'));
  * @constant
  * @type {Color}
  */
-Color.MINTCREAM = freezeObject(Color.fromCssColorString('#F5FFFA'));
+Color.MINTCREAM = Object.freeze(Color.fromCssColorString('#F5FFFA'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFE4E1
@@ -1806,7 +1806,7 @@ Color.MINTCREAM = freezeObject(Color.fromCssColorString('#F5FFFA'));
  * @constant
  * @type {Color}
  */
-Color.MISTYROSE = freezeObject(Color.fromCssColorString('#FFE4E1'));
+Color.MISTYROSE = Object.freeze(Color.fromCssColorString('#FFE4E1'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFE4B5
@@ -1815,7 +1815,7 @@ Color.MISTYROSE = freezeObject(Color.fromCssColorString('#FFE4E1'));
  * @constant
  * @type {Color}
  */
-Color.MOCCASIN = freezeObject(Color.fromCssColorString('#FFE4B5'));
+Color.MOCCASIN = Object.freeze(Color.fromCssColorString('#FFE4B5'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFDEAD
@@ -1824,7 +1824,7 @@ Color.MOCCASIN = freezeObject(Color.fromCssColorString('#FFE4B5'));
  * @constant
  * @type {Color}
  */
-Color.NAVAJOWHITE = freezeObject(Color.fromCssColorString('#FFDEAD'));
+Color.NAVAJOWHITE = Object.freeze(Color.fromCssColorString('#FFDEAD'));
 
 /**
  * An immutable Color instance initialized to CSS color #000080
@@ -1833,7 +1833,7 @@ Color.NAVAJOWHITE = freezeObject(Color.fromCssColorString('#FFDEAD'));
  * @constant
  * @type {Color}
  */
-Color.NAVY = freezeObject(Color.fromCssColorString('#000080'));
+Color.NAVY = Object.freeze(Color.fromCssColorString('#000080'));
 
 /**
  * An immutable Color instance initialized to CSS color #FDF5E6
@@ -1842,7 +1842,7 @@ Color.NAVY = freezeObject(Color.fromCssColorString('#000080'));
  * @constant
  * @type {Color}
  */
-Color.OLDLACE = freezeObject(Color.fromCssColorString('#FDF5E6'));
+Color.OLDLACE = Object.freeze(Color.fromCssColorString('#FDF5E6'));
 
 /**
  * An immutable Color instance initialized to CSS color #808000
@@ -1851,7 +1851,7 @@ Color.OLDLACE = freezeObject(Color.fromCssColorString('#FDF5E6'));
  * @constant
  * @type {Color}
  */
-Color.OLIVE = freezeObject(Color.fromCssColorString('#808000'));
+Color.OLIVE = Object.freeze(Color.fromCssColorString('#808000'));
 
 /**
  * An immutable Color instance initialized to CSS color #6B8E23
@@ -1860,7 +1860,7 @@ Color.OLIVE = freezeObject(Color.fromCssColorString('#808000'));
  * @constant
  * @type {Color}
  */
-Color.OLIVEDRAB = freezeObject(Color.fromCssColorString('#6B8E23'));
+Color.OLIVEDRAB = Object.freeze(Color.fromCssColorString('#6B8E23'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFA500
@@ -1869,7 +1869,7 @@ Color.OLIVEDRAB = freezeObject(Color.fromCssColorString('#6B8E23'));
  * @constant
  * @type {Color}
  */
-Color.ORANGE = freezeObject(Color.fromCssColorString('#FFA500'));
+Color.ORANGE = Object.freeze(Color.fromCssColorString('#FFA500'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF4500
@@ -1878,7 +1878,7 @@ Color.ORANGE = freezeObject(Color.fromCssColorString('#FFA500'));
  * @constant
  * @type {Color}
  */
-Color.ORANGERED = freezeObject(Color.fromCssColorString('#FF4500'));
+Color.ORANGERED = Object.freeze(Color.fromCssColorString('#FF4500'));
 
 /**
  * An immutable Color instance initialized to CSS color #DA70D6
@@ -1887,7 +1887,7 @@ Color.ORANGERED = freezeObject(Color.fromCssColorString('#FF4500'));
  * @constant
  * @type {Color}
  */
-Color.ORCHID = freezeObject(Color.fromCssColorString('#DA70D6'));
+Color.ORCHID = Object.freeze(Color.fromCssColorString('#DA70D6'));
 
 /**
  * An immutable Color instance initialized to CSS color #EEE8AA
@@ -1896,7 +1896,7 @@ Color.ORCHID = freezeObject(Color.fromCssColorString('#DA70D6'));
  * @constant
  * @type {Color}
  */
-Color.PALEGOLDENROD = freezeObject(Color.fromCssColorString('#EEE8AA'));
+Color.PALEGOLDENROD = Object.freeze(Color.fromCssColorString('#EEE8AA'));
 
 /**
  * An immutable Color instance initialized to CSS color #98FB98
@@ -1905,7 +1905,7 @@ Color.PALEGOLDENROD = freezeObject(Color.fromCssColorString('#EEE8AA'));
  * @constant
  * @type {Color}
  */
-Color.PALEGREEN = freezeObject(Color.fromCssColorString('#98FB98'));
+Color.PALEGREEN = Object.freeze(Color.fromCssColorString('#98FB98'));
 
 /**
  * An immutable Color instance initialized to CSS color #AFEEEE
@@ -1914,7 +1914,7 @@ Color.PALEGREEN = freezeObject(Color.fromCssColorString('#98FB98'));
  * @constant
  * @type {Color}
  */
-Color.PALETURQUOISE = freezeObject(Color.fromCssColorString('#AFEEEE'));
+Color.PALETURQUOISE = Object.freeze(Color.fromCssColorString('#AFEEEE'));
 
 /**
  * An immutable Color instance initialized to CSS color #DB7093
@@ -1923,7 +1923,7 @@ Color.PALETURQUOISE = freezeObject(Color.fromCssColorString('#AFEEEE'));
  * @constant
  * @type {Color}
  */
-Color.PALEVIOLETRED = freezeObject(Color.fromCssColorString('#DB7093'));
+Color.PALEVIOLETRED = Object.freeze(Color.fromCssColorString('#DB7093'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFEFD5
@@ -1932,7 +1932,7 @@ Color.PALEVIOLETRED = freezeObject(Color.fromCssColorString('#DB7093'));
  * @constant
  * @type {Color}
  */
-Color.PAPAYAWHIP = freezeObject(Color.fromCssColorString('#FFEFD5'));
+Color.PAPAYAWHIP = Object.freeze(Color.fromCssColorString('#FFEFD5'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFDAB9
@@ -1941,7 +1941,7 @@ Color.PAPAYAWHIP = freezeObject(Color.fromCssColorString('#FFEFD5'));
  * @constant
  * @type {Color}
  */
-Color.PEACHPUFF = freezeObject(Color.fromCssColorString('#FFDAB9'));
+Color.PEACHPUFF = Object.freeze(Color.fromCssColorString('#FFDAB9'));
 
 /**
  * An immutable Color instance initialized to CSS color #CD853F
@@ -1950,7 +1950,7 @@ Color.PEACHPUFF = freezeObject(Color.fromCssColorString('#FFDAB9'));
  * @constant
  * @type {Color}
  */
-Color.PERU = freezeObject(Color.fromCssColorString('#CD853F'));
+Color.PERU = Object.freeze(Color.fromCssColorString('#CD853F'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFC0CB
@@ -1959,7 +1959,7 @@ Color.PERU = freezeObject(Color.fromCssColorString('#CD853F'));
  * @constant
  * @type {Color}
  */
-Color.PINK = freezeObject(Color.fromCssColorString('#FFC0CB'));
+Color.PINK = Object.freeze(Color.fromCssColorString('#FFC0CB'));
 
 /**
  * An immutable Color instance initialized to CSS color #DDA0DD
@@ -1968,7 +1968,7 @@ Color.PINK = freezeObject(Color.fromCssColorString('#FFC0CB'));
  * @constant
  * @type {Color}
  */
-Color.PLUM = freezeObject(Color.fromCssColorString('#DDA0DD'));
+Color.PLUM = Object.freeze(Color.fromCssColorString('#DDA0DD'));
 
 /**
  * An immutable Color instance initialized to CSS color #B0E0E6
@@ -1977,7 +1977,7 @@ Color.PLUM = freezeObject(Color.fromCssColorString('#DDA0DD'));
  * @constant
  * @type {Color}
  */
-Color.POWDERBLUE = freezeObject(Color.fromCssColorString('#B0E0E6'));
+Color.POWDERBLUE = Object.freeze(Color.fromCssColorString('#B0E0E6'));
 
 /**
  * An immutable Color instance initialized to CSS color #800080
@@ -1986,7 +1986,7 @@ Color.POWDERBLUE = freezeObject(Color.fromCssColorString('#B0E0E6'));
  * @constant
  * @type {Color}
  */
-Color.PURPLE = freezeObject(Color.fromCssColorString('#800080'));
+Color.PURPLE = Object.freeze(Color.fromCssColorString('#800080'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF0000
@@ -1995,7 +1995,7 @@ Color.PURPLE = freezeObject(Color.fromCssColorString('#800080'));
  * @constant
  * @type {Color}
  */
-Color.RED = freezeObject(Color.fromCssColorString('#FF0000'));
+Color.RED = Object.freeze(Color.fromCssColorString('#FF0000'));
 
 /**
  * An immutable Color instance initialized to CSS color #BC8F8F
@@ -2004,7 +2004,7 @@ Color.RED = freezeObject(Color.fromCssColorString('#FF0000'));
  * @constant
  * @type {Color}
  */
-Color.ROSYBROWN = freezeObject(Color.fromCssColorString('#BC8F8F'));
+Color.ROSYBROWN = Object.freeze(Color.fromCssColorString('#BC8F8F'));
 
 /**
  * An immutable Color instance initialized to CSS color #4169E1
@@ -2013,7 +2013,7 @@ Color.ROSYBROWN = freezeObject(Color.fromCssColorString('#BC8F8F'));
  * @constant
  * @type {Color}
  */
-Color.ROYALBLUE = freezeObject(Color.fromCssColorString('#4169E1'));
+Color.ROYALBLUE = Object.freeze(Color.fromCssColorString('#4169E1'));
 
 /**
  * An immutable Color instance initialized to CSS color #8B4513
@@ -2022,7 +2022,7 @@ Color.ROYALBLUE = freezeObject(Color.fromCssColorString('#4169E1'));
  * @constant
  * @type {Color}
  */
-Color.SADDLEBROWN = freezeObject(Color.fromCssColorString('#8B4513'));
+Color.SADDLEBROWN = Object.freeze(Color.fromCssColorString('#8B4513'));
 
 /**
  * An immutable Color instance initialized to CSS color #FA8072
@@ -2031,7 +2031,7 @@ Color.SADDLEBROWN = freezeObject(Color.fromCssColorString('#8B4513'));
  * @constant
  * @type {Color}
  */
-Color.SALMON = freezeObject(Color.fromCssColorString('#FA8072'));
+Color.SALMON = Object.freeze(Color.fromCssColorString('#FA8072'));
 
 /**
  * An immutable Color instance initialized to CSS color #F4A460
@@ -2040,7 +2040,7 @@ Color.SALMON = freezeObject(Color.fromCssColorString('#FA8072'));
  * @constant
  * @type {Color}
  */
-Color.SANDYBROWN = freezeObject(Color.fromCssColorString('#F4A460'));
+Color.SANDYBROWN = Object.freeze(Color.fromCssColorString('#F4A460'));
 
 /**
  * An immutable Color instance initialized to CSS color #2E8B57
@@ -2049,7 +2049,7 @@ Color.SANDYBROWN = freezeObject(Color.fromCssColorString('#F4A460'));
  * @constant
  * @type {Color}
  */
-Color.SEAGREEN = freezeObject(Color.fromCssColorString('#2E8B57'));
+Color.SEAGREEN = Object.freeze(Color.fromCssColorString('#2E8B57'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFF5EE
@@ -2058,7 +2058,7 @@ Color.SEAGREEN = freezeObject(Color.fromCssColorString('#2E8B57'));
  * @constant
  * @type {Color}
  */
-Color.SEASHELL = freezeObject(Color.fromCssColorString('#FFF5EE'));
+Color.SEASHELL = Object.freeze(Color.fromCssColorString('#FFF5EE'));
 
 /**
  * An immutable Color instance initialized to CSS color #A0522D
@@ -2067,7 +2067,7 @@ Color.SEASHELL = freezeObject(Color.fromCssColorString('#FFF5EE'));
  * @constant
  * @type {Color}
  */
-Color.SIENNA = freezeObject(Color.fromCssColorString('#A0522D'));
+Color.SIENNA = Object.freeze(Color.fromCssColorString('#A0522D'));
 
 /**
  * An immutable Color instance initialized to CSS color #C0C0C0
@@ -2076,7 +2076,7 @@ Color.SIENNA = freezeObject(Color.fromCssColorString('#A0522D'));
  * @constant
  * @type {Color}
  */
-Color.SILVER = freezeObject(Color.fromCssColorString('#C0C0C0'));
+Color.SILVER = Object.freeze(Color.fromCssColorString('#C0C0C0'));
 
 /**
  * An immutable Color instance initialized to CSS color #87CEEB
@@ -2085,7 +2085,7 @@ Color.SILVER = freezeObject(Color.fromCssColorString('#C0C0C0'));
  * @constant
  * @type {Color}
  */
-Color.SKYBLUE = freezeObject(Color.fromCssColorString('#87CEEB'));
+Color.SKYBLUE = Object.freeze(Color.fromCssColorString('#87CEEB'));
 
 /**
  * An immutable Color instance initialized to CSS color #6A5ACD
@@ -2094,7 +2094,7 @@ Color.SKYBLUE = freezeObject(Color.fromCssColorString('#87CEEB'));
  * @constant
  * @type {Color}
  */
-Color.SLATEBLUE = freezeObject(Color.fromCssColorString('#6A5ACD'));
+Color.SLATEBLUE = Object.freeze(Color.fromCssColorString('#6A5ACD'));
 
 /**
  * An immutable Color instance initialized to CSS color #708090
@@ -2103,7 +2103,7 @@ Color.SLATEBLUE = freezeObject(Color.fromCssColorString('#6A5ACD'));
  * @constant
  * @type {Color}
  */
-Color.SLATEGRAY = freezeObject(Color.fromCssColorString('#708090'));
+Color.SLATEGRAY = Object.freeze(Color.fromCssColorString('#708090'));
 
 /**
  * An immutable Color instance initialized to CSS color #708090
@@ -2121,7 +2121,7 @@ Color.SLATEGREY = Color.SLATEGRAY;
  * @constant
  * @type {Color}
  */
-Color.SNOW = freezeObject(Color.fromCssColorString('#FFFAFA'));
+Color.SNOW = Object.freeze(Color.fromCssColorString('#FFFAFA'));
 
 /**
  * An immutable Color instance initialized to CSS color #00FF7F
@@ -2130,7 +2130,7 @@ Color.SNOW = freezeObject(Color.fromCssColorString('#FFFAFA'));
  * @constant
  * @type {Color}
  */
-Color.SPRINGGREEN = freezeObject(Color.fromCssColorString('#00FF7F'));
+Color.SPRINGGREEN = Object.freeze(Color.fromCssColorString('#00FF7F'));
 
 /**
  * An immutable Color instance initialized to CSS color #4682B4
@@ -2139,7 +2139,7 @@ Color.SPRINGGREEN = freezeObject(Color.fromCssColorString('#00FF7F'));
  * @constant
  * @type {Color}
  */
-Color.STEELBLUE = freezeObject(Color.fromCssColorString('#4682B4'));
+Color.STEELBLUE = Object.freeze(Color.fromCssColorString('#4682B4'));
 
 /**
  * An immutable Color instance initialized to CSS color #D2B48C
@@ -2148,7 +2148,7 @@ Color.STEELBLUE = freezeObject(Color.fromCssColorString('#4682B4'));
  * @constant
  * @type {Color}
  */
-Color.TAN = freezeObject(Color.fromCssColorString('#D2B48C'));
+Color.TAN = Object.freeze(Color.fromCssColorString('#D2B48C'));
 
 /**
  * An immutable Color instance initialized to CSS color #008080
@@ -2157,7 +2157,7 @@ Color.TAN = freezeObject(Color.fromCssColorString('#D2B48C'));
  * @constant
  * @type {Color}
  */
-Color.TEAL = freezeObject(Color.fromCssColorString('#008080'));
+Color.TEAL = Object.freeze(Color.fromCssColorString('#008080'));
 
 /**
  * An immutable Color instance initialized to CSS color #D8BFD8
@@ -2166,7 +2166,7 @@ Color.TEAL = freezeObject(Color.fromCssColorString('#008080'));
  * @constant
  * @type {Color}
  */
-Color.THISTLE = freezeObject(Color.fromCssColorString('#D8BFD8'));
+Color.THISTLE = Object.freeze(Color.fromCssColorString('#D8BFD8'));
 
 /**
  * An immutable Color instance initialized to CSS color #FF6347
@@ -2175,7 +2175,7 @@ Color.THISTLE = freezeObject(Color.fromCssColorString('#D8BFD8'));
  * @constant
  * @type {Color}
  */
-Color.TOMATO = freezeObject(Color.fromCssColorString('#FF6347'));
+Color.TOMATO = Object.freeze(Color.fromCssColorString('#FF6347'));
 
 /**
  * An immutable Color instance initialized to CSS color #40E0D0
@@ -2184,7 +2184,7 @@ Color.TOMATO = freezeObject(Color.fromCssColorString('#FF6347'));
  * @constant
  * @type {Color}
  */
-Color.TURQUOISE = freezeObject(Color.fromCssColorString('#40E0D0'));
+Color.TURQUOISE = Object.freeze(Color.fromCssColorString('#40E0D0'));
 
 /**
  * An immutable Color instance initialized to CSS color #EE82EE
@@ -2193,7 +2193,7 @@ Color.TURQUOISE = freezeObject(Color.fromCssColorString('#40E0D0'));
  * @constant
  * @type {Color}
  */
-Color.VIOLET = freezeObject(Color.fromCssColorString('#EE82EE'));
+Color.VIOLET = Object.freeze(Color.fromCssColorString('#EE82EE'));
 
 /**
  * An immutable Color instance initialized to CSS color #F5DEB3
@@ -2202,7 +2202,7 @@ Color.VIOLET = freezeObject(Color.fromCssColorString('#EE82EE'));
  * @constant
  * @type {Color}
  */
-Color.WHEAT = freezeObject(Color.fromCssColorString('#F5DEB3'));
+Color.WHEAT = Object.freeze(Color.fromCssColorString('#F5DEB3'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFFFFF
@@ -2211,7 +2211,7 @@ Color.WHEAT = freezeObject(Color.fromCssColorString('#F5DEB3'));
  * @constant
  * @type {Color}
  */
-Color.WHITE = freezeObject(Color.fromCssColorString('#FFFFFF'));
+Color.WHITE = Object.freeze(Color.fromCssColorString('#FFFFFF'));
 
 /**
  * An immutable Color instance initialized to CSS color #F5F5F5
@@ -2220,7 +2220,7 @@ Color.WHITE = freezeObject(Color.fromCssColorString('#FFFFFF'));
  * @constant
  * @type {Color}
  */
-Color.WHITESMOKE = freezeObject(Color.fromCssColorString('#F5F5F5'));
+Color.WHITESMOKE = Object.freeze(Color.fromCssColorString('#F5F5F5'));
 
 /**
  * An immutable Color instance initialized to CSS color #FFFF00
@@ -2229,7 +2229,7 @@ Color.WHITESMOKE = freezeObject(Color.fromCssColorString('#F5F5F5'));
  * @constant
  * @type {Color}
  */
-Color.YELLOW = freezeObject(Color.fromCssColorString('#FFFF00'));
+Color.YELLOW = Object.freeze(Color.fromCssColorString('#FFFF00'));
 
 /**
  * An immutable Color instance initialized to CSS color #9ACD32
@@ -2238,7 +2238,7 @@ Color.YELLOW = freezeObject(Color.fromCssColorString('#FFFF00'));
  * @constant
  * @type {Color}
  */
-Color.YELLOWGREEN = freezeObject(Color.fromCssColorString('#9ACD32'));
+Color.YELLOWGREEN = Object.freeze(Color.fromCssColorString('#9ACD32'));
 
 /**
  * An immutable Color instance initialized to CSS transparent.
@@ -2247,7 +2247,7 @@ Color.YELLOWGREEN = freezeObject(Color.fromCssColorString('#9ACD32'));
  * @constant
  * @type {Color}
  */
-Color.TRANSPARENT = freezeObject(new Color(0, 0, 0, 0));
+Color.TRANSPARENT = Object.freeze(new Color(0, 0, 0, 0));
 
 module.exports = Color;
 

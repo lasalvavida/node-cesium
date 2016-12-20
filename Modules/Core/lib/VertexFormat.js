@@ -122,7 +122,7 @@ VertexFormat.POSITION_ONLY = Object.freeze(new VertexFormat({
  * @see VertexFormat#position
  * @see VertexFormat#normal
  */
-VertexFormat.POSITION_AND_NORMAL = freezeObject(new VertexFormat({
+VertexFormat.POSITION_AND_NORMAL = Object.freeze(new VertexFormat({
     position : true,
     normal : true
 }));
@@ -139,7 +139,7 @@ VertexFormat.POSITION_AND_NORMAL = freezeObject(new VertexFormat({
  * @see VertexFormat#normal
  * @see VertexFormat#st
  */
-VertexFormat.POSITION_NORMAL_AND_ST = freezeObject(new VertexFormat({
+VertexFormat.POSITION_NORMAL_AND_ST = Object.freeze(new VertexFormat({
     position : true,
     normal : true,
     st : true
@@ -155,7 +155,7 @@ VertexFormat.POSITION_NORMAL_AND_ST = freezeObject(new VertexFormat({
  * @see VertexFormat#position
  * @see VertexFormat#st
  */
-VertexFormat.POSITION_AND_ST = freezeObject(new VertexFormat({
+VertexFormat.POSITION_AND_ST = Object.freeze(new VertexFormat({
     position : true,
     st : true
 }));
@@ -169,7 +169,7 @@ VertexFormat.POSITION_AND_ST = freezeObject(new VertexFormat({
  * @see VertexFormat#position
  * @see VertexFormat#color
  */
-VertexFormat.POSITION_AND_COLOR = freezeObject(new VertexFormat({
+VertexFormat.POSITION_AND_COLOR = Object.freeze(new VertexFormat({
     position : true,
     color : true
 }));
@@ -186,7 +186,7 @@ VertexFormat.POSITION_AND_COLOR = freezeObject(new VertexFormat({
  * @see VertexFormat#binormal
  * @see VertexFormat#tangent
  */
-VertexFormat.ALL = freezeObject(new VertexFormat({
+VertexFormat.ALL = Object.freeze(new VertexFormat({
     position : true,
     normal : true,
     st : true,

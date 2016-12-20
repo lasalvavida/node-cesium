@@ -2610,7 +2610,7 @@ Matrix4.IDENTITY = Object.freeze(new Matrix4(1.0, 0.0, 0.0, 0.0,
  * @type {Matrix4}
  * @constant
  */
-Matrix4.ZERO = freezeObject(new Matrix4(0.0, 0.0, 0.0, 0.0,
+Matrix4.ZERO = Object.freeze(new Matrix4(0.0, 0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0, 0.0));

@@ -1449,7 +1449,7 @@ Matrix3.IDENTITY = Object.freeze(new Matrix3(1.0, 0.0, 0.0,
  * @type {Matrix3}
  * @constant
  */
-Matrix3.ZERO = freezeObject(new Matrix3(0.0, 0.0, 0.0,
+Matrix3.ZERO = Object.freeze(new Matrix3(0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0,
                                         0.0, 0.0, 0.0));
 

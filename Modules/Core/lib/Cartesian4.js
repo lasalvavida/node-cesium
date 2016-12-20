@@ -834,7 +834,7 @@ Cartesian4.ZERO = Object.freeze(new Cartesian4(0.0, 0.0, 0.0, 0.0));
  * @type {Cartesian4}
  * @constant
  */
-Cartesian4.UNIT_X = freezeObject(new Cartesian4(1.0, 0.0, 0.0, 0.0));
+Cartesian4.UNIT_X = Object.freeze(new Cartesian4(1.0, 0.0, 0.0, 0.0));
 
 /**
  * An immutable Cartesian4 instance initialized to (0.0, 1.0, 0.0, 0.0).
@@ -842,7 +842,7 @@ Cartesian4.UNIT_X = freezeObject(new Cartesian4(1.0, 0.0, 0.0, 0.0));
  * @type {Cartesian4}
  * @constant
  */
-Cartesian4.UNIT_Y = freezeObject(new Cartesian4(0.0, 1.0, 0.0, 0.0));
+Cartesian4.UNIT_Y = Object.freeze(new Cartesian4(0.0, 1.0, 0.0, 0.0));
 
 /**
  * An immutable Cartesian4 instance initialized to (0.0, 0.0, 1.0, 0.0).
@@ -850,7 +850,7 @@ Cartesian4.UNIT_Y = freezeObject(new Cartesian4(0.0, 1.0, 0.0, 0.0));
  * @type {Cartesian4}
  * @constant
  */
-Cartesian4.UNIT_Z = freezeObject(new Cartesian4(0.0, 0.0, 1.0, 0.0));
+Cartesian4.UNIT_Z = Object.freeze(new Cartesian4(0.0, 0.0, 1.0, 0.0));
 
 /**
  * An immutable Cartesian4 instance initialized to (0.0, 0.0, 0.0, 1.0).
@@ -858,7 +858,7 @@ Cartesian4.UNIT_Z = freezeObject(new Cartesian4(0.0, 0.0, 1.0, 0.0));
  * @type {Cartesian4}
  * @constant
  */
-Cartesian4.UNIT_W = freezeObject(new Cartesian4(0.0, 0.0, 0.0, 1.0));
+Cartesian4.UNIT_W = Object.freeze(new Cartesian4(0.0, 0.0, 0.0, 1.0));
 
 /**
  * Duplicates this Cartesian4 instance.
