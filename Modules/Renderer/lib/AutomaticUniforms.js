@@ -1,6 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var Cartesian3 = CesiumCore.Cartesian3;
 var Matrix4 = CesiumCore.Matrix4;
 var WebGLConstants = CesiumCore.WebGLConstants;

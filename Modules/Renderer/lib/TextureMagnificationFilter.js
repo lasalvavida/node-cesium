@@ -1,7 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
-var freezeObject = CesiumCore.freezeObject;
+var CesiumCore = require('cesium-core-experimental');
 var WebGLConstants = CesiumCore.WebGLConstants;
 
 /**
@@ -17,5 +16,5 @@ var TextureMagnificationFilter = {
     }
 };
 
-module.exports = freezeObject(TextureMagnificationFilter);
+module.exports = Object.freeze(TextureMagnificationFilter);
 

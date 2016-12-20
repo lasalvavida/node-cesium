@@ -1,7 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
-var defineProperties = CesiumCore.defineProperties;
+var CesiumCore = require('cesium-core-experimental');
 
 /**
  * @private
@@ -30,7 +29,7 @@ var ContextLimits = {
     _highpIntSupported: false
 };
 
-defineProperties(ContextLimits, {
+Object.defineProperties(ContextLimits, {
 
     /**
      * The maximum number of texture units that can be used from the vertex and fragment

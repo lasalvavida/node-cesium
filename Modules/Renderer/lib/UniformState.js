@@ -1,13 +1,12 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var BoundingRectangle = CesiumCore.BoundingRectangle;
 var Cartesian2 = CesiumCore.Cartesian2;
 var Cartesian3 = CesiumCore.Cartesian3;
 var Cartesian4 = CesiumCore.Cartesian4;
 var Cartographic = CesiumCore.Cartographic;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var EncodedCartesian3 = CesiumCore.EncodedCartesian3;
 var CesiumMath = CesiumCore.Math;
 var Matrix3 = CesiumCore.Matrix3;
@@ -136,7 +135,7 @@ function UniformState() {
     this._fogDensity = undefined;
 }
 
-defineProperties(UniformState.prototype, {
+Object.defineProperties(UniformState.prototype, {
     /**
      * @memberof UniformState.prototype
      * @type {FrameState}

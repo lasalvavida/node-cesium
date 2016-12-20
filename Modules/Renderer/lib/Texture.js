@@ -1,10 +1,9 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var Cartesian2 = CesiumCore.Cartesian2;
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var CesiumMath = CesiumCore.Math;
@@ -264,7 +263,7 @@ Texture.fromFramebuffer = function(options) {
     return texture;
 };
 
-defineProperties(Texture.prototype, {
+Object.defineProperties(Texture.prototype, {
     /**
      * The sampler to use when sampling this texture.
      * Create a sampler by calling {@link Sampler}.  If this

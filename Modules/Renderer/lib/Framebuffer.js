@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var PixelFormat = CesiumCore.PixelFormat;
@@ -230,7 +229,7 @@ function Framebuffer(options) {
     this._unBind();
 }
 
-defineProperties(Framebuffer.prototype, {
+Object.defineProperties(Framebuffer.prototype, {
     /**
      * The status of the framebuffer. If the status is not WebGLConstants.FRAMEBUFFER_COMPLETE,
      * a {@link DeveloperError} will be thrown when attempting to render to the framebuffer.

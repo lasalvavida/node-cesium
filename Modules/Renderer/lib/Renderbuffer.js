@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var ContextLimits = require('./ContextLimits');
@@ -62,7 +61,7 @@ function Renderbuffer(options) {
     gl.bindRenderbuffer(gl.RENDERBUFFER, null);
 }
 
-defineProperties(Renderbuffer.prototype, {
+Object.defineProperties(Renderbuffer.prototype, {
     format: {
         get : function() {
             return this._format;

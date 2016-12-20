@@ -1,7 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
-var freezeObject = CesiumCore.freezeObject;
+var CesiumCore = require('cesium-core-experimental');
 var WebGLConstants = CesiumCore.WebGLConstants;
 
 /**
@@ -19,5 +18,5 @@ var MipmapHint = {
     }
 };
 
-module.exports = freezeObject(MipmapHint);
+module.exports = Object.freeze(MipmapHint);
 

@@ -1,6 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var Cartesian2 = CesiumCore.Cartesian2;
 var Cartesian3 = CesiumCore.Cartesian3;
 var Cartesian4 = CesiumCore.Cartesian4;

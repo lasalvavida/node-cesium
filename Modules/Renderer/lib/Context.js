@@ -1,13 +1,12 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var clone = CesiumCore.clone;
 var Color = CesiumCore.Color;
 var ComponentDatatype = CesiumCore.ComponentDatatype;
 var createGuid = CesiumCore.createGuid;
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var Geometry = CesiumCore.Geometry;
@@ -164,6 +163,7 @@ function Context(canvas, options) {
 
     // Override select WebGL defaults
     webglOptions.alpha = defaultValue(webglOptions.alpha, false); // WebGL default is true
+    webglOptions.stencil = defaultValue(webglOptions.stencil, true); // WebGL default is false
 
     var defaultToWebgl2 = false;
     var webgl2Supported = (typeof WebGL2RenderingContext !== 'undefined');
@@ -374,7 +374,7 @@ function Context(canvas, options) {
 
 var defaultFramebufferMarker = {};
 
-defineProperties(Context.prototype, {
+Object.defineProperties(Context.prototype, {
     id : {
         get : function() {
             return this._id;
@@ -474,6 +474,18 @@ defineProperties(Context.prototype, {
     stencilBits : {
         get : function() {
             return this._stencilBits;
+        }
+    },
+
+    /**
+     * <code>true</code> if the WebGL context supports stencil buffers.
+     * Stencil buffers are not supported by all systems.
+     * @memberof Context.prototype
+     * @type {Boolean}
+     */
+    stencilBuffer : {
+        get : function() {
+            return this._stencilBits >= 8;
         }
     },
 

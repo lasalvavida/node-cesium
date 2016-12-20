@@ -1,6 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 /**
  * The state for a particular rendering pass.  This is used to supplement the state
  * in a command being executed.

@@ -1,6 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var ComponentDatatype = CesiumCore.ComponentDatatype;
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;

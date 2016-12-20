@@ -1,6 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var BoundingRectangle = CesiumCore.BoundingRectangle;
 var Color = CesiumCore.Color;
 var defaultValue = CesiumCore.defaultValue;

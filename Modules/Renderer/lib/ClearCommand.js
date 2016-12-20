@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var Color = CesiumCore.Color;
 var defaultValue = CesiumCore.defaultValue;
-var freezeObject = CesiumCore.freezeObject;
 
 /**
  * Represents a command to the renderer for clearing a framebuffer.
@@ -82,7 +81,7 @@ function ClearCommand(options) {
  *
  * @constant
  */
-ClearCommand.ALL = freezeObject(new ClearCommand({
+ClearCommand.ALL = Object.freeze(new ClearCommand({
     color : new Color(0.0, 0.0, 0.0, 0.0),
     depth : 1.0,
     stencil : 0.0

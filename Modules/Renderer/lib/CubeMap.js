@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var CesiumMath = CesiumCore.Math;
@@ -155,7 +154,7 @@ function CubeMap(options) {
     this.sampler = defined(options.sampler) ? options.sampler : new Sampler();
 }
 
-defineProperties(CubeMap.prototype, {
+Object.defineProperties(CubeMap.prototype, {
     positiveX : {
         get : function() {
             return this._positiveX;

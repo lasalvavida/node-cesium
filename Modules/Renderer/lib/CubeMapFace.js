@@ -1,8 +1,7 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
-var defineProperties = CesiumCore.defineProperties;
 var DeveloperError = CesiumCore.DeveloperError;
 var PixelDatatype = require('./PixelDatatype');
 
@@ -21,7 +20,7 @@ function CubeMapFace(gl, texture, textureTarget, targetFace, pixelFormat, pixelD
     this._flipY = flipY;
 }
 
-defineProperties(CubeMapFace.prototype, {
+Object.defineProperties(CubeMapFace.prototype, {
     pixelFormat : {
         get : function() {
             return this._pixelFormat;

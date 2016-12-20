@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var IndexDatatype = CesiumCore.IndexDatatype;
@@ -198,7 +197,7 @@ Buffer.createIndexBuffer = function(options) {
 
     var numberOfIndices = buffer.sizeInBytes / bytesPerIndex;
 
-    defineProperties(buffer, {
+    Object.defineProperties(buffer, {
         indexDatatype: {
             get : function() {
                 return indexDatatype;

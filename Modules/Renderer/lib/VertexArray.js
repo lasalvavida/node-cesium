@@ -1,10 +1,9 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var ComponentDatatype = CesiumCore.ComponentDatatype;
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var Geometry = CesiumCore.Geometry;
@@ -629,7 +628,7 @@ VertexArray.fromGeometry = function(options) {
     });
 };
 
-defineProperties(VertexArray.prototype, {
+Object.defineProperties(VertexArray.prototype, {
     numberOfAttributes : {
         get : function() {
             return this._attributes.length;

@@ -1,6 +1,6 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defined = CesiumCore.defined;
 var DeveloperError = CesiumCore.DeveloperError;
 var loadImage = CesiumCore.loadImage;

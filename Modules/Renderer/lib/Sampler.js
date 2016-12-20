@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var DeveloperError = CesiumCore.DeveloperError;
 var TextureMagnificationFilter = require('./TextureMagnificationFilter');
 var TextureMinificationFilter = require('./TextureMinificationFilter');
@@ -50,7 +49,7 @@ function Sampler(options) {
     this._maximumAnisotropy = maximumAnisotropy;
 }
 
-defineProperties(Sampler.prototype, {
+Object.defineProperties(Sampler.prototype, {
     wrapS : {
         get : function() {
             return this._wrapS;

@@ -1,8 +1,7 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var ShaderProgram = require('./ShaderProgram');
 var ShaderSource = require('./ShaderSource');
@@ -17,7 +16,7 @@ function ShaderCache(context) {
     this._shadersToRelease = {};
 }
 
-defineProperties(ShaderCache.prototype, {
+Object.defineProperties(ShaderCache.prototype, {
     numberOfShaders : {
         get : function() {
             return this._numberOfShaders;

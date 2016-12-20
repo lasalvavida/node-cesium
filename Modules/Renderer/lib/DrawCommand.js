@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var PrimitiveType = CesiumCore.PrimitiveType;
 
 /**
@@ -44,7 +43,7 @@ function DrawCommand(options) {
     this.derivedCommands = {};
 }
 
-defineProperties(DrawCommand.prototype, {
+Object.defineProperties(DrawCommand.prototype, {
     /**
      * The bounding volume of the geometry in world space.  This is used for culling and frustum selection.
      * <p>

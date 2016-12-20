@@ -1,9 +1,8 @@
 'use strict';
 
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
-var defineProperties = CesiumCore.defineProperties;
 var destroyObject = CesiumCore.destroyObject;
 var DeveloperError = CesiumCore.DeveloperError;
 var RuntimeError = CesiumCore.RuntimeError;
@@ -75,7 +74,7 @@ ShaderProgram.replaceCache = function(options) {
     return options.context.shaderCache.replaceShaderProgram(options);
 };
 
-defineProperties(ShaderProgram.prototype, {
+Object.defineProperties(ShaderProgram.prototype, {
     /**
      * GLSL source for the shader program's vertex shader.
      * @memberof ShaderProgram.prototype
