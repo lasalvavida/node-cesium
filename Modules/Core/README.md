@@ -1,4 +1,4 @@
-# cesium-core
+# cesium-core-experimental
 Cesium Core libraries in CommonJS format for use with Node.js
 
 ## !!! Experimental !!!
@@ -7,11 +7,11 @@ This is not an official release of [Cesium](https://github.com/AnalyticalGraphic
 ## Usage
 ### Get cesium-core
 ```
-npm install cesium-core --save
+npm install cesium-core-experimental --save
 ```
 
 ```javascript
-var CesiumCore = require('cesium-core');
+var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
 ```

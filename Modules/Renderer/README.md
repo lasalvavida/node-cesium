@@ -1,4 +1,4 @@
-# cesium-renderer
+# cesium-renderer-experimental
 Cesium Renderer libraries in CommonJS format for use with Node.js
 
 ## !!! Experimental !!!
@@ -8,13 +8,13 @@ Note: The Cesium Renderer API is not a part of the Cesium public API, and as suc
 Production code should instead use the higher-level Cesium Scene API.
 
 ## Usage
-### Get cesium-renderer
+### Get cesium-renderer-experimental
 ```
-npm install cesium-renderer --save
+npm install cesium-renderer-experimental --save
 ```
 
 ```javascript
-var CesiumRenderer = require('cesium-renderer');
+var CesiumRenderer = require('cesium-renderer-experimental');
 var Framebuffer = CesiumRenderer.Framebuffer;
 var ShaderSource = CesiumRenderer.ShaderSource;
 ```
