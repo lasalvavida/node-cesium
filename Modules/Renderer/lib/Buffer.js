@@ -218,7 +218,7 @@ Buffer.createIndexBuffer = function(options) {
     return buffer;
 };
 
-defineProperties(Buffer.prototype, {
+Object.defineProperties(Buffer.prototype, {
     sizeInBytes : {
         get : function() {
             return this._sizeInBytes;

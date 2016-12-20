@@ -1101,7 +1101,7 @@ function PickId(pickObjects, key, color) {
     this.color = color;
 }
 
-defineProperties(PickId.prototype, {
+Object.defineProperties(PickId.prototype, {
     object : {
         get : function() {
             return this._pickObjects[this.key];
