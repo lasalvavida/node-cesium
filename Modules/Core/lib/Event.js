@@ -1,7 +1,6 @@
 'use strict';
 
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -31,7 +30,7 @@ function Event() {
     this._insideRaiseEvent = false;
 }
 
-defineProperties(Event.prototype, {
+Object.defineProperties(Event.prototype, {
     /**
      * The number of listeners currently subscribed to the event.
      * @memberof Event.prototype

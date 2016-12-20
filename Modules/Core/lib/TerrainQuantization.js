@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * This enumerated type is used to determine how the vertices of the terrain mesh are compressed.
@@ -27,5 +26,5 @@ var TerrainQuantization = {
     BITS12 : 1
 };
 
-module.exports = freezeObject(TerrainQuantization);
+module.exports = Object.freeze(TerrainQuantization);
 

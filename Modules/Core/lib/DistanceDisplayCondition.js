@@ -2,7 +2,6 @@
 
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 
 /**
  * Determines visibility based on the distance to the camera.
@@ -25,7 +24,7 @@ function DistanceDisplayCondition(near, far) {
     this._far = far;
 }
 
-defineProperties(DistanceDisplayCondition.prototype, {
+Object.defineProperties(DistanceDisplayCondition.prototype, {
     /**
      * The smallest distance in the interval where the object is visible.
      * @memberof DistanceDisplayCondition.prototype

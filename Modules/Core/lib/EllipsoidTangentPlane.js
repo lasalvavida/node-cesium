@@ -6,7 +6,6 @@ var Cartesian3 = require('./Cartesian3');
 var Cartesian4 = require('./Cartesian4');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var IntersectionTests = require('./IntersectionTests');
@@ -54,7 +53,7 @@ function EllipsoidTangentPlane(origin, ellipsoid) {
     this._plane = Plane.fromPointNormal(origin, normal);
 }
 
-defineProperties(EllipsoidTangentPlane.prototype, {
+Object.defineProperties(EllipsoidTangentPlane.prototype, {
     /**
      * Gets the ellipsoid.
      * @memberof EllipsoidTangentPlane.prototype

@@ -1,7 +1,6 @@
 'use strict';
 
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 
 var _supportsFullscreen;
 var _names = {
@@ -22,7 +21,7 @@ var _names = {
  */
 var Fullscreen = {};
 
-defineProperties(Fullscreen, {
+Object.defineProperties(Fullscreen, {
     /**
      * The element that is currently fullscreen, if any.  To simply check if the
      * browser is in fullscreen mode or not, use {@link Fullscreen#fullscreen}.

@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Style options for corners.
@@ -39,5 +38,5 @@ var CornerType = {
     BEVELED : 2
 };
 
-module.exports = freezeObject(CornerType);
+module.exports = Object.freeze(CornerType);
 

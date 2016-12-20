@@ -4,7 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var Cartesian4 = require('./Cartesian4');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var LinearSpline = require('./LinearSpline');
 var Matrix4 = require('./Matrix4');
@@ -197,7 +196,7 @@ function HermiteSpline(options) {
     this._lastTimeIndex = 0;
 }
 
-defineProperties(HermiteSpline.prototype, {
+Object.defineProperties(HermiteSpline.prototype, {
     /**
      * An array of times for the control points.
      *

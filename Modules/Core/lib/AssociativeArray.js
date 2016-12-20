@@ -1,7 +1,6 @@
 'use strict';
 
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -15,7 +14,7 @@ function AssociativeArray() {
     this._hash = {};
 }
 
-defineProperties(AssociativeArray.prototype, {
+Object.defineProperties(AssociativeArray.prototype, {
     /**
      * Gets the number of items in the collection.
      * @memberof AssociativeArray.prototype

@@ -4,7 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var FeatureDetection = require('./FeatureDetection');
-var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
 // Bail out if the browser doesn't support typed arrays, to prevent the setup function
@@ -328,5 +327,5 @@ ComponentDatatype.fromName = function(name) {
     }
 };
 
-module.exports = freezeObject(ComponentDatatype);
+module.exports = Object.freeze(ComponentDatatype);
 

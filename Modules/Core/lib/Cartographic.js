@@ -4,7 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var scaleToGeodeticSurface = require('./scaleToGeodeticSurface');
 
@@ -214,7 +213,7 @@ Cartographic.equalsEpsilon = function(left, right, epsilon) {
  * @type {Cartographic}
  * @constant
  */
-Cartographic.ZERO = freezeObject(new Cartographic(0.0, 0.0, 0.0));
+Cartographic.ZERO = Object.freeze(new Cartographic(0.0, 0.0, 0.0));
 
 /**
  * Duplicates this instance.

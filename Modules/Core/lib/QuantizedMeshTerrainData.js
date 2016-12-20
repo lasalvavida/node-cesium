@@ -6,7 +6,6 @@ var Cartesian2 = require('./Cartesian2');
 var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var IndexDatatype = require('./IndexDatatype');
 var Intersections2D = require('./Intersections2D');
@@ -181,7 +180,7 @@ function QuantizedMeshTerrainData(options) {
     this._mesh = undefined;
 }
 
-defineProperties(QuantizedMeshTerrainData.prototype, {
+Object.defineProperties(QuantizedMeshTerrainData.prototype, {
     /**
      * The water mask included in this terrain data, if any.  A water mask is a rectangular
      * Uint8Array or image where a value of 255 indicates water and a value of 0 indicates land.

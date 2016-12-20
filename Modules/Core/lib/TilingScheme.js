@@ -1,6 +1,5 @@
 'use strict';
 
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -22,7 +21,7 @@ function TilingScheme(options) {
     //>>includeEnd('debug');
 }
 
-defineProperties(TilingScheme.prototype, {
+Object.defineProperties(TilingScheme.prototype, {
     /**
      * Gets the ellipsoid that is tiled by the tiling scheme.
      * @memberof TilingScheme.prototype

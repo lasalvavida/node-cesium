@@ -3,7 +3,6 @@
 var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var EllipseGeometry = require('./EllipseGeometry');
 var Ellipsoid = require('./Ellipsoid');
@@ -167,7 +166,7 @@ CircleGeometry.createShadowVolume = function(circleGeometry, minHeightFunc, maxH
     });
 };
 
-defineProperties(CircleGeometry.prototype, {
+Object.defineProperties(CircleGeometry.prototype, {
     /**
      * @private
      */

@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * @private
@@ -12,5 +11,5 @@ var GeometryType = {
     POLYLINES : 3
 };
 
-module.exports = freezeObject(GeometryType);
+module.exports = Object.freeze(GeometryType);
 

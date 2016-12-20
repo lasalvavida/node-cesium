@@ -3,9 +3,7 @@
 var Cartesian2 = require('./Cartesian2');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 
 /**
  * A 2x2 matrix, indexable as a column-major order array.
@@ -844,7 +842,7 @@ Matrix2.equalsEpsilon = function(left, right, epsilon) {
  * @type {Matrix2}
  * @constant
  */
-Matrix2.IDENTITY = freezeObject(new Matrix2(1.0, 0.0,
+Matrix2.IDENTITY = Object.freeze(new Matrix2(1.0, 0.0,
                                             0.0, 1.0));
 
 /**
@@ -904,7 +902,7 @@ Matrix2.COLUMN1ROW0 = 2;
  */
 Matrix2.COLUMN1ROW1 = 3;
 
-defineProperties(Matrix2.prototype, {
+Object.defineProperties(Matrix2.prototype, {
     /**
      * Gets the number of items in the collection.
      * @memberof Matrix2.prototype

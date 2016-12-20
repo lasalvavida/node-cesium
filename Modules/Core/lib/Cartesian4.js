@@ -3,7 +3,6 @@
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
 /**
@@ -506,6 +505,34 @@ Cartesian4.multiplyComponents = function(left, right, result) {
 };
 
 /**
+ * Computes the componentwise quotient of two Cartesians.
+ *
+ * @param {Cartesian4} left The first Cartesian.
+ * @param {Cartesian4} right The second Cartesian.
+ * @param {Cartesian4} result The object onto which to store the result.
+ * @returns {Cartesian4} The modified result parameter.
+ */
+Cartesian4.divideComponents = function(left, right, result) {
+    //>>includeStart('debug', pragmas.debug);
+    if (!defined(left)) {
+        throw new DeveloperError('left is required');
+    }
+    if (!defined(right)) {
+        throw new DeveloperError('right is required');
+    }
+    if (!defined(result)) {
+        throw new DeveloperError('result is required');
+    }
+    //>>includeEnd('debug');
+
+    result.x = left.x / right.x;
+    result.y = left.y / right.y;
+    result.z = left.z / right.z;
+    result.w = left.w / right.w;
+    return result;
+};
+
+/**
  * Computes the componentwise sum of two Cartesians.
  *
  * @param {Cartesian4} left The first Cartesian.
@@ -799,7 +826,7 @@ Cartesian4.equalsEpsilon = function(left, right, relativeEpsilon, absoluteEpsilo
  * @type {Cartesian4}
  * @constant
  */
-Cartesian4.ZERO = freezeObject(new Cartesian4(0.0, 0.0, 0.0, 0.0));
+Cartesian4.ZERO = Object.freeze(new Cartesian4(0.0, 0.0, 0.0, 0.0));
 
 /**
  * An immutable Cartesian4 instance initialized to (1.0, 0.0, 0.0, 0.0).

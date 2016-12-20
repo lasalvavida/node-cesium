@@ -1,10 +1,9 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 var JulianDate = require('./JulianDate');
 var TimeInterval = require('./TimeInterval');
 
-var MINIMUM_VALUE = freezeObject(JulianDate.fromIso8601('0000-01-01T00:00:00Z'));
+var MINIMUM_VALUE = Object.freeze(JulianDate.fromIso8601('0000-01-01T00:00:00Z'));
 var MAXIMUM_VALUE = freezeObject(JulianDate.fromIso8601('9999-12-31T24:00:00Z'));
 var MAXIMUM_INTERVAL = freezeObject(new TimeInterval({
     start : MINIMUM_VALUE,

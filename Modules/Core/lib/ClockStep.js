@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Constants to determine how much time advances with each call
@@ -40,5 +39,5 @@ var ClockStep = {
     SYSTEM_CLOCK : 2
 };
 
-module.exports = freezeObject(ClockStep);
+module.exports = Object.freeze(ClockStep);
 

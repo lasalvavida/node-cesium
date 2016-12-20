@@ -7,7 +7,6 @@ var Cartesian3 = require('./Cartesian3');
 var Credit = require('./Credit');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Event = require('./Event');
 var GeographicTilingScheme = require('./GeographicTilingScheme');
@@ -514,7 +513,7 @@ CesiumTerrainProvider.prototype.requestTileGeometry = function(x, y, level, thro
     });
 };
 
-defineProperties(CesiumTerrainProvider.prototype, {
+Object.defineProperties(CesiumTerrainProvider.prototype, {
     /**
      * Gets an event that is raised when the terrain provider encounters an asynchronous error.  By subscribing
      * to the event, you will be notified of the error and can potentially recover from it.  Event listeners

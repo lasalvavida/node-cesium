@@ -2,7 +2,6 @@
 
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Quaternion = require('./Quaternion');
 var Spline = require('./Spline');
@@ -113,7 +112,7 @@ function QuaternionSpline(options) {
     this._lastTimeIndex = 0;
 }
 
-defineProperties(QuaternionSpline.prototype, {
+Object.defineProperties(QuaternionSpline.prototype, {
     /**
      * An array of times for the control points.
      *

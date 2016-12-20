@@ -2,7 +2,6 @@
 
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var destroyObject = require('./destroyObject');
 var Iso8601 = require('./Iso8601');
 var JulianDate = require('./JulianDate');
@@ -55,7 +54,7 @@ function VideoSynchronizer(options) {
     this._firstTickAfterSeek = false;
 }
 
-defineProperties(VideoSynchronizer.prototype, {
+Object.defineProperties(VideoSynchronizer.prototype, {
     /**
      * Gets or sets the clock used to drive the video element.
      *

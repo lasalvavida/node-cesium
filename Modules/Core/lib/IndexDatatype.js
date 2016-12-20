@@ -2,7 +2,6 @@
 
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var WebGLConstants = require('./WebGLConstants');
 
@@ -140,5 +139,5 @@ IndexDatatype.createTypedArrayFromArrayBuffer = function(numberOfVertices, sourc
     return new Uint16Array(sourceArray, byteOffset, length);
 };
 
-module.exports = freezeObject(IndexDatatype);
+module.exports = Object.freeze(IndexDatatype);
 

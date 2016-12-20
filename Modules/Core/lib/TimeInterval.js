@@ -2,9 +2,7 @@
 
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var JulianDate = require('./JulianDate');
 
 /**
@@ -95,7 +93,7 @@ function TimeInterval(options) {
     this.isStopIncluded = defaultValue(options.isStopIncluded, true);
 }
 
-defineProperties(TimeInterval.prototype, {
+Object.defineProperties(TimeInterval.prototype, {
     /**
      * Gets whether or not this interval is empty.
      * @memberof TimeInterval.prototype
@@ -385,7 +383,7 @@ TimeInterval.prototype.toString = function() {
  * @type {TimeInterval}
  * @constant
  */
-TimeInterval.EMPTY = freezeObject(new TimeInterval({
+TimeInterval.EMPTY = Object.freeze(new TimeInterval({
     start : new JulianDate(),
     stop : new JulianDate(),
     isStartIncluded : false,

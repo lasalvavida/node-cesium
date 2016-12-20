@@ -3,7 +3,6 @@
 var binarySearch = require('./binarySearch');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Event = require('./Event');
 var JulianDate = require('./JulianDate');
@@ -32,7 +31,7 @@ function TimeIntervalCollection(intervals) {
     }
 }
 
-defineProperties(TimeIntervalCollection.prototype, {
+Object.defineProperties(TimeIntervalCollection.prototype, {
     /**
      * Gets an event that is raised whenever the collection of intervals change.
      * @memberof TimeIntervalCollection.prototype

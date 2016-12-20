@@ -3,9 +3,7 @@
 var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
 /**
@@ -1441,7 +1439,7 @@ Matrix3.equalsEpsilon = function(left, right, epsilon) {
  * @type {Matrix3}
  * @constant
  */
-Matrix3.IDENTITY = freezeObject(new Matrix3(1.0, 0.0, 0.0,
+Matrix3.IDENTITY = Object.freeze(new Matrix3(1.0, 0.0, 0.0,
                                             0.0, 1.0, 0.0,
                                             0.0, 0.0, 1.0));
 
@@ -1527,7 +1525,7 @@ Matrix3.COLUMN2ROW1 = 7;
  */
 Matrix3.COLUMN2ROW2 = 8;
 
-defineProperties(Matrix3.prototype, {
+Object.defineProperties(Matrix3.prototype, {
     /**
      * Gets the number of items in the collection.
      * @memberof Matrix3.prototype

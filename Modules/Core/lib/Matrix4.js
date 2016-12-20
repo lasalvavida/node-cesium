@@ -4,9 +4,7 @@ var Cartesian3 = require('./Cartesian3');
 var Cartesian4 = require('./Cartesian4');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var Matrix3 = require('./Matrix3');
 var RuntimeError = require('./RuntimeError');
@@ -2601,7 +2599,7 @@ Matrix4.inverseTransformation = function(matrix, result) {
  * @type {Matrix4}
  * @constant
  */
-Matrix4.IDENTITY = freezeObject(new Matrix4(1.0, 0.0, 0.0, 0.0,
+Matrix4.IDENTITY = Object.freeze(new Matrix4(1.0, 0.0, 0.0, 0.0,
                                             0.0, 1.0, 0.0, 0.0,
                                             0.0, 0.0, 1.0, 0.0,
                                             0.0, 0.0, 0.0, 1.0));
@@ -2745,7 +2743,7 @@ Matrix4.COLUMN3ROW2 = 14;
  */
 Matrix4.COLUMN3ROW3 = 15;
 
-defineProperties(Matrix4.prototype, {
+Object.defineProperties(Matrix4.prototype, {
     /**
      * Gets the number of items in the collection.
      * @memberof Matrix4.prototype

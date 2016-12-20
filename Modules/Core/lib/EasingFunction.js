@@ -1,7 +1,6 @@
 'use strict';
 
 var Tween = require('tween.js');
-var freezeObject = require('./freezeObject');
 
 /**
  * Easing functions for use with {@link TweenCollection}.  These function are from
@@ -257,5 +256,5 @@ var EasingFunction = {
  * }
  */
 
-module.exports = freezeObject(EasingFunction);
+module.exports = Object.freeze(EasingFunction);
 

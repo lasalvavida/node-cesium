@@ -1,7 +1,6 @@
 'use strict';
 
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 var nextCreditId = 0;
@@ -56,7 +55,7 @@ function Credit(text, imageUrl, link) {
     this._id = id;
 }
 
-defineProperties(Credit.prototype, {
+Object.defineProperties(Credit.prototype, {
     /**
      * The credit text
      * @memberof Credit.prototype

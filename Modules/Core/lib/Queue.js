@@ -1,6 +1,5 @@
 'use strict';
 
-var defineProperties = require('./defineProperties');
 
 /**
  * A queue that can enqueue items at the end, and dequeue items from the front.
@@ -14,7 +13,7 @@ function Queue() {
     this._length = 0;
 }
 
-defineProperties(Queue.prototype, {
+Object.defineProperties(Queue.prototype, {
     /**
      * The length of the queue.
      *

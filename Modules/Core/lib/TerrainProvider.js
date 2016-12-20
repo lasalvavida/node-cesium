@@ -1,7 +1,6 @@
 'use strict';
 
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var CesiumMath = require('./Math');
 
@@ -21,7 +20,7 @@ function TerrainProvider() {
     DeveloperError.throwInstantiationError();
 }
 
-defineProperties(TerrainProvider.prototype, {
+Object.defineProperties(TerrainProvider.prototype, {
     /**
      * Gets an event that is raised when the terrain provider encounters an asynchronous error..  By subscribing
      * to the event, you will be notified of the error and can potentially recover from it.  Event listeners

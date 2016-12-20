@@ -3,7 +3,6 @@
 var ComponentDatatype = require('./ComponentDatatype');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -46,7 +45,7 @@ function ShowGeometryInstanceAttribute(show) {
     this.value = ShowGeometryInstanceAttribute.toValue(show);
 }
 
-defineProperties(ShowGeometryInstanceAttribute.prototype, {
+Object.defineProperties(ShowGeometryInstanceAttribute.prototype, {
     /**
      * The datatype of each component in the attribute, e.g., individual elements in
      * {@link ColorGeometryInstanceAttribute#value}.

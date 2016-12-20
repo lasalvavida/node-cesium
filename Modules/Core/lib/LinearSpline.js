@@ -3,7 +3,6 @@
 var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Spline = require('./Spline');
 
@@ -65,7 +64,7 @@ function LinearSpline(options) {
     this._lastTimeIndex = 0;
 }
 
-defineProperties(LinearSpline.prototype, {
+Object.defineProperties(LinearSpline.prototype, {
     /**
      * An array of times for the control points.
      *

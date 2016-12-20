@@ -4,7 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var Cartographic = require('./Cartographic');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var CesiumMath = require('./Math');
@@ -212,7 +211,7 @@ function EllipsoidGeodesic(start, end, ellipsoid) {
     }
 }
 
-defineProperties(EllipsoidGeodesic.prototype, {
+Object.defineProperties(EllipsoidGeodesic.prototype, {
     /**
      * Gets the ellipsoid.
      * @memberof EllipsoidGeodesic.prototype

@@ -9,7 +9,6 @@ var CornerType = require('./CornerType');
 var CorridorGeometryLibrary = require('./CorridorGeometryLibrary');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var Geometry = require('./Geometry');
@@ -981,7 +980,7 @@ CorridorGeometry.createShadowVolume = function(corridorGeometry, minHeightFunc, 
     });
 };
 
-defineProperties(CorridorGeometry.prototype, {
+Object.defineProperties(CorridorGeometry.prototype, {
     /**
      * @private
      */

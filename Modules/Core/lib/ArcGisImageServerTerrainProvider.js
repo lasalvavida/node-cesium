@@ -4,7 +4,6 @@ var Promise = require('bluebird');
 var Credit = require('./Credit');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var Event = require('./Event');
@@ -89,7 +88,7 @@ function ArcGisImageServerTerrainProvider(options) {
     this._readyPromise = Promise.resolve(true);
 }
 
-defineProperties(ArcGisImageServerTerrainProvider.prototype, {
+Object.defineProperties(ArcGisImageServerTerrainProvider.prototype, {
     /**
      * Gets an event that is raised when the terrain provider encounters an asynchronous error.  By subscribing
      * to the event, you will be notified of the error and can potentially recover from it.  Event listeners

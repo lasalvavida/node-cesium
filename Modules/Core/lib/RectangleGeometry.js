@@ -7,7 +7,6 @@ var Cartographic = require('./Cartographic');
 var ComponentDatatype = require('./ComponentDatatype');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var Geometry = require('./Geometry');
@@ -824,7 +823,7 @@ RectangleGeometry.createShadowVolume = function(rectangleGeometry, minHeightFunc
     });
 };
 
-defineProperties(RectangleGeometry.prototype, {
+Object.defineProperties(RectangleGeometry.prototype, {
     /**
      * @private
      */

@@ -4,7 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var Cartesian4 = require('./Cartesian4');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var HermiteSpline = require('./HermiteSpline');
 var Matrix4 = require('./Matrix4');
@@ -180,7 +179,7 @@ function CatmullRomSpline(options) {
     this._lastTimeIndex = 0;
 }
 
-defineProperties(CatmullRomSpline.prototype, {
+Object.defineProperties(CatmullRomSpline.prototype, {
     /**
      * An array of times for the control points.
      *

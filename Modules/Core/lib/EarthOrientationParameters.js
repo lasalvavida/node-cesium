@@ -5,7 +5,6 @@ var binarySearch = require('./binarySearch');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var EarthOrientationParametersSample = require('./EarthOrientationParametersSample');
-var freezeObject = require('./freezeObject');
 var JulianDate = require('./JulianDate');
 var LeapSecond = require('./LeapSecond');
 var loadJson = require('./loadJson');
@@ -99,7 +98,7 @@ function EarthOrientationParameters(options) {
 /**
  * A default {@link EarthOrientationParameters} instance that returns zero for all EOP values.
  */
-EarthOrientationParameters.NONE = freezeObject({
+EarthOrientationParameters.NONE = Object.freeze({
         getPromiseToLoad : function() {
             return when();
         },

@@ -4,7 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var Cartographic = require('./Cartographic');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 
@@ -27,7 +26,7 @@ function GeographicProjection(ellipsoid) {
     this._oneOverSemimajorAxis = 1.0 / this._semimajorAxis;
 }
 
-defineProperties(GeographicProjection.prototype, {
+Object.defineProperties(GeographicProjection.prototype, {
     /**
      * Gets the {@link Ellipsoid}.
      *

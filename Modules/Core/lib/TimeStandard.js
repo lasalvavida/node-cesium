@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Provides the type of time standards which JulianDate can take as input.
@@ -27,5 +26,5 @@ var TimeStandard = {
     TAI : 1
 };
 
-module.exports = freezeObject(TimeStandard);
+module.exports = Object.freeze(TimeStandard);
 

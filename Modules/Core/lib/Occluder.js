@@ -4,7 +4,6 @@ var BoundingSphere = require('./BoundingSphere');
 var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var CesiumMath = require('./Math');
@@ -53,7 +52,7 @@ function Occluder(occluderBoundingSphere, cameraPosition) {
 
 var scratchCartesian3 = new Cartesian3();
 
-defineProperties(Occluder.prototype, {
+Object.defineProperties(Occluder.prototype, {
     /**
      * The position of the occluder.
      * @memberof Occluder.prototype

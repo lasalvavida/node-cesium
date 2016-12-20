@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * This enumerated type is used in determining to what extent an object, the occludee,
@@ -36,5 +35,5 @@ var Visibility = {
     FULL : 1
 };
 
-module.exports = freezeObject(Visibility);
+module.exports = Object.freeze(Visibility);
 

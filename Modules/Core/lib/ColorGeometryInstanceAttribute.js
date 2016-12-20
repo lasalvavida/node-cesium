@@ -4,7 +4,6 @@ var Color = require('./Color');
 var ComponentDatatype = require('./ComponentDatatype');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -56,7 +55,7 @@ function ColorGeometryInstanceAttribute(red, green, blue, alpha) {
     ]);
 }
 
-defineProperties(ColorGeometryInstanceAttribute.prototype, {
+Object.defineProperties(ColorGeometryInstanceAttribute.prototype, {
     /**
      * The datatype of each component in the attribute, e.g., individual elements in
      * {@link ColorGeometryInstanceAttribute#value}.

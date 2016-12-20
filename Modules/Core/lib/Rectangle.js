@@ -3,10 +3,8 @@
 var Cartographic = require('./Cartographic');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
 /**
@@ -56,7 +54,7 @@ function Rectangle(west, south, east, north) {
     this.north = defaultValue(north, 0.0);
 }
 
-defineProperties(Rectangle.prototype, {
+Object.defineProperties(Rectangle.prototype, {
     /**
      * Gets the width of the rectangle in radians.
      * @memberof Rectangle.prototype
@@ -893,7 +891,7 @@ Rectangle.subsample = function(rectangle, ellipsoid, surfaceHeight, result) {
  * @type {Rectangle}
  * @constant
 */
-Rectangle.MAX_VALUE = freezeObject(new Rectangle(-Math.PI, -CesiumMath.PI_OVER_TWO, Math.PI, CesiumMath.PI_OVER_TWO));
+Rectangle.MAX_VALUE = Object.freeze(new Rectangle(-Math.PI, -CesiumMath.PI_OVER_TWO, Math.PI, CesiumMath.PI_OVER_TWO));
 
 module.exports = Rectangle;
 

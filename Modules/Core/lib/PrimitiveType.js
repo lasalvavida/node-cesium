@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
 /**
@@ -83,5 +82,5 @@ var PrimitiveType = {
     }
 };
 
-module.exports = freezeObject(PrimitiveType);
+module.exports = Object.freeze(PrimitiveType);
 

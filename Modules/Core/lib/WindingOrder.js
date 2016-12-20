@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
 /**
@@ -34,5 +33,5 @@ var WindingOrder = {
     }
 };
 
-module.exports = freezeObject(WindingOrder);
+module.exports = Object.freeze(WindingOrder);
 

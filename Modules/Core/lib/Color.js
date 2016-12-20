@@ -4,7 +4,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var FeatureDetection = require('./FeatureDetection');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
 function hue2rgb(m1, m2, h) {
@@ -935,7 +934,7 @@ Color.divideByScalar = function(color, scalar, result) {
  * @constant
  * @type {Color}
  */
-Color.ALICEBLUE = freezeObject(Color.fromCssColorString('#F0F8FF'));
+Color.ALICEBLUE = Object.freeze(Color.fromCssColorString('#F0F8FF'));
 
 /**
  * An immutable Color instance initialized to CSS color #FAEBD7

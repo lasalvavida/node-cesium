@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * This enumerated type is used in determining where, relative to the frustum, an
@@ -36,5 +35,5 @@ var Intersect = {
     INSIDE : 1
 };
 
-module.exports = freezeObject(Intersect);
+module.exports = Object.freeze(Intersect);
 

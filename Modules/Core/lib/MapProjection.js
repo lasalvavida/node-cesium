@@ -1,6 +1,5 @@
 'use strict';
 
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -17,7 +16,7 @@ function MapProjection() {
     DeveloperError.throwInstantiationError();
 }
 
-defineProperties(MapProjection.prototype, {
+Object.defineProperties(MapProjection.prototype, {
     /**
      * Gets the {@link Ellipsoid}.
      *

@@ -3,7 +3,6 @@
 var ComponentDatatype = require('./ComponentDatatype');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -55,7 +54,7 @@ function DistanceDisplayConditionGeometryInstanceAttribute(near, far) {
     this.value = new Float32Array([near, far]);
 }
 
-defineProperties(DistanceDisplayConditionGeometryInstanceAttribute.prototype, {
+Object.defineProperties(DistanceDisplayConditionGeometryInstanceAttribute.prototype, {
     /**
      * The datatype of each component in the attribute, e.g., individual elements in
      * {@link DistanceDisplayConditionGeometryInstanceAttribute#value}.

@@ -3,7 +3,6 @@
 var Cartesian3 = require('./Cartesian3');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 
 /**
  * A plane in Hessian Normal Form defined by
@@ -148,7 +147,7 @@ Plane.getPointDistance = function(plane, point) {
  * @type {Plane}
  * @constant
  */
-Plane.ORIGIN_XY_PLANE = freezeObject(new Plane(Cartesian3.UNIT_Z, 0.0));
+Plane.ORIGIN_XY_PLANE = Object.freeze(new Plane(Cartesian3.UNIT_Z, 0.0));
 
 /**
  * A constant initialized to the YZ plane passing through the origin, with normal in positive X.

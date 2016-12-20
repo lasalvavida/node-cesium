@@ -3,7 +3,6 @@
 var Cartesian2 = require('./Cartesian2');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var Ellipsoid = require('./Ellipsoid');
 var Rectangle = require('./Rectangle');
 var WebMercatorProjection = require('./WebMercatorProjection');
@@ -56,7 +55,7 @@ function WebMercatorTilingScheme(options) {
                               northeast.longitude, northeast.latitude);
 }
 
-defineProperties(WebMercatorTilingScheme.prototype, {
+Object.defineProperties(WebMercatorTilingScheme.prototype, {
     /**
      * Gets the ellipsoid that is tiled by this tiling scheme.
      * @memberof WebMercatorTilingScheme.prototype

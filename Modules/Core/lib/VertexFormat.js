@@ -3,7 +3,6 @@
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 
 /**
  * A vertex format defines what attributes make up a vertex.  A VertexFormat can be provided
@@ -109,7 +108,7 @@ function VertexFormat(options) {
  *
  * @see VertexFormat#position
  */
-VertexFormat.POSITION_ONLY = freezeObject(new VertexFormat({
+VertexFormat.POSITION_ONLY = Object.freeze(new VertexFormat({
     position : true
 }));
 

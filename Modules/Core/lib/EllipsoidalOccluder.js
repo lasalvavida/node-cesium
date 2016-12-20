@@ -4,7 +4,6 @@ var BoundingSphere = require('./BoundingSphere');
 var Cartesian3 = require('./Cartesian3');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Rectangle = require('./Rectangle');
 
@@ -49,7 +48,7 @@ function EllipsoidalOccluder(ellipsoid, cameraPosition) {
     }
 }
 
-defineProperties(EllipsoidalOccluder.prototype, {
+Object.defineProperties(EllipsoidalOccluder.prototype, {
     /**
      * Gets the occluding ellipsoid.
      * @memberof EllipsoidalOccluder.prototype

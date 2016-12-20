@@ -4,7 +4,6 @@ var Cartesian3 = require('./Cartesian3');
 var Cartographic = require('./Cartographic');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var CesiumMath = require('./Math');
@@ -27,7 +26,7 @@ function WebMercatorProjection(ellipsoid) {
     this._oneOverSemimajorAxis = 1.0 / this._semimajorAxis;
 }
 
-defineProperties(WebMercatorProjection.prototype, {
+Object.defineProperties(WebMercatorProjection.prototype, {
     /**
      * Gets the {@link Ellipsoid}.
      *

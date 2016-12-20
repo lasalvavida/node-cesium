@@ -9,7 +9,6 @@ var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var EllipsoidalOccluder = require('./EllipsoidalOccluder');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var Matrix4 = require('./Matrix4');
 var OrientedBoundingBox = require('./OrientedBoundingBox');
@@ -32,7 +31,7 @@ var HeightmapTessellator = {};
  *
  * @constant
  */
-HeightmapTessellator.DEFAULT_STRUCTURE = freezeObject({
+HeightmapTessellator.DEFAULT_STRUCTURE = Object.freeze({
     heightScale : 1.0,
     heightOffset : 0.0,
     elementsPerHeight : 1,

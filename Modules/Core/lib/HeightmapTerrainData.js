@@ -3,7 +3,6 @@
 var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var GeographicTilingScheme = require('./GeographicTilingScheme');
 var HeightmapTessellator = require('./HeightmapTessellator');
@@ -126,7 +125,7 @@ function HeightmapTerrainData(options) {
     this._mesh = undefined;
 }
 
-defineProperties(HeightmapTerrainData.prototype, {
+Object.defineProperties(HeightmapTerrainData.prototype, {
     /**
      * The water mask included in this terrain data, if any.  A water mask is a rectangular
      * Uint8Array or image where a value of 255 indicates water and a value of 0 indicates land.

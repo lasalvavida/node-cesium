@@ -3,7 +3,6 @@
 var Cartesian2 = require('./Cartesian2');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var GeographicProjection = require('./GeographicProjection');
@@ -37,7 +36,7 @@ function GeographicTilingScheme(options) {
     this._numberOfLevelZeroTilesY = defaultValue(options.numberOfLevelZeroTilesY, 1);
 }
 
-defineProperties(GeographicTilingScheme.prototype, {
+Object.defineProperties(GeographicTilingScheme.prototype, {
     /**
      * Gets the ellipsoid that is tiled by this tiling scheme.
      * @memberof GeographicTilingScheme.prototype

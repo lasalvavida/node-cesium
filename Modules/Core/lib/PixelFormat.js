@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 var WebGLConstants = require('./WebGLConstants');
 
 /**
@@ -98,5 +97,5 @@ var PixelFormat = {
     }
 };
 
-module.exports = freezeObject(PixelFormat);
+module.exports = Object.freeze(PixelFormat);
 

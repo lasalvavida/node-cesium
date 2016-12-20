@@ -4,9 +4,7 @@ var Cartesian3 = require('./Cartesian3');
 var Cartographic = require('./Cartographic');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var scaleToGeodeticSurface = require('./scaleToGeodeticSurface');
 
@@ -79,7 +77,7 @@ function Ellipsoid(x, y, z) {
     initialize(this, x, y, z);
 }
 
-defineProperties(Ellipsoid.prototype, {
+Object.defineProperties(Ellipsoid.prototype, {
     /**
      * Gets the radii of the ellipsoid.
      * @memberof Ellipsoid.prototype
@@ -219,7 +217,7 @@ Ellipsoid.fromCartesian3 = function(cartesian, result) {
  * @type {Ellipsoid}
  * @constant
  */
-Ellipsoid.WGS84 = freezeObject(new Ellipsoid(6378137.0, 6378137.0, 6356752.3142451793));
+Ellipsoid.WGS84 = Object.freeze(new Ellipsoid(6378137.0, 6378137.0, 6356752.3142451793));
 
 /**
  * An Ellipsoid instance initialized to radii of (1.0, 1.0, 1.0).

@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Constants used by {@link Clock#tick} to determine behavior
@@ -41,5 +40,5 @@ var ClockRange = {
     LOOP_STOP : 2
 };
 
-module.exports = freezeObject(ClockRange);
+module.exports = Object.freeze(ClockRange);
 

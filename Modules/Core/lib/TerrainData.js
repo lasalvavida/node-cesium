@@ -1,6 +1,5 @@
 'use strict';
 
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 
 /**
@@ -17,7 +16,7 @@ function TerrainData() {
     DeveloperError.throwInstantiationError();
 }
 
-defineProperties(TerrainData.prototype, {
+Object.defineProperties(TerrainData.prototype, {
     /**
      * The water mask included in this terrain data, if any.  A water mask is a rectangular
      * Uint8Array or image where a value of 255 indicates water and a value of 0 indicates land.

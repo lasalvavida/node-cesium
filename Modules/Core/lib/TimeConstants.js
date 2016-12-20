@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Constants for time conversions like those done by {@link JulianDate}.
@@ -85,5 +84,5 @@ var TimeConstants = {
     MODIFIED_JULIAN_DATE_DIFFERENCE : 2400000.5
 };
 
-module.exports = freezeObject(TimeConstants);
+module.exports = Object.freeze(TimeConstants);
 

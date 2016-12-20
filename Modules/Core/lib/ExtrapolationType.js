@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Constants to determine how an interpolated value is extrapolated
@@ -36,5 +35,5 @@ var ExtrapolationType = {
     EXTRAPOLATE : 2
 };
 
-module.exports = freezeObject(ExtrapolationType);
+module.exports = Object.freeze(ExtrapolationType);
 

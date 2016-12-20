@@ -3,7 +3,6 @@
 var Promise = require('bluebird');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var Ellipsoid = require('./Ellipsoid');
 var Event = require('./Event');
 var GeographicTilingScheme = require('./GeographicTilingScheme');
@@ -45,7 +44,7 @@ function EllipsoidTerrainProvider(options) {
     this._readyPromise = Promise.resolve(true);
 }
 
-defineProperties(EllipsoidTerrainProvider.prototype, {
+Object.defineProperties(EllipsoidTerrainProvider.prototype, {
     /**
      * Gets an event that is raised when the terrain provider encounters an asynchronous error.  By subscribing
      * to the event, you will be notified of the error and can potentially recover from it.  Event listeners

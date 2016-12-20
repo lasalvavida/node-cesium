@@ -4,7 +4,6 @@ var ClockRange = require('./ClockRange');
 var ClockStep = require('./ClockStep');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Event = require('./Event');
 var getTimestamp = require('./getTimestamp');
@@ -138,7 +137,7 @@ function Clock(options) {
     this.shouldAnimate = defaultValue(options.shouldAnimate, true);
 }
 
-defineProperties(Clock.prototype, {
+Object.defineProperties(Clock.prototype, {
     /**
      * The current time.
      * Changing this property will change

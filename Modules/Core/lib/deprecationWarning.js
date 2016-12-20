@@ -28,7 +28,7 @@ var oneTimeWarning = require('./oneTimeWarning');
  * };
  *
  * // Deprecated property
- * defineProperties(Bar.prototype, {
+ * Object.defineProperties(Bar.prototype, {
  *     prop : {
  *         get : function() {
  *             deprecationWarning('Bar.prop', 'Bar.prop was deprecated in Cesium 1.01.  It will be removed in 1.03.  Use Bar.newProp instead.');

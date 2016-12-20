@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * This enumerated type is for representing keyboard modifiers. These are keys
@@ -34,5 +33,5 @@ var KeyboardEventModifier = {
     ALT : 2
 };
 
-module.exports = freezeObject(KeyboardEventModifier);
+module.exports = Object.freeze(KeyboardEventModifier);
 

@@ -8,7 +8,6 @@ var Cartographic = require('./Cartographic');
 var ComponentDatatype = require('./ComponentDatatype');
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
-var defineProperties = require('./defineProperties');
 var DeveloperError = require('./DeveloperError');
 var Ellipsoid = require('./Ellipsoid');
 var EllipsoidTangentPlane = require('./EllipsoidTangentPlane');
@@ -880,7 +879,7 @@ PolygonGeometry.createShadowVolume = function(polygonGeometry, minHeightFunc, ma
     });
 };
 
-defineProperties(PolygonGeometry.prototype, {
+Object.defineProperties(PolygonGeometry.prototype, {
     /**
      * @private
      */

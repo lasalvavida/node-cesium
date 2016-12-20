@@ -3,7 +3,6 @@
 var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 
 /**
@@ -500,6 +499,33 @@ Cartesian3.multiplyComponents = function(left, right, result) {
     result.x = left.x * right.x;
     result.y = left.y * right.y;
     result.z = left.z * right.z;
+    return result;
+};
+
+/**
+ * Computes the componentwise quotient of two Cartesians.
+ *
+ * @param {Cartesian3} left The first Cartesian.
+ * @param {Cartesian3} right The second Cartesian.
+ * @param {Cartesian3} result The object onto which to store the result.
+ * @returns {Cartesian3} The modified result parameter.
+ */
+Cartesian3.divideComponents = function(left, right, result) {
+    //>>includeStart('debug', pragmas.debug);
+    if (!defined(left)) {
+        throw new DeveloperError('left is required');
+    }
+    if (!defined(right)) {
+        throw new DeveloperError('right is required');
+    }
+    if (!defined(result)) {
+        throw new DeveloperError('result is required');
+    }
+    //>>includeEnd('debug');
+
+    result.x = left.x / right.x;
+    result.y = left.y / right.y;
+    result.z = left.z / right.z;
     return result;
 };
 
@@ -1083,7 +1109,7 @@ Cartesian3.fromRadiansArrayHeights = function(coordinates, ellipsoid, result) {
  * @type {Cartesian3}
  * @constant
  */
-Cartesian3.ZERO = freezeObject(new Cartesian3(0.0, 0.0, 0.0));
+Cartesian3.ZERO = Object.freeze(new Cartesian3(0.0, 0.0, 0.0));
 
 /**
  * An immutable Cartesian3 instance initialized to (1.0, 0.0, 0.0).

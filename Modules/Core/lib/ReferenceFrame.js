@@ -1,6 +1,5 @@
 'use strict';
 
-var freezeObject = require('./freezeObject');
 
 /**
  * Constants for identifying well-known reference frames.
@@ -25,5 +24,5 @@ var ReferenceFrame = {
     INERTIAL : 1
 };
 
-module.exports = freezeObject(ReferenceFrame);
+module.exports = Object.freeze(ReferenceFrame);
 

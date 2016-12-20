@@ -5,7 +5,6 @@ var defaultValue = require('./defaultValue');
 var defined = require('./defined');
 var DeveloperError = require('./DeveloperError');
 var FeatureDetection = require('./FeatureDetection');
-var freezeObject = require('./freezeObject');
 var CesiumMath = require('./Math');
 var Matrix3 = require('./Matrix3');
 
@@ -1085,7 +1084,7 @@ Quaternion.equalsEpsilon = function(left, right, epsilon) {
  * @type {Quaternion}
  * @constant
  */
-Quaternion.ZERO = freezeObject(new Quaternion(0.0, 0.0, 0.0, 0.0));
+Quaternion.ZERO = Object.freeze(new Quaternion(0.0, 0.0, 0.0, 0.0));
 
 /**
  * An immutable Quaternion instance initialized to (0.0, 0.0, 0.0, 1.0).
