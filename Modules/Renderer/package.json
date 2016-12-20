@@ -1,6 +1,6 @@
 {
-  "name": "cesium-renderer-experimental",
-  "version": "1.28.1",
+  "name": "cesium-renderer",
+  "version": "1.28.4",
   "description": "Cesium Renderer libraries in CommonJS format for use with Node.js",
   "repository": {
     "type": "git",
@@ -15,7 +15,5 @@
   ],
   "author": "Rob Taglang",
   "license": "Apache-2.0",
-  "dependencies": {
-    "cesium-core-experimental": "^1.28.0"
-  }
+  "dependencies": {}
 }
