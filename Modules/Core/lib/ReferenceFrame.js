@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * Constants for identifying well-known reference frames.
  *

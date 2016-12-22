@@ -1,6 +1,6 @@
 {
   "name": "cesium-core-experimental",
-  "version": "1.28.3",
+  "version": "1.28.4",
   "description": "Cesium Core libraries in CommonJS format for use with Node.js",
   "repository": {
     "type": "git",

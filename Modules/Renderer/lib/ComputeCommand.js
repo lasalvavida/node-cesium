@@ -2,7 +2,7 @@
 
 var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
-var Pass = require('../Scene/Pass');
+var Pass = require('./Pass');
 
 /**
  * Represents a command to the renderer for GPU Compute (using old-school GPGPU).

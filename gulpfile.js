@@ -43,17 +43,17 @@ gulp.task('post-process-core', function(done) {
                     return fsReadFile(file)
                         .then(function (data) {
                             var fileContents = data.toString();
-                            // As per our Node style guide, delete duplicate newlines
-                            fileContents = fileContents.replace(/\r\n/g, '\n');
-                            fileContents = fileContents.replace(/\n{2,}/g, '\n\n');
                             // We can remove the global define tag for jsHint since we don't use define anymore
                             fileContents = fileContents.replace(/\/\*global define\*\/(\s*)/, '');
                             // Change `freezeObject` usage to `Object.freeze`
                             fileContents = fileContents.replace('var freezeObject = require(\'./freezeObject\');\n', '');
-                            fileContents = fileContents.replace('freezeObject', 'Object.freeze');
+                            fileContents = fileContents.replace(/freezeObject/g, 'Object.freeze');
                             // Change `defineProperties` usage to `Object.defineProperties`
                             fileContents = fileContents.replace('var defineProperties = require(\'./defineProperties\');\n', '');
-                            fileContents = fileContents.replace('defineProperties', 'Object.defineProperties');
+                            fileContents = fileContents.replace(/defineProperties/g, 'Object.defineProperties');
+                            // As per our Node style guide, delete duplicate newlines
+                            fileContents = fileContents.replace(/\r\n/g, '\n');
+                            fileContents = fileContents.replace(/\n{2,}/g, '\n\n');
                             // Replace ThirdParty `when` usage with npm `bluebird`
                             fileContents = fileContents.replace('\'../ThirdParty/when\'', '\'bluebird\'');
                             fileContents = fileContents.replace(/(var when)/g, 'var Promise');
@@ -116,9 +116,6 @@ gulp.task('post-process-renderer', function(done) {
                     .then(function(data) {
                         console.log(file);
                         var fileContents = data.toString();
-                        // As per our Node style guide, delete duplicate newlines
-                        fileContents = fileContents.replace(/\r\n/g, '\n');
-                        fileContents = fileContents.replace(/\n{2,}/g, '\n\n');
                         // We can remove the global define tag for jsHint since we don't use define anymore
                         fileContents = fileContents.replace(/\/\*global define\*\/(\s*)/, '');
                         // Require cesium-core
@@ -126,10 +123,13 @@ gulp.task('post-process-renderer', function(done) {
                         fileContents = fileContents.replace(/require\('\.\.\/Core\/(.*?)'\);/g, 'CesiumCore.$1;');
                         // Change `freezeObject` usage to `Object.freeze`
                         fileContents = fileContents.replace('var freezeObject = CesiumCore.freezeObject;\n', '');
-                        fileContents = fileContents.replace('freezeObject', 'Object.freeze');
+                        fileContents = fileContents.replace(/freezeObject/g, 'Object.freeze');
                         // Change `defineProperties` usage to `Object.defineProperties`
                         fileContents = fileContents.replace('var defineProperties = CesiumCore.defineProperties;\n', '');
-                        fileContents = fileContents.replace('defineProperties', 'Object.defineProperties');
+                        fileContents = fileContents.replace(/defineProperties/g, 'Object.defineProperties');
+                        // As per our Node style guide, delete duplicate newlines
+                        fileContents = fileContents.replace(/\r\n/g, '\n');
+                        fileContents = fileContents.replace(/\n{2,}/g, '\n\n');
                         // This module itself is private, so just expose everything
                         var filePath = file.substring(file.indexOf('lib'));
                         var moduleName = filePath.substring(filePath.indexOf('/') + 1).slice(0, -3);

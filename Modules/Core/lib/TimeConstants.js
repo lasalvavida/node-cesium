@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * Constants for time conversions like those done by {@link JulianDate}.
  *

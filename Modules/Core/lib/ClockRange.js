@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * Constants used by {@link Clock#tick} to determine behavior
  * when {@link Clock#startTime} or {@link Clock#stopTime} is reached.

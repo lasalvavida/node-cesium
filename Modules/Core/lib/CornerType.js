@@ -1,6 +1,5 @@
 'use strict';
 
-
 /**
  * Style options for corners.
  *
