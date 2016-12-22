@@ -1,6 +1,6 @@
 {
   "name": "cesium-renderer-experimental",
-  "version": "1.28.6",
+  "version": "1.28.7",
   "description": "Cesium Renderer libraries in CommonJS format for use with Node.js",
   "repository": {
     "type": "git",

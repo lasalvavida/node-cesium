@@ -4,7 +4,7 @@ var CesiumCore = require('cesium-core-experimental');
 var defaultValue = CesiumCore.defaultValue;
 var defined = CesiumCore.defined;
 var DeveloperError = CesiumCore.DeveloperError;
-var CzmBuiltins = require('../Shaders/Builtin/CzmBuiltins');
+var CzmBuiltins = require('../Shaders/Builtin/CzmBuiltins.glsl');
 var AutomaticUniforms = require('./AutomaticUniforms');
 
 function removeComments(source) {
